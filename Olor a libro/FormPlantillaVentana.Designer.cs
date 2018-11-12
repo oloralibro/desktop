@@ -97,6 +97,7 @@
             this.labelMenuJugar.Size = new System.Drawing.Size(113, 66);
             this.labelMenuJugar.TabIndex = 15;
             this.labelMenuJugar.Text = "Jugar";
+            this.labelMenuJugar.Click += new System.EventHandler(this.labelMenuJugar_Click);
             // 
             // labelMenuInicio
             // 

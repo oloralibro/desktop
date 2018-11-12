@@ -115,6 +115,7 @@
             // 
             this.textBoxContraseña.Location = new System.Drawing.Point(106, 111);
             this.textBoxContraseña.Name = "textBoxContraseña";
+            this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(320, 20);
             this.textBoxContraseña.TabIndex = 14;
             // 

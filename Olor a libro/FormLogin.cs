@@ -26,11 +26,11 @@ namespace Olor_a_libro
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (File.Exists(@"../Archivos\UsuariosRegistrados.json"))
+            if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
             {
             //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
 
-                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../Archivos\UsuariosRegistrados.json"));
+                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
                 lista_usuarios = jArrayUsuarios.ToObject<List<Usuario>>();
 
                 existe_usuario = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxNombreUsuario.Text)&&p.contraseña.Equals(this.textBoxContraseña.Text));

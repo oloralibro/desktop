@@ -27,10 +27,10 @@ namespace Olor_a_libro
 
         private void FormRegistro_Load(object sender, EventArgs e)
         {
-            if (File.Exists(@"../Archivos\UsuariosRegistrados.json"))
+            if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
             {
                 //si existe el fichero UsuariosRegistrados lo cargamos en una lista
-                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../Archivos\UsuariosRegistrados.json"));
+                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
                 lista_usuarios = jArrayUsuarios.ToObject<List<Usuario>>();
             }
             else
@@ -83,7 +83,7 @@ namespace Olor_a_libro
         public void sobreescribir_json(JArray o)
         {
             o = (JArray)JToken.FromObject(lista_usuarios);
-            StreamWriter fichero = File.CreateText(@"../Archivos\UsuariosRegistrados.json");
+            StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
             JsonTextWriter writer = new JsonTextWriter(fichero);
             o.WriteTo(writer);
             writer.Close();

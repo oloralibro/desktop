@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormRegistroSuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroSuper.Designer.cs">
+      <DependentUpon>FormRegistroSuper.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSuperuser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroSuper.resx">
+      <DependentUpon>FormRegistroSuper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuperuser.resx">
       <DependentUpon>FormSuperuser.cs</DependentUpon>

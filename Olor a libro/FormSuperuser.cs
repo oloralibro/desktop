@@ -3,23 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Olor_a_libro
 {
-    public partial class FormAjustes : Form
+    public partial class FormSuperuser : Olor_a_libro.FormPlantillaVentana
     {
-        public FormAjustes()
+        public FormSuperuser()
         {
             InitializeComponent();
-        }
-
-        private void buttonAceptar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

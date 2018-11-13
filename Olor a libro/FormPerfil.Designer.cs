@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPerfil));
             this.pictureBoxIconoUsuario = new System.Windows.Forms.PictureBox();
             this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,9 +49,10 @@
             // 
             // pictureBoxIconoUsuario
             // 
+            this.pictureBoxIconoUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconoUsuario.Image")));
             this.pictureBoxIconoUsuario.Location = new System.Drawing.Point(63, 129);
             this.pictureBoxIconoUsuario.Name = "pictureBoxIconoUsuario";
-            this.pictureBoxIconoUsuario.Size = new System.Drawing.Size(200, 200);
+            this.pictureBoxIconoUsuario.Size = new System.Drawing.Size(256, 256);
             this.pictureBoxIconoUsuario.TabIndex = 4;
             this.pictureBoxIconoUsuario.TabStop = false;
             // 
@@ -58,7 +60,7 @@
             // 
             this.labelNombreUsuario.AutoSize = true;
             this.labelNombreUsuario.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreUsuario.Location = new System.Drawing.Point(306, 193);
+            this.labelNombreUsuario.Location = new System.Drawing.Point(365, 196);
             this.labelNombreUsuario.Name = "labelNombreUsuario";
             this.labelNombreUsuario.Size = new System.Drawing.Size(303, 44);
             this.labelNombreUsuario.TabIndex = 5;
@@ -67,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 237);
+            this.label1.Location = new System.Drawing.Point(361, 240);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 13);
             this.label1.TabIndex = 6;
@@ -75,7 +77,7 @@
             // 
             // pictureBoxNivel
             // 
-            this.pictureBoxNivel.Location = new System.Drawing.Point(626, 193);
+            this.pictureBoxNivel.Location = new System.Drawing.Point(685, 196);
             this.pictureBoxNivel.Name = "pictureBoxNivel";
             this.pictureBoxNivel.Size = new System.Drawing.Size(55, 50);
             this.pictureBoxNivel.TabIndex = 7;

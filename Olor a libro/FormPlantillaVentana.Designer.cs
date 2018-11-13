@@ -214,6 +214,7 @@
             this.pictureMenuIconoSuperUser.Size = new System.Drawing.Size(124, 59);
             this.pictureMenuIconoSuperUser.TabIndex = 16;
             this.pictureMenuIconoSuperUser.TabStop = false;
+            this.pictureMenuIconoSuperUser.Click += new System.EventHandler(this.pictureMenuIconoSuperUser_Click);
             // 
             // FormPlantillaVentana
             // 

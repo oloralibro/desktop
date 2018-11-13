@@ -70,5 +70,12 @@ namespace Olor_a_libro
         {
 
         }
+
+        private void pictureMenuIconoSuperUser_Click(object sender, EventArgs e)
+        {
+            FormSuperuser form_super = new FormSuperuser();
+            form_super.ShowDialog();
+            this.Close();
+        }
     }
 }

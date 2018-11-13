@@ -63,7 +63,6 @@ namespace Olor_a_libro
         {
             FormAjustes form_ajustes = new FormAjustes();
             form_ajustes.ShowDialog();
-            this.Close();
         }
 
         private void labelMenuJugar_Click(object sender, EventArgs e)
@@ -74,7 +73,7 @@ namespace Olor_a_libro
         private void pictureMenuIconoSuperUser_Click(object sender, EventArgs e)
         {
             FormSuperuser form_super = new FormSuperuser();
-            form_super.ShowDialog();
+            form_super.Show();
             this.Close();
         }
     }

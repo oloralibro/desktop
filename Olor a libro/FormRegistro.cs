@@ -95,7 +95,7 @@ namespace Olor_a_libro
         private void buttonSuperUser_Click(object sender, EventArgs e)
         {
             FormRegistroSuper f = new FormRegistroSuper();
-            f.Show();
+            f.ShowDialog();
             super_user=f.super_user;
         }
     }

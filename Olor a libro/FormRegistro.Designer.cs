@@ -44,6 +44,7 @@
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonSuperUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxIcono)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,12 +182,23 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "______________________________________________________________________";
             // 
+            // buttonSuperUser
+            // 
+            this.buttonSuperUser.Location = new System.Drawing.Point(97, 284);
+            this.buttonSuperUser.Name = "buttonSuperUser";
+            this.buttonSuperUser.Size = new System.Drawing.Size(43, 23);
+            this.buttonSuperUser.TabIndex = 38;
+            this.buttonSuperUser.Text = "Super";
+            this.buttonSuperUser.UseVisualStyleBackColor = true;
+            this.buttonSuperUser.Click += new System.EventHandler(this.buttonSuperUser_Click);
+            // 
             // FormRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(444, 330);
+            this.Controls.Add(this.buttonSuperUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxUsuario);
             this.Controls.Add(this.labelUsuario);
@@ -232,5 +244,6 @@
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonSuperUser;
     }
 }

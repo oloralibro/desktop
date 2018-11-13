@@ -31,16 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuperuser));
             this.tabControlSuperuser = new System.Windows.Forms.TabControl();
             this.tabPageRedLibrerias = new System.Windows.Forms.TabPage();
-            this.tabPageUsuarios = new System.Windows.Forms.TabPage();
+            this.buttonEliminarLibrerias = new System.Windows.Forms.Button();
+            this.buttonModificarLibrerias = new System.Windows.Forms.Button();
+            this.buttonAnyadirLibrerias = new System.Windows.Forms.Button();
+            this.listBoxLibrerias = new System.Windows.Forms.ListBox();
+            this.textBoxBuscadorLibrerias = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxBuscador = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.buttonAnyadir = new System.Windows.Forms.Button();
-            this.buttonModificar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.tabPageUsuarios = new System.Windows.Forms.TabPage();
+            this.buttonEliminarUser = new System.Windows.Forms.Button();
+            this.buttonModificarUser = new System.Windows.Forms.Button();
+            this.buttonAnyadirUser = new System.Windows.Forms.Button();
+            this.listBoxUsers = new System.Windows.Forms.ListBox();
+            this.textBoxBuscadorUsers = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPageUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlSuperuser
@@ -55,11 +63,11 @@
             // 
             // tabPageRedLibrerias
             // 
-            this.tabPageRedLibrerias.Controls.Add(this.buttonEliminar);
-            this.tabPageRedLibrerias.Controls.Add(this.buttonModificar);
-            this.tabPageRedLibrerias.Controls.Add(this.buttonAnyadir);
-            this.tabPageRedLibrerias.Controls.Add(this.listBox1);
-            this.tabPageRedLibrerias.Controls.Add(this.textBoxBuscador);
+            this.tabPageRedLibrerias.Controls.Add(this.buttonEliminarLibrerias);
+            this.tabPageRedLibrerias.Controls.Add(this.buttonModificarLibrerias);
+            this.tabPageRedLibrerias.Controls.Add(this.buttonAnyadirLibrerias);
+            this.tabPageRedLibrerias.Controls.Add(this.listBoxLibrerias);
+            this.tabPageRedLibrerias.Controls.Add(this.textBoxBuscadorLibrerias);
             this.tabPageRedLibrerias.Controls.Add(this.pictureBox1);
             this.tabPageRedLibrerias.Location = new System.Drawing.Point(4, 22);
             this.tabPageRedLibrerias.Name = "tabPageRedLibrerias";
@@ -69,15 +77,50 @@
             this.tabPageRedLibrerias.Text = "Red de Librerías";
             this.tabPageRedLibrerias.UseVisualStyleBackColor = true;
             // 
-            // tabPageUsuarios
+            // buttonEliminarLibrerias
             // 
-            this.tabPageUsuarios.Location = new System.Drawing.Point(4, 22);
-            this.tabPageUsuarios.Name = "tabPageUsuarios";
-            this.tabPageUsuarios.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUsuarios.Size = new System.Drawing.Size(1190, 473);
-            this.tabPageUsuarios.TabIndex = 1;
-            this.tabPageUsuarios.Text = "Usuarios";
-            this.tabPageUsuarios.UseVisualStyleBackColor = true;
+            this.buttonEliminarLibrerias.Location = new System.Drawing.Point(874, 535);
+            this.buttonEliminarLibrerias.Name = "buttonEliminarLibrerias";
+            this.buttonEliminarLibrerias.Size = new System.Drawing.Size(84, 32);
+            this.buttonEliminarLibrerias.TabIndex = 5;
+            this.buttonEliminarLibrerias.Text = "Eliminar";
+            this.buttonEliminarLibrerias.UseVisualStyleBackColor = true;
+            // 
+            // buttonModificarLibrerias
+            // 
+            this.buttonModificarLibrerias.Location = new System.Drawing.Point(1009, 535);
+            this.buttonModificarLibrerias.Name = "buttonModificarLibrerias";
+            this.buttonModificarLibrerias.Size = new System.Drawing.Size(82, 32);
+            this.buttonModificarLibrerias.TabIndex = 4;
+            this.buttonModificarLibrerias.Text = "Modificar";
+            this.buttonModificarLibrerias.UseVisualStyleBackColor = true;
+            // 
+            // buttonAnyadirLibrerias
+            // 
+            this.buttonAnyadirLibrerias.Location = new System.Drawing.Point(1137, 535);
+            this.buttonAnyadirLibrerias.Name = "buttonAnyadirLibrerias";
+            this.buttonAnyadirLibrerias.Size = new System.Drawing.Size(82, 32);
+            this.buttonAnyadirLibrerias.TabIndex = 3;
+            this.buttonAnyadirLibrerias.Text = "Añadir";
+            this.buttonAnyadirLibrerias.UseVisualStyleBackColor = true;
+            // 
+            // listBoxLibrerias
+            // 
+            this.listBoxLibrerias.BackColor = System.Drawing.SystemColors.Menu;
+            this.listBoxLibrerias.FormattingEnabled = true;
+            this.listBoxLibrerias.Location = new System.Drawing.Point(41, 87);
+            this.listBoxLibrerias.Name = "listBoxLibrerias";
+            this.listBoxLibrerias.Size = new System.Drawing.Size(1178, 433);
+            this.listBoxLibrerias.TabIndex = 2;
+            // 
+            // textBoxBuscadorLibrerias
+            // 
+            this.textBoxBuscadorLibrerias.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorLibrerias.Location = new System.Drawing.Point(79, 31);
+            this.textBoxBuscadorLibrerias.Multiline = true;
+            this.textBoxBuscadorLibrerias.Name = "textBoxBuscadorLibrerias";
+            this.textBoxBuscadorLibrerias.Size = new System.Drawing.Size(1140, 32);
+            this.textBoxBuscadorLibrerias.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -88,48 +131,75 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBoxBuscador
+            // tabPageUsuarios
             // 
-            this.textBoxBuscador.Location = new System.Drawing.Point(79, 31);
-            this.textBoxBuscador.Multiline = true;
-            this.textBoxBuscador.Name = "textBoxBuscador";
-            this.textBoxBuscador.Size = new System.Drawing.Size(1140, 32);
-            this.textBoxBuscador.TabIndex = 1;
+            this.tabPageUsuarios.Controls.Add(this.buttonEliminarUser);
+            this.tabPageUsuarios.Controls.Add(this.buttonModificarUser);
+            this.tabPageUsuarios.Controls.Add(this.buttonAnyadirUser);
+            this.tabPageUsuarios.Controls.Add(this.listBoxUsers);
+            this.tabPageUsuarios.Controls.Add(this.textBoxBuscadorUsers);
+            this.tabPageUsuarios.Controls.Add(this.pictureBox2);
+            this.tabPageUsuarios.Location = new System.Drawing.Point(4, 22);
+            this.tabPageUsuarios.Name = "tabPageUsuarios";
+            this.tabPageUsuarios.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUsuarios.Size = new System.Drawing.Size(1256, 577);
+            this.tabPageUsuarios.TabIndex = 1;
+            this.tabPageUsuarios.Text = "Usuarios";
+            this.tabPageUsuarios.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // buttonEliminarUser
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(41, 87);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1178, 433);
-            this.listBox1.TabIndex = 2;
+            this.buttonEliminarUser.Location = new System.Drawing.Point(874, 535);
+            this.buttonEliminarUser.Name = "buttonEliminarUser";
+            this.buttonEliminarUser.Size = new System.Drawing.Size(84, 32);
+            this.buttonEliminarUser.TabIndex = 11;
+            this.buttonEliminarUser.Text = "Eliminar";
+            this.buttonEliminarUser.UseVisualStyleBackColor = true;
             // 
-            // buttonAnyadir
+            // buttonModificarUser
             // 
-            this.buttonAnyadir.Location = new System.Drawing.Point(1144, 535);
-            this.buttonAnyadir.Name = "buttonAnyadir";
-            this.buttonAnyadir.Size = new System.Drawing.Size(75, 23);
-            this.buttonAnyadir.TabIndex = 3;
-            this.buttonAnyadir.Text = "Añadir";
-            this.buttonAnyadir.UseVisualStyleBackColor = true;
+            this.buttonModificarUser.Location = new System.Drawing.Point(1009, 535);
+            this.buttonModificarUser.Name = "buttonModificarUser";
+            this.buttonModificarUser.Size = new System.Drawing.Size(82, 32);
+            this.buttonModificarUser.TabIndex = 10;
+            this.buttonModificarUser.Text = "Modificar";
+            this.buttonModificarUser.UseVisualStyleBackColor = true;
             // 
-            // buttonModificar
+            // buttonAnyadirUser
             // 
-            this.buttonModificar.Location = new System.Drawing.Point(1035, 535);
-            this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(75, 23);
-            this.buttonModificar.TabIndex = 4;
-            this.buttonModificar.Text = "Modificar";
-            this.buttonModificar.UseVisualStyleBackColor = true;
+            this.buttonAnyadirUser.Location = new System.Drawing.Point(1137, 535);
+            this.buttonAnyadirUser.Name = "buttonAnyadirUser";
+            this.buttonAnyadirUser.Size = new System.Drawing.Size(82, 32);
+            this.buttonAnyadirUser.TabIndex = 9;
+            this.buttonAnyadirUser.Text = "Añadir";
+            this.buttonAnyadirUser.UseVisualStyleBackColor = true;
             // 
-            // buttonEliminar
+            // listBoxUsers
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(929, 535);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
-            this.buttonEliminar.TabIndex = 5;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.listBoxUsers.BackColor = System.Drawing.SystemColors.Menu;
+            this.listBoxUsers.FormattingEnabled = true;
+            this.listBoxUsers.Location = new System.Drawing.Point(41, 87);
+            this.listBoxUsers.Name = "listBoxUsers";
+            this.listBoxUsers.Size = new System.Drawing.Size(1178, 433);
+            this.listBoxUsers.TabIndex = 8;
+            // 
+            // textBoxBuscadorUsers
+            // 
+            this.textBoxBuscadorUsers.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorUsers.Location = new System.Drawing.Point(79, 31);
+            this.textBoxBuscadorUsers.Multiline = true;
+            this.textBoxBuscadorUsers.Name = "textBoxBuscadorUsers";
+            this.textBoxBuscadorUsers.Size = new System.Drawing.Size(1140, 32);
+            this.textBoxBuscadorUsers.TabIndex = 7;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(41, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // FormSuperuser
             // 
@@ -143,6 +213,9 @@
             this.tabPageRedLibrerias.ResumeLayout(false);
             this.tabPageRedLibrerias.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPageUsuarios.ResumeLayout(false);
+            this.tabPageUsuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,11 +226,17 @@
         private System.Windows.Forms.TabControl tabControlSuperuser;
         private System.Windows.Forms.TabPage tabPageRedLibrerias;
         private System.Windows.Forms.TabPage tabPageUsuarios;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBoxBuscador;
+        private System.Windows.Forms.ListBox listBoxLibrerias;
+        private System.Windows.Forms.TextBox textBoxBuscadorLibrerias;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonEliminar;
-        private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Button buttonAnyadir;
+        private System.Windows.Forms.Button buttonEliminarLibrerias;
+        private System.Windows.Forms.Button buttonModificarLibrerias;
+        private System.Windows.Forms.Button buttonAnyadirLibrerias;
+        private System.Windows.Forms.Button buttonEliminarUser;
+        private System.Windows.Forms.Button buttonModificarUser;
+        private System.Windows.Forms.Button buttonAnyadirUser;
+        private System.Windows.Forms.ListBox listBoxUsers;
+        private System.Windows.Forms.TextBox textBoxBuscadorUsers;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAjustes));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonEditarIcono = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 128);
@@ -150,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(581, 390);
+            this.ClientSize = new System.Drawing.Size(590, 390);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonEditarLista);
             this.Controls.Add(this.buttonCambiarContrasenya);
@@ -163,6 +165,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonEditarIcono);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormAjustes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Olor A Libro - Ajustes";

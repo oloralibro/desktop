@@ -49,6 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActividad.Designer.cs">
+      <DependentUpon>FormActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActividadesLibreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActividadesLibreria.Designer.cs">
+      <DependentUpon>FormActividadesLibreria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibreria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibreria.Designer.cs">
+      <DependentUpon>FormLibreria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistroSuper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,12 @@
     </Compile>
     <Compile Include="FormSuperuser.Designer.cs">
       <DependentUpon>FormSuperuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="FormActividades.cs">
@@ -124,8 +148,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormActividad.resx">
+      <DependentUpon>FormActividad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormActividades.resx">
       <DependentUpon>FormActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActividadesLibreria.resx">
+      <DependentUpon>FormActividadesLibreria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAjustes.resx">
       <DependentUpon>FormAjustes.cs</DependentUpon>
@@ -135,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibreria.resx">
+      <DependentUpon>FormLibreria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrerias.resx">
       <DependentUpon>FormLibrerias.cs</DependentUpon>
@@ -159,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSuperuser.resx">
       <DependentUpon>FormSuperuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

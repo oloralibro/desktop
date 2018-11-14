@@ -61,6 +61,12 @@
     <Compile Include="FormActividadesLibreria.Designer.cs">
       <DependentUpon>FormActividadesLibreria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormJugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJugar.Designer.cs">
+      <DependentUpon>FormJugar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibreria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJugar.resx">
+      <DependentUpon>FormJugar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibreria.resx">
       <DependentUpon>FormLibreria.cs</DependentUpon>

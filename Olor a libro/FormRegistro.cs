@@ -17,8 +17,8 @@ namespace Olor_a_libro
     {
         List<Usuario> lista_usuarios;
         JArray jArrayUsuarios;
-        Usuario usuario;
-        bool usuario_repetido,super_user;
+        public Usuario usuario;
+        bool usuario_repetido, super_user;
 
         public FormRegistro()
         {
@@ -44,7 +44,7 @@ namespace Olor_a_libro
         {
             //Creamos el usuario con la info insertada
             usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
-            if (super_user==true)
+            if (super_user == true)
             {
                 usuario.super_usuario = true;
             }
@@ -73,9 +73,9 @@ namespace Olor_a_libro
                     sobreescribir_json(jArrayUsuarios);
                     this.Close();
                 }
-                
+
             }
-            
+
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace Olor_a_libro
         {
             FormRegistroSuper f = new FormRegistroSuper();
             f.ShowDialog();
-            super_user=f.super_user;
+            super_user = f.super_user;
         }
     }
 }

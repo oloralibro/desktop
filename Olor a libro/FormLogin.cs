@@ -18,6 +18,7 @@ namespace Olor_a_libro
         JArray jArrayUsuarios;
         List<Usuario> lista_usuarios;
         bool existe_usuario;
+        Usuario usuario_copia;
 
         public FormLogin()
         {
@@ -28,12 +29,12 @@ namespace Olor_a_libro
         {
             if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
             {
-            //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
+                //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
 
                 jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
                 lista_usuarios = jArrayUsuarios.ToObject<List<Usuario>>();
 
-                existe_usuario = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxNombreUsuario.Text)&&p.contraseña.Equals(this.textBoxContraseña.Text));
+                existe_usuario = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxNombreUsuario.Text) && p.contraseña.Equals(this.textBoxContraseña.Text));
                 if (this.textBoxNombreUsuario.Text.Equals(""))
                 {
                     MessageBox.Show("Introduce tu usuario.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -42,10 +43,14 @@ namespace Olor_a_libro
                 {
                     MessageBox.Show("Introduce tu contraseña.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (existe_usuario==true)
+                else if (existe_usuario == true)
                 {
+                    usuario_copia = lista_usuarios.FirstOrDefault(a => a.nombre_usuario.Equals(this.textBoxNombreUsuario.Text));
+                    //en la linia anterior busquem dins de la llista l'usuari que vol entrar i copiem aquest usuari
+                    //per tal de passar-lo al form inicio
                     FormInicio f = new FormInicio();
                     f.Show();
+                    f.user = usuario_copia;
                     this.Hide();
                 }
                 else
@@ -58,7 +63,7 @@ namespace Olor_a_libro
             {
                 MessageBox.Show("No hay ningun usuario registrado.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-               
+
         }
 
         private void buttonCrearCuenta_Click(object sender, EventArgs e)

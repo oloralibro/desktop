@@ -1,1 +1,1 @@
-[{"nombre_usuario":"j","correo_electronico":"j","contraseña":"j","puntuacion_total":0,"nivel":0,"lista_actividades":[]}]
+[{"super_usuario":false,"nombre_usuario":"j","correo_electronico":"j","contraseña":"j","puntuacion_total":0,"nivel":0,"lista_actividades":[]},{"super_usuario":false,"nombre_usuario":"q","correo_electronico":"q","contraseña":"q","puntuacion_total":0,"nivel":0,"lista_actividades":[]},{"super_usuario":true,"nombre_usuario":"w","correo_electronico":"w","contraseña":"w","puntuacion_total":0,"nivel":0,"lista_actividades":[]}]

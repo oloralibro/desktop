@@ -35,7 +35,6 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.PictureBoxIcono = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.checkBoxRecuerdame = new System.Windows.Forms.CheckBox();
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.textBoxNombreUsuario = new System.Windows.Forms.TextBox();
             this.labelContraseña = new System.Windows.Forms.Label();
@@ -100,20 +99,9 @@
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // checkBoxRecuerdame
-            // 
-            this.checkBoxRecuerdame.AutoSize = true;
-            this.checkBoxRecuerdame.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRecuerdame.Location = new System.Drawing.Point(137, 137);
-            this.checkBoxRecuerdame.Name = "checkBoxRecuerdame";
-            this.checkBoxRecuerdame.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxRecuerdame.TabIndex = 15;
-            this.checkBoxRecuerdame.Text = "Recuerdame";
-            this.checkBoxRecuerdame.UseVisualStyleBackColor = true;
-            // 
             // textBoxContraseña
             // 
-            this.textBoxContraseña.Location = new System.Drawing.Point(106, 111);
+            this.textBoxContraseña.Location = new System.Drawing.Point(106, 120);
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(320, 20);
@@ -130,7 +118,7 @@
             // 
             this.labelContraseña.AutoSize = true;
             this.labelContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContraseña.Location = new System.Drawing.Point(39, 111);
+            this.labelContraseña.Location = new System.Drawing.Point(39, 120);
             this.labelContraseña.Name = "labelContraseña";
             this.labelContraseña.Size = new System.Drawing.Size(61, 13);
             this.labelContraseña.TabIndex = 12;
@@ -158,7 +146,6 @@
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.PictureBoxIcono);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.checkBoxRecuerdame);
             this.Controls.Add(this.textBoxContraseña);
             this.Controls.Add(this.textBoxNombreUsuario);
             this.Controls.Add(this.labelContraseña);
@@ -182,7 +169,6 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.PictureBox PictureBoxIcono;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.CheckBox checkBoxRecuerdame;
         private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.TextBox textBoxNombreUsuario;
         private System.Windows.Forms.Label labelContraseña;

@@ -9,6 +9,7 @@ namespace Olor_a_libro
 {
     public class Usuario
     {
+        public bool super_usuario;
         public string nombre_usuario;
         public string correo_electronico;
         public string contraseña;
@@ -18,6 +19,7 @@ namespace Olor_a_libro
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
         {
+            this.super_usuario = false;
             this.nombre_usuario = nombre_usuario;
             this.correo_electronico = correo_electronico;
             this.contraseña = contraseña;
@@ -26,15 +28,5 @@ namespace Olor_a_libro
             this.lista_actividades = new ArrayList();
 
         }
-        /*public void crear_usuario(FormRegistro o)
-        {
-            Usuario usuario = new Usuario();
-            usuario.nombre_usuario = o.textBoxUsuario.Text;
-            usuario.correo_electronico = o.textBoxEmail.Text;
-            usuario.contraseña = o.textBoxContraseña.Text;
-            usuario.puntuacion_total = 0;
-            usuario.nivel = 0;
-        }
-        */
     }
 }

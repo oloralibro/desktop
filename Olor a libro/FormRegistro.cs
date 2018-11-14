@@ -18,7 +18,7 @@ namespace Olor_a_libro
         List<Usuario> lista_usuarios;
         JArray jArrayUsuarios;
         Usuario usuario;
-        bool usuario_repetido;
+        bool usuario_repetido,super_user;
 
         public FormRegistro()
         {
@@ -44,7 +44,10 @@ namespace Olor_a_libro
         {
             //Creamos el usuario con la info insertada
             usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
-
+            if (super_user==true)
+            {
+                usuario.super_usuario = true;
+            }
             //Comprovamos que este usuario no este ya en la lista de usuarios 
             usuario_repetido = lista_usuarios.Any(p => p.nombre_usuario.Equals(usuario.nombre_usuario));
             if (usuario_repetido == true)
@@ -89,5 +92,11 @@ namespace Olor_a_libro
             writer.Close();
         }
 
+        private void buttonSuperUser_Click(object sender, EventArgs e)
+        {
+            FormRegistroSuper f = new FormRegistroSuper();
+            f.ShowDialog();
+            super_user=f.super_user;
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace Olor_a_libro
     {
         List<Usuario> lista_usuarios;
         JArray jArrayUsuarios;
-        public Usuario usuario;
+        Usuario usuario;
         bool usuario_repetido, super_user;
 
         public FormRegistro()

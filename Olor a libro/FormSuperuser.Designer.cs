@@ -241,7 +241,7 @@
             this.Controls.Add(this.tabControlSuperuser);
             this.Name = "FormSuperuser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menú Superuser";
+            this.Text = "Olor A Libro - SuperUser";
             this.Controls.SetChildIndex(this.tabControlSuperuser, 0);
             this.tabControlSuperuser.ResumeLayout(false);
             this.tabPageRedLibrerias.ResumeLayout(false);

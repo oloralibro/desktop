@@ -15,5 +15,11 @@ namespace Olor_a_libro
         {
             InitializeComponent();
         }
+
+        private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
+        {
+            FormAñadirLibreria f = new FormAñadirLibreria();
+            f.ShowDialog();
+        }
     }
 }

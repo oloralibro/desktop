@@ -15,7 +15,7 @@ namespace Olor_a_libro
         public string contraseña;
         public int puntuacion_total;
         public int nivel;
-        public ArrayList lista_actividades;
+        public List<Actividad> lista_actividades;
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
         {
@@ -25,8 +25,7 @@ namespace Olor_a_libro
             this.contraseña = contraseña;
             this.puntuacion_total = 0;
             this.nivel = 0;
-            this.lista_actividades = new ArrayList();
-
+            this.lista_actividades = new List<Actividad>();
         }
     }
 }

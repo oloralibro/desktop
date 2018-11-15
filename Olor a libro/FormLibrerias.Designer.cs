@@ -79,6 +79,7 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(486, 33);
             this.textBoxBuscar.TabIndex = 19;
+            this.textBoxBuscar.Text = "  Buscador libreria";
             // 
             // FormLibrerias
             // 

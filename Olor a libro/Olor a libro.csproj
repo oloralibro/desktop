@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actividad.cs" />
     <Compile Include="FormActividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +68,11 @@
     <Compile Include="FormJugar.Designer.cs">
       <DependentUpon>FormJugar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLibreria.cs">
+    <Compile Include="FormAñadirLibreria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLibreria.Designer.cs">
-      <DependentUpon>FormLibreria.cs</DependentUpon>
+    <Compile Include="FormAñadirLibreria.Designer.cs">
+      <DependentUpon>FormAñadirLibreria.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistroSuper.cs">
       <SubType>Form</SubType>
@@ -91,6 +92,7 @@
     <Compile Include="FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libreria.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="FormActividades.cs">
       <SubType>Form</SubType>
@@ -175,8 +177,8 @@
     <EmbeddedResource Include="FormJugar.resx">
       <DependentUpon>FormJugar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLibreria.resx">
-      <DependentUpon>FormLibreria.cs</DependentUpon>
+    <EmbeddedResource Include="FormAñadirLibreria.resx">
+      <DependentUpon>FormAñadirLibreria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrerias.resx">
       <DependentUpon>FormLibrerias.cs</DependentUpon>
@@ -215,6 +217,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Ficheros\LibreriasRegistradas.json" />
+    <None Include="Ficheros\UsuariosRegistrados.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -229,8 +233,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ficheros\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

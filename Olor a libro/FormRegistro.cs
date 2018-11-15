@@ -42,32 +42,32 @@ namespace Olor_a_libro
 
         private void buttonRegistrarse_Click(object sender, EventArgs e)
         {
-            //Creamos el usuario con la info insertada
-            usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
-            if (super_user == true)
-            {
-                usuario.super_usuario = true;
-            }
             //Comprovamos que este usuario no este ya en la lista de usuarios 
-            usuario_repetido = lista_usuarios.Any(p => p.nombre_usuario.Equals(usuario.nombre_usuario));
+            usuario_repetido = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxUsuario.Text));
             if (usuario_repetido == true)
             {
                 MessageBox.Show("Este nombre de usuario ya existe, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if (!usuario.correo_electronico.Equals(this.textBoxCormirmarEmail.Text))
+                if (!this.textBoxEmail.Text.Equals(this.textBoxCormirmarEmail.Text))
                 {
                     //Comprovamos con confirmar correo que haya introducido bien el correo 
                     MessageBox.Show("El correo electronico no coincide, introducelo de nuevo.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (!usuario.contraseña.Equals(this.textBoxConfirmarContraseña.Text))
+                else if (!this.textBoxContraseña.Text.Equals(this.textBoxConfirmarContraseña.Text))
                 {
                     //Comprovamos con confirmar contraseña que este bien introducida 
                     MessageBox.Show("La contraseña no coincide, introducela de nuevo.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
+                    //Creamos el usuario con la info insertada
+                    usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
+                    if (super_user == true)
+                    {
+                        usuario.super_usuario = true;
+                    }
                     //Añadimos el usuario a la lista de usuarios y al json de usuarios registrados
                     lista_usuarios.Add(usuario);
                     sobreescribir_json(jArrayUsuarios);

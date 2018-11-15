@@ -38,7 +38,7 @@
             // textBoxBuscarLibro
             // 
             this.textBoxBuscarLibro.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBuscarLibro.Location = new System.Drawing.Point(314, 110);
+            this.textBoxBuscarLibro.Location = new System.Drawing.Point(314, 118);
             this.textBoxBuscarLibro.Name = "textBoxBuscarLibro";
             this.textBoxBuscarLibro.Size = new System.Drawing.Size(670, 36);
             this.textBoxBuscarLibro.TabIndex = 4;
@@ -47,7 +47,7 @@
             // pictureBoxIconoBuscador
             // 
             this.pictureBoxIconoBuscador.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconoBuscador.Image")));
-            this.pictureBoxIconoBuscador.Location = new System.Drawing.Point(276, 114);
+            this.pictureBoxIconoBuscador.Location = new System.Drawing.Point(276, 122);
             this.pictureBoxIconoBuscador.Name = "pictureBoxIconoBuscador";
             this.pictureBoxIconoBuscador.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscador.TabIndex = 18;

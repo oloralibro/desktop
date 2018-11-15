@@ -11,6 +11,9 @@ namespace Olor_a_libro
 {
     public partial class FormSuperUser : Olor_a_libro.FormPlantillaVentana
     {
+
+        //String[] lista_actividades =
+
         public FormSuperUser()
         {
             InitializeComponent();
@@ -18,7 +21,7 @@ namespace Olor_a_libro
 
         private void FormSuperUser_Load(object sender, EventArgs e)
         {
-
+            //listBoxActividades.Items.AddRange();
         }
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)

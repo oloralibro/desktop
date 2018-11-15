@@ -20,85 +20,75 @@ namespace Olor_a_libro
 
         private void labelMenuActividades_Click(object sender, EventArgs e)
         {
-            FormActividades form_actividades = new FormActividades();
-            form_actividades.user = this.user;
-            form_actividades.Show();
+            FormActividades formActividades = new FormActividades();
+            formActividades.user = this.user;
+            formActividades.Show();
             this.Close();
         }
 
         private void labelMenuLibrerias_Click(object sender, EventArgs e)
         {
-            FormLibrerias form_librerias = new FormLibrerias();
-            form_librerias.user = this.user;
-            form_librerias.Show();
+            FormLibrerias formLibrerias = new FormLibrerias();
+            formLibrerias.user = this.user;
+            formLibrerias.Show();
             this.Close();
         }
 
         private void labelMenuPerfil_Click(object sender, EventArgs e)
         {
-            FormPerfil form_perfil = new FormPerfil();
-            form_perfil.user = this.user;
-            form_perfil.Show();
+            FormPerfil formPerfil = new FormPerfil();
+            formPerfil.user = this.user;
+            formPerfil.Show();
             this.Close();
         }
 
         private void labelMenuInicio_Click(object sender, EventArgs e)
         {
-            FormInicio form_inicio = new FormInicio();
-            form_inicio.user = this.user;
-            form_inicio.Show();
+            FormInicio formInicio = new FormInicio();
+            formInicio.user = this.user;
+            formInicio.Show();
             this.Close();
         }
 
         private void labelMenuLibros_Click(object sender, EventArgs e)
         {
-            FormLibros form_libros = new FormLibros();
-            form_libros.user = this.user;
-            form_libros.Show();
+            FormLibros formLibros = new FormLibros();
+            formLibros.user = this.user;
+            formLibros.Show();
             this.Close();
         }
 
         private void labelMenuHistorial_Click(object sender, EventArgs e)
         {
-            FormHistorial form_historial = new FormHistorial();
-            form_historial.user = this.user;
-            form_historial.Show();
+            FormHistorial formHistorial = new FormHistorial();
+            formHistorial.user = this.user;
+            formHistorial.Show();
             this.Close();
         }
 
         private void labelMenuAjustes_Click(object sender, EventArgs e)
         {
-            FormAjustes form_ajustes = new FormAjustes();
-            form_ajustes.ShowDialog();
+            FormAjustes formAjustes = new FormAjustes();
+            formAjustes.ShowDialog();
         }
 
         private void labelMenuJugar_Click(object sender, EventArgs e)
         {
-            FormJugar form_jugar = new FormJugar();
-            form_jugar.user = this.user;
-            form_jugar.Show();
+            FormJugar formJugar = new FormJugar();
+            formJugar.user = this.user;
+            formJugar.Show();
             this.Close();
         }
 
         private void pictureMenuIconoSuperUser_Click(object sender, EventArgs e)
         {
-
-            try
+            if (user.superUsuario == true)
             {
-                if (user.super_usuario == true)
-                {
-                    FormSuperuser form_super = new FormSuperuser();
-                    form_super.user = this.user;
-                    form_super.Show();
-                    this.Close();
-                }
+                FormSuperUser formSuper = new FormSuperUser();
+                formSuper.user = this.user;
+                formSuper.Show();
+                this.Close();
             }
-            catch
-            {
-
-            }
-
-
         }
     }
 }

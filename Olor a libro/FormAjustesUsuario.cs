@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Olor_a_libro
 {
-    public partial class FormActividad : Form
+    public partial class FormAjustesUsuario : Form
     {
-        public FormActividad()
+        public FormAjustesUsuario()
         {
             InitializeComponent();
         }

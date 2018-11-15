@@ -9,23 +9,23 @@ namespace Olor_a_libro
 {
     public class Usuario
     {
-        public bool super_usuario;
-        public string nombre_usuario;
-        public string correo_electronico;
+        public bool superUsuario;
+        public string nombre;
+        public string correoElectronico;
         public string contraseña;
-        public int puntuacion_total;
+        public int puntuacionTotal;
         public int nivel;
-        public List<Actividad> lista_actividades;
+        public List<Actividad> listaActividades;
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
         {
-            this.super_usuario = false;
-            this.nombre_usuario = nombre_usuario;
-            this.correo_electronico = correo_electronico;
+            this.superUsuario = false;
+            this.nombre = nombre_usuario;
+            this.correoElectronico = correo_electronico;
             this.contraseña = contraseña;
-            this.puntuacion_total = 0;
+            this.puntuacionTotal = 0;
             this.nivel = 0;
-            this.lista_actividades = new List<Actividad>();
+            this.listaActividades = new List<Actividad>();
         }
     }
 }

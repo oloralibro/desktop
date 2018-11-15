@@ -16,9 +16,9 @@ namespace Olor_a_libro
     {
 
         JArray jArrayUsuarios;
-        List<Usuario> lista_usuarios;
-        bool existe_usuario;
-        Usuario usuario_copia;
+        List<Usuario> listaUsuarios;
+        bool existeUsuario;
+        Usuario usuarioCopia;
 
         public FormLogin()
         {
@@ -32,25 +32,29 @@ namespace Olor_a_libro
                 //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
 
                 jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-                lista_usuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+                listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
 
-                existe_usuario = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxNombreUsuario.Text) && p.contraseña.Equals(this.textBoxContraseña.Text));
-                if (this.textBoxNombreUsuario.Text.Equals(""))
+                existeUsuario = listaUsuarios.Any(p => p.nombre.Equals(this.textBoxNombreUsuario.Text) && p.contraseña.Equals(this.textBoxContraseña.Text));
+                if (this.textBoxNombreUsuario.Text.Equals("") && this.textBoxContraseña.Text.Equals(""))
+                {
+                    MessageBox.Show("Introduce tu contraseña y usuario.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (this.textBoxNombreUsuario.Text.Equals(""))
                 {
                     MessageBox.Show("Introduce tu usuario.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                if (this.textBoxContraseña.Text.Equals(""))
+                else if (this.textBoxContraseña.Text.Equals(""))
                 {
                     MessageBox.Show("Introduce tu contraseña.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (existe_usuario == true)
+                else if (existeUsuario == true)
                 {
-                    usuario_copia = lista_usuarios.FirstOrDefault(a => a.nombre_usuario.Equals(this.textBoxNombreUsuario.Text));
+                    usuarioCopia = listaUsuarios.FirstOrDefault(a => a.nombre.Equals(this.textBoxNombreUsuario.Text));
                     //en la linia anterior busquem dins de la llista l'usuari que vol entrar i copiem aquest usuari
                     //per tal de passar-lo al form inicio
                     FormInicio f = new FormInicio();
                     f.Show();
-                    f.user = usuario_copia;
+                    f.user = usuarioCopia;
                     this.Hide();
                 }
                 else

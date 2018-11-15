@@ -9,16 +9,22 @@ using System.Collections;
 
 namespace Olor_a_libro
 {
-    public partial class FormSuperuser : Olor_a_libro.FormPlantillaVentana
+    public partial class FormSuperUser : Olor_a_libro.FormPlantillaVentana
     {
-        public FormSuperuser()
+        public FormSuperUser()
         {
             InitializeComponent();
         }
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
         {
-            FormAñadirLibreria f = new FormAñadirLibreria();
+            FormAjustesLibreria f = new FormAjustesLibreria();
+            f.ShowDialog();
+        }
+
+        private void buttonAñadirActividad_Click(object sender, EventArgs e)
+        {
+            FormAjustesActividad f = new FormAjustesActividad();
             f.ShowDialog();
         }
     }

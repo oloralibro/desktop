@@ -1,6 +1,6 @@
 ﻿namespace Olor_a_libro
 {
-    partial class FormSuperuser
+    partial class FormSuperUser
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuperuser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuperUser));
             this.tabControlSuperuser = new System.Windows.Forms.TabControl();
             this.tabPageRedLibrerias = new System.Windows.Forms.TabPage();
             this.buttonEliminarLibrerias = new System.Windows.Forms.Button();
@@ -44,17 +44,27 @@
             this.listBoxUsuarios = new System.Windows.Forms.ListBox();
             this.textBoxBuscadorUsuarios = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
+            this.tabPageActividades = new System.Windows.Forms.TabPage();
+            this.buttonEliminarActividad = new System.Windows.Forms.Button();
+            this.buttonModificarActividad = new System.Windows.Forms.Button();
+            this.buttonAñadirActividad = new System.Windows.Forms.Button();
+            this.listBoxActividades = new System.Windows.Forms.ListBox();
+            this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
+            this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorLibrerias)).BeginInit();
             this.tabPageUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).BeginInit();
+            this.tabPageActividades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorActividades)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlSuperuser
             // 
             this.tabControlSuperuser.Controls.Add(this.tabPageRedLibrerias);
             this.tabControlSuperuser.Controls.Add(this.tabPageUsuarios);
+            this.tabControlSuperuser.Controls.Add(this.tabPageActividades);
             this.tabControlSuperuser.Location = new System.Drawing.Point(0, 77);
             this.tabControlSuperuser.Name = "tabControlSuperuser";
             this.tabControlSuperuser.SelectedIndex = 0;
@@ -187,7 +197,7 @@
             // textBoxBuscadorUsuarios
             // 
             this.textBoxBuscadorUsuarios.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxBuscadorUsuarios.Location = new System.Drawing.Point(79, 31);
+            this.textBoxBuscadorUsuarios.Location = new System.Drawing.Point(79, 33);
             this.textBoxBuscadorUsuarios.Multiline = true;
             this.textBoxBuscadorUsuarios.Name = "textBoxBuscadorUsuarios";
             this.textBoxBuscadorUsuarios.Size = new System.Drawing.Size(675, 32);
@@ -196,19 +206,89 @@
             // pictureBoxIconoBuscadorUsuarios
             // 
             this.pictureBoxIconoBuscadorUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconoBuscadorUsuarios.Image")));
-            this.pictureBoxIconoBuscadorUsuarios.Location = new System.Drawing.Point(41, 31);
+            this.pictureBoxIconoBuscadorUsuarios.Location = new System.Drawing.Point(41, 33);
             this.pictureBoxIconoBuscadorUsuarios.Name = "pictureBoxIconoBuscadorUsuarios";
             this.pictureBoxIconoBuscadorUsuarios.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscadorUsuarios.TabIndex = 12;
             this.pictureBoxIconoBuscadorUsuarios.TabStop = false;
             // 
-            // FormSuperuser
+            // tabPageActividades
+            // 
+            this.tabPageActividades.Controls.Add(this.buttonEliminarActividad);
+            this.tabPageActividades.Controls.Add(this.buttonModificarActividad);
+            this.tabPageActividades.Controls.Add(this.buttonAñadirActividad);
+            this.tabPageActividades.Controls.Add(this.listBoxActividades);
+            this.tabPageActividades.Controls.Add(this.textBoxBuscadorActividades);
+            this.tabPageActividades.Controls.Add(this.pictureBoxIconoBuscadorActividades);
+            this.tabPageActividades.Location = new System.Drawing.Point(4, 22);
+            this.tabPageActividades.Name = "tabPageActividades";
+            this.tabPageActividades.Size = new System.Drawing.Size(1256, 577);
+            this.tabPageActividades.TabIndex = 2;
+            this.tabPageActividades.Text = "Actividades";
+            this.tabPageActividades.UseVisualStyleBackColor = true;
+            // 
+            // buttonEliminarActividad
+            // 
+            this.buttonEliminarActividad.Location = new System.Drawing.Point(620, 514);
+            this.buttonEliminarActividad.Name = "buttonEliminarActividad";
+            this.buttonEliminarActividad.Size = new System.Drawing.Size(84, 32);
+            this.buttonEliminarActividad.TabIndex = 11;
+            this.buttonEliminarActividad.Text = "Eliminar";
+            this.buttonEliminarActividad.UseVisualStyleBackColor = true;
+            // 
+            // buttonModificarActividad
+            // 
+            this.buttonModificarActividad.Location = new System.Drawing.Point(502, 514);
+            this.buttonModificarActividad.Name = "buttonModificarActividad";
+            this.buttonModificarActividad.Size = new System.Drawing.Size(82, 32);
+            this.buttonModificarActividad.TabIndex = 10;
+            this.buttonModificarActividad.Text = "Modificar";
+            this.buttonModificarActividad.UseVisualStyleBackColor = true;
+            // 
+            // buttonAñadirActividad
+            // 
+            this.buttonAñadirActividad.Location = new System.Drawing.Point(739, 514);
+            this.buttonAñadirActividad.Name = "buttonAñadirActividad";
+            this.buttonAñadirActividad.Size = new System.Drawing.Size(82, 32);
+            this.buttonAñadirActividad.TabIndex = 9;
+            this.buttonAñadirActividad.Text = "Añadir";
+            this.buttonAñadirActividad.UseVisualStyleBackColor = true;
+            this.buttonAñadirActividad.Click += new System.EventHandler(this.buttonAñadirActividad_Click);
+            // 
+            // listBoxActividades
+            // 
+            this.listBoxActividades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.listBoxActividades.FormattingEnabled = true;
+            this.listBoxActividades.Location = new System.Drawing.Point(41, 80);
+            this.listBoxActividades.Name = "listBoxActividades";
+            this.listBoxActividades.Size = new System.Drawing.Size(1178, 407);
+            this.listBoxActividades.TabIndex = 8;
+            // 
+            // textBoxBuscadorActividades
+            // 
+            this.textBoxBuscadorActividades.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorActividades.Location = new System.Drawing.Point(79, 33);
+            this.textBoxBuscadorActividades.Multiline = true;
+            this.textBoxBuscadorActividades.Name = "textBoxBuscadorActividades";
+            this.textBoxBuscadorActividades.Size = new System.Drawing.Size(675, 32);
+            this.textBoxBuscadorActividades.TabIndex = 7;
+            // 
+            // pictureBoxIconoBuscadorActividades
+            // 
+            this.pictureBoxIconoBuscadorActividades.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconoBuscadorActividades.Image")));
+            this.pictureBoxIconoBuscadorActividades.Location = new System.Drawing.Point(41, 33);
+            this.pictureBoxIconoBuscadorActividades.Name = "pictureBoxIconoBuscadorActividades";
+            this.pictureBoxIconoBuscadorActividades.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
+            this.pictureBoxIconoBuscadorActividades.TabStop = false;
+            // 
+            // FormSuperUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1259, 678);
             this.Controls.Add(this.tabControlSuperuser);
-            this.Name = "FormSuperuser";
+            this.Name = "FormSuperUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Olor A Libro - SuperUser";
             this.Controls.SetChildIndex(this.tabControlSuperuser, 0);
@@ -219,6 +299,9 @@
             this.tabPageUsuarios.ResumeLayout(false);
             this.tabPageUsuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).EndInit();
+            this.tabPageActividades.ResumeLayout(false);
+            this.tabPageActividades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorActividades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +324,12 @@
         private System.Windows.Forms.ListBox listBoxUsuarios;
         private System.Windows.Forms.TextBox textBoxBuscadorUsuarios;
         private System.Windows.Forms.PictureBox pictureBoxIconoBuscadorUsuarios;
+        private System.Windows.Forms.TabPage tabPageActividades;
+        private System.Windows.Forms.Button buttonEliminarActividad;
+        private System.Windows.Forms.Button buttonModificarActividad;
+        private System.Windows.Forms.Button buttonAñadirActividad;
+        private System.Windows.Forms.ListBox listBoxActividades;
+        private System.Windows.Forms.TextBox textBoxBuscadorActividades;
+        private System.Windows.Forms.PictureBox pictureBoxIconoBuscadorActividades;
     }
 }

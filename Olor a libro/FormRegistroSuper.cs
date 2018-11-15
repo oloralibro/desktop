@@ -12,7 +12,7 @@ namespace Olor_a_libro
 {
     public partial class FormRegistroSuper : Form
     {
-        public bool super_user=false;
+        public bool superUser=false;
 
         public FormRegistroSuper()
         {
@@ -24,7 +24,7 @@ namespace Olor_a_libro
             if (this.textBoxContraseñaSuper.Text.Equals("superuser"))
             {
                 MessageBox.Show("Privilegios actualizados","",MessageBoxButtons.OK);
-                super_user = true;
+                superUser = true;
                 this.Close();
             }
             else {

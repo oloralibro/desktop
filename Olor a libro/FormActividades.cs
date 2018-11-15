@@ -14,16 +14,5 @@ namespace Olor_a_libro
         {
             InitializeComponent();
         }
-
-        //Evento para que aparezca y desaparezca el buscador cuando clickamos la lupa
-        /*private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (textBoxBuscar.Visible.Equals(false)) {
-                textBoxBuscar.Visible = true;
-            }
-            else{
-                textBoxBuscar.Visible = false;
-            }
-        }*/
     }
 }

@@ -10,19 +10,19 @@ namespace Olor_a_libro
     {
         public String nombre;
         public String direccion;
-        public String hora_apertura;
-        public String hora_cierre;
-        public String numero_telefono;
-        public List<Actividad> lista_actividades;
+        public String horaApertura;
+        public String horaCierre;
+        public String numeroTelefono;
+        public List<Actividad> listaActividades;
 
-        public Libreria(String nombre, String direccion, String hora_apertura, String hora_cierre, String numero_telefono)
+        public Libreria(String nombre, String direccion, String horaApertura, String horaCierre, String numeroTelefono)
         {
             this.nombre = nombre;
             this.direccion = direccion;
-            this.hora_apertura = hora_apertura;
-            this.hora_cierre = hora_cierre;
-            this.numero_telefono = numero_telefono;
-            this.lista_actividades = new List<Actividad>();
+            this.horaApertura = horaApertura;
+            this.horaCierre = horaCierre;
+            this.numeroTelefono = numeroTelefono;
+            this.listaActividades = new List<Actividad>();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Olor_a_libro
 {
-    partial class FormUsuario
+    partial class FormAjustesUsuario
     {
         /// <summary>
         /// Required designer variable.

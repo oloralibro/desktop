@@ -67,18 +67,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(185, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre de usuario :";
+            this.label1.Text = "Nombre de usuario ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(185, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.Size = new System.Drawing.Size(96, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Correo electrónico :";
+            this.label2.Text = "Correo electrónico ";
             // 
             // listBoxLibrosFav
             // 

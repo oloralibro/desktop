@@ -50,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actividad.cs" />
-    <Compile Include="FormActividad.cs">
+    <Compile Include="FormAjustesActividad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormActividad.Designer.cs">
-      <DependentUpon>FormActividad.cs</DependentUpon>
+    <Compile Include="FormAjustesActividad.Designer.cs">
+      <DependentUpon>FormAjustesActividad.cs</DependentUpon>
     </Compile>
     <Compile Include="FormActividadesLibreria.cs">
       <SubType>Form</SubType>
@@ -68,11 +68,11 @@
     <Compile Include="FormJugar.Designer.cs">
       <DependentUpon>FormJugar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAñadirLibreria.cs">
+    <Compile Include="FormAjustesLibreria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAñadirLibreria.Designer.cs">
-      <DependentUpon>FormAñadirLibreria.cs</DependentUpon>
+    <Compile Include="FormAjustesLibreria.Designer.cs">
+      <DependentUpon>FormAjustesLibreria.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegistroSuper.cs">
       <SubType>Form</SubType>
@@ -80,17 +80,17 @@
     <Compile Include="FormRegistroSuper.Designer.cs">
       <DependentUpon>FormRegistroSuper.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSuperuser.cs">
+    <Compile Include="FormSuperUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSuperuser.Designer.cs">
-      <DependentUpon>FormSuperuser.cs</DependentUpon>
+    <Compile Include="FormSuperUser.Designer.cs">
+      <DependentUpon>FormSuperUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUsuario.cs">
+    <Compile Include="FormAjustesUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUsuario.Designer.cs">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
+    <Compile Include="FormAjustesUsuario.Designer.cs">
+      <DependentUpon>FormAjustesUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Libreria.cs" />
     <Compile Include="Usuario.cs" />
@@ -156,8 +156,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormActividad.resx">
-      <DependentUpon>FormActividad.cs</DependentUpon>
+    <EmbeddedResource Include="FormAjustesActividad.resx">
+      <DependentUpon>FormAjustesActividad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormActividades.resx">
       <DependentUpon>FormActividades.cs</DependentUpon>
@@ -177,8 +177,8 @@
     <EmbeddedResource Include="FormJugar.resx">
       <DependentUpon>FormJugar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAñadirLibreria.resx">
-      <DependentUpon>FormAñadirLibreria.cs</DependentUpon>
+    <EmbeddedResource Include="FormAjustesLibreria.resx">
+      <DependentUpon>FormAjustesLibreria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrerias.resx">
       <DependentUpon>FormLibrerias.cs</DependentUpon>
@@ -201,11 +201,11 @@
     <EmbeddedResource Include="FormRegistroSuper.resx">
       <DependentUpon>FormRegistroSuper.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSuperuser.resx">
-      <DependentUpon>FormSuperuser.cs</DependentUpon>
+    <EmbeddedResource Include="FormSuperUser.resx">
+      <DependentUpon>FormSuperUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUsuario.resx">
-      <DependentUpon>FormUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="FormAjustesUsuario.resx">
+      <DependentUpon>FormAjustesUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

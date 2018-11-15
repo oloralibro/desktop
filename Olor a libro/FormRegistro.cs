@@ -15,10 +15,10 @@ namespace Olor_a_libro
 {
     public partial class FormRegistro : Form
     {
-        List<Usuario> lista_usuarios;
+        List<Usuario> listaUsuarios;
         JArray jArrayUsuarios;
         Usuario usuario;
-        bool usuario_repetido, super_user;
+        bool usuarioRepetido, superUser;
 
         public FormRegistro()
         {
@@ -31,20 +31,20 @@ namespace Olor_a_libro
             {
                 //si existe el fichero UsuariosRegistrados lo cargamos en una lista
                 jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-                lista_usuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+                listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
             }
             else
             {
                 //si no, creamos una lista vacia
-                lista_usuarios = new List<Usuario>();
+                listaUsuarios = new List<Usuario>();
             }
         }
 
         private void buttonRegistrarse_Click(object sender, EventArgs e)
         {
             //Comprovamos que este usuario no este ya en la lista de usuarios 
-            usuario_repetido = lista_usuarios.Any(p => p.nombre_usuario.Equals(this.textBoxUsuario.Text));
-            if (usuario_repetido == true)
+            usuarioRepetido = listaUsuarios.Any(p => p.nombre.Equals(this.textBoxUsuario.Text));
+            if (usuarioRepetido == true)
             {
                 MessageBox.Show("Este nombre de usuario ya existe, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -64,13 +64,13 @@ namespace Olor_a_libro
                 {
                     //Creamos el usuario con la info insertada
                     usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
-                    if (super_user == true)
+                    if (superUser == true)
                     {
-                        usuario.super_usuario = true;
+                        usuario.superUsuario = true;
                     }
                     //Añadimos el usuario a la lista de usuarios y al json de usuarios registrados
-                    lista_usuarios.Add(usuario);
-                    sobreescribir_json(jArrayUsuarios);
+                    listaUsuarios.Add(usuario);
+                    SobreescribirJson(jArrayUsuarios);
                     this.Close();
                 }
 
@@ -83,9 +83,9 @@ namespace Olor_a_libro
             this.Close();
         }
 
-        public void sobreescribir_json(JArray o)
+        public void SobreescribirJson(JArray o)
         {
-            o = (JArray)JToken.FromObject(lista_usuarios);
+            o = (JArray)JToken.FromObject(listaUsuarios);
             StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
             JsonTextWriter writer = new JsonTextWriter(fichero);
             o.WriteTo(writer);
@@ -96,7 +96,7 @@ namespace Olor_a_libro
         {
             FormRegistroSuper f = new FormRegistroSuper();
             f.ShowDialog();
-            super_user = f.super_user;
+            superUser = f.superUser;
         }
     }
 }

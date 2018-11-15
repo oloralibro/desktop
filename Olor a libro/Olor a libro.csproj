@@ -217,6 +217,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Ficheros\ActividadesRegistradas.json" />
     <None Include="Ficheros\LibreriasRegistradas.json" />
     <None Include="Ficheros\UsuariosRegistrados.json" />
     <None Include="packages.config" />

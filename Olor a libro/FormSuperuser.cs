@@ -16,6 +16,11 @@ namespace Olor_a_libro
             InitializeComponent();
         }
 
+        private void FormSuperUser_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
         {
             FormAjustesLibreria f = new FormAjustesLibreria();
@@ -27,5 +32,6 @@ namespace Olor_a_libro
             FormAjustesActividad f = new FormAjustesActividad();
             f.ShowDialog();
         }
+
     }
 }

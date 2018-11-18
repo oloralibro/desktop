@@ -38,10 +38,10 @@
             this.textBoxBuscadorLibrerias = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorLibrerias = new System.Windows.Forms.PictureBox();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
+            this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
             this.buttonEliminarUsuarios = new System.Windows.Forms.Button();
             this.buttonModificarUsuarios = new System.Windows.Forms.Button();
             this.buttonAñadirUsuarios = new System.Windows.Forms.Button();
-            this.listBoxUsuarios = new System.Windows.Forms.ListBox();
             this.textBoxBuscadorUsuarios = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
             this.tabPageActividades = new System.Windows.Forms.TabPage();
@@ -51,10 +51,14 @@
             this.listBoxActividades = new System.Windows.Forms.ListBox();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorLibrerias)).BeginInit();
             this.tabPageUsuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).BeginInit();
             this.tabPageActividades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorActividades)).BeginInit();
@@ -70,6 +74,7 @@
             this.tabControlSuperuser.SelectedIndex = 0;
             this.tabControlSuperuser.Size = new System.Drawing.Size(1264, 603);
             this.tabControlSuperuser.TabIndex = 4;
+            this.tabControlSuperuser.Click += new System.EventHandler(this.tabPageUsuarios_Click);
             // 
             // tabPageRedLibrerias
             // 
@@ -144,10 +149,10 @@
             // 
             // tabPageUsuarios
             // 
+            this.tabPageUsuarios.Controls.Add(this.dataGridViewUsuarios);
             this.tabPageUsuarios.Controls.Add(this.buttonEliminarUsuarios);
             this.tabPageUsuarios.Controls.Add(this.buttonModificarUsuarios);
             this.tabPageUsuarios.Controls.Add(this.buttonAñadirUsuarios);
-            this.tabPageUsuarios.Controls.Add(this.listBoxUsuarios);
             this.tabPageUsuarios.Controls.Add(this.textBoxBuscadorUsuarios);
             this.tabPageUsuarios.Controls.Add(this.pictureBoxIconoBuscadorUsuarios);
             this.tabPageUsuarios.Location = new System.Drawing.Point(4, 22);
@@ -157,6 +162,20 @@
             this.tabPageUsuarios.TabIndex = 1;
             this.tabPageUsuarios.Text = "Usuarios";
             this.tabPageUsuarios.UseVisualStyleBackColor = true;
+            this.tabPageUsuarios.Click += new System.EventHandler(this.tabPageUsuarios_Click);
+            // 
+            // dataGridViewUsuarios
+            // 
+            this.dataGridViewUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.dataGridViewUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombre,
+            this.correoElectronico,
+            this.nivel});
+            this.dataGridViewUsuarios.Location = new System.Drawing.Point(41, 80);
+            this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
+            this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
+            this.dataGridViewUsuarios.TabIndex = 18;
             // 
             // buttonEliminarUsuarios
             // 
@@ -184,15 +203,6 @@
             this.buttonAñadirUsuarios.TabIndex = 15;
             this.buttonAñadirUsuarios.Text = "Añadir";
             this.buttonAñadirUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // listBoxUsuarios
-            // 
-            this.listBoxUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.listBoxUsuarios.FormattingEnabled = true;
-            this.listBoxUsuarios.Location = new System.Drawing.Point(41, 80);
-            this.listBoxUsuarios.Name = "listBoxUsuarios";
-            this.listBoxUsuarios.Size = new System.Drawing.Size(1178, 407);
-            this.listBoxUsuarios.TabIndex = 14;
             // 
             // textBoxBuscadorUsuarios
             // 
@@ -282,6 +292,27 @@
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
             // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre usuario";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 400;
+            // 
+            // correoElectronico
+            // 
+            this.correoElectronico.DataPropertyName = "correoElectronico";
+            this.correoElectronico.HeaderText = "E-mail";
+            this.correoElectronico.Name = "correoElectronico";
+            this.correoElectronico.Width = 400;
+            // 
+            // nivel
+            // 
+            this.nivel.DataPropertyName = "nivel";
+            this.nivel.HeaderText = "Nivel";
+            this.nivel.Name = "nivel";
+            this.nivel.Width = 350;
+            // 
             // FormSuperUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,6 +330,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorLibrerias)).EndInit();
             this.tabPageUsuarios.ResumeLayout(false);
             this.tabPageUsuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).EndInit();
             this.tabPageActividades.ResumeLayout(false);
             this.tabPageActividades.PerformLayout();
@@ -322,7 +354,6 @@
         private System.Windows.Forms.Button buttonEliminarUsuarios;
         private System.Windows.Forms.Button buttonModificarUsuarios;
         private System.Windows.Forms.Button buttonAñadirUsuarios;
-        private System.Windows.Forms.ListBox listBoxUsuarios;
         private System.Windows.Forms.TextBox textBoxBuscadorUsuarios;
         private System.Windows.Forms.PictureBox pictureBoxIconoBuscadorUsuarios;
         private System.Windows.Forms.TabPage tabPageActividades;
@@ -332,5 +363,9 @@
         private System.Windows.Forms.ListBox listBoxActividades;
         private System.Windows.Forms.TextBox textBoxBuscadorActividades;
         private System.Windows.Forms.PictureBox pictureBoxIconoBuscadorActividades;
+        private System.Windows.Forms.DataGridView dataGridViewUsuarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correoElectronico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nivel;
     }
 }

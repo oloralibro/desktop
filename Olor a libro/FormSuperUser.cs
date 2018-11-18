@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System.IO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace Olor_a_libro
     {
 
         //String[] lista_actividades =
+        JArray jArrayUsuarios;
+        List<Usuario> listaUsuarios;
 
         public FormSuperUser()
         {
@@ -36,5 +40,19 @@ namespace Olor_a_libro
             f.ShowDialog();
         }
 
+        private void tabPageUsuarios_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
+            {
+                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
+                listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+
+                dataGridViewUsuarios.DataSource = listaUsuarios;
+            }
+            else
+            {
+                MessageBox.Show("No hay ningun usuario registrado.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

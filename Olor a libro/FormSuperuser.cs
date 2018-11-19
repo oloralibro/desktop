@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System.IO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace Olor_a_libro
     {
 
         //String[] lista_actividades =
+        JArray jArrayUsuarios, jArrayLibrerias;
+        List<Usuario> listaUsuarios;
 
         public FormSuperUser()
         {
@@ -22,6 +26,12 @@ namespace Olor_a_libro
         private void FormSuperUser_Load(object sender, EventArgs e)
         {
             //listBoxActividades.Items.AddRange();
+            //Cargamos gridview de usuarios
+            jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
+            listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+            dataGridViewUsuarios.DataSource = listaUsuarios;
+            //Cargamos la lista de librerias
+            jArrayLibrerias = JArray.Parse(File.ReadAllText(@"../../Ficheros\LibreriasRegistradas.json"));
         }
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)

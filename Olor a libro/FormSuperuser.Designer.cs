@@ -53,7 +53,7 @@
             this.textBoxBuscadorUsuarios = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
             this.tabPageActividades = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,7 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).BeginInit();
             this.tabPageActividades.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorActividades)).BeginInit();
             this.SuspendLayout();
             // 
@@ -293,7 +293,7 @@
             // 
             // tabPageActividades
             // 
-            this.tabPageActividades.Controls.Add(this.dataGridView1);
+            this.tabPageActividades.Controls.Add(this.dataGridViewActividades);
             this.tabPageActividades.Controls.Add(this.buttonEliminarActividad);
             this.tabPageActividades.Controls.Add(this.buttonModificarActividad);
             this.tabPageActividades.Controls.Add(this.buttonAñadirActividad);
@@ -306,18 +306,18 @@
             this.tabPageActividades.Text = "Actividades";
             this.tabPageActividades.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewActividades
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 80);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1178, 407);
-            this.dataGridView1.TabIndex = 19;
+            this.dataGridViewActividades.Location = new System.Drawing.Point(41, 80);
+            this.dataGridViewActividades.Name = "dataGridViewActividades";
+            this.dataGridViewActividades.Size = new System.Drawing.Size(1178, 407);
+            this.dataGridViewActividades.TabIndex = 19;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -408,7 +408,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorUsuarios)).EndInit();
             this.tabPageActividades.ResumeLayout(false);
             this.tabPageActividades.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconoBuscadorActividades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -446,7 +446,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horaApertura;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewActividades;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;

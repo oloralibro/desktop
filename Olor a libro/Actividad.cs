@@ -8,10 +8,10 @@ namespace Olor_a_libro
 {
     public class Actividad
     {
-        public String nombre;
-        public String descripcion;
-        public String direccion;
-        public int puntos;
+        public String nombre { get; set; }
+        public String descripcion { get; set; }
+        public String direccion { get; set; }
+        public int puntos { get; set; }
 
         public Actividad(String nombre, String descripcion, int puntos)
         {

@@ -14,9 +14,10 @@ namespace Olor_a_libro
     public partial class FormSuperUser : Olor_a_libro.FormPlantillaVentana
     {
 
-        //String[] lista_actividades =
-        JArray jArrayUsuarios, jArrayLibrerias;
-        List<Usuario> listaUsuarios;
+        JArray jArrayUsuarios, jArrayLibrerias, jArrayActividades;
+        BindingList<Usuario> listaUsuarios;
+        BindingList<Actividad> listaActividades;
+        BindingList<Libreria> listaLibrerias ;
 
         public FormSuperUser()
         {
@@ -25,15 +26,19 @@ namespace Olor_a_libro
 
         private void FormSuperUser_Load(object sender, EventArgs e)
         {
-            //listBoxActividades.Items.AddRange();
             //Cargamos gridview de usuarios
             jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-            listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+            listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
             dataGridViewUsuarios.DataSource = null;
             dataGridViewUsuarios.DataSource = listaUsuarios;
          
             //Cargamos la lista de librerias
             jArrayLibrerias = JArray.Parse(File.ReadAllText(@"../../Ficheros\LibreriasRegistradas.json"));
+
+            //Cargamos la lista de actividades
+            jArrayActividades = JArray.Parse(File.ReadAllText(@"../../Ficheros\ActividadesRegistradas.json"));
+            listaActividades = jArrayActividades.ToObject<BindingList<Actividad>>();
+            dataGridViewActividades.DataSource = listaActividades;
         }
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)

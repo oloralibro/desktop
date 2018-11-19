@@ -29,7 +29,9 @@ namespace Olor_a_libro
             //Cargamos gridview de usuarios
             jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
             listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+            dataGridViewUsuarios.DataSource = null;
             dataGridViewUsuarios.DataSource = listaUsuarios;
+         
             //Cargamos la lista de librerias
             jArrayLibrerias = JArray.Parse(File.ReadAllText(@"../../Ficheros\LibreriasRegistradas.json"));
         }
@@ -40,10 +42,17 @@ namespace Olor_a_libro
             f.ShowDialog();
         }
 
+        private void buttonModificarUsuarios_Click(object sender, EventArgs e)
+        {
+            FormAjustesUsuario f = new FormAjustesUsuario();
+
+        }
+
         private void buttonAñadirActividad_Click(object sender, EventArgs e)
         {
             FormAjustesActividad f = new FormAjustesActividad();
             f.ShowDialog();
+
         }
 
     }

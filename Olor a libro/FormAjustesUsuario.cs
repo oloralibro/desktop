@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Olor_a_libro
 {
+
     public partial class FormAjustesUsuario : Form
     {
         public FormAjustesUsuario()

@@ -8,12 +8,12 @@ namespace Olor_a_libro
 {
     public class Libreria
     {
-        public String nombre;
-        public String direccion;
-        public String horaApertura;
-        public String horaCierre;
-        public String numeroTelefono;
-        public List<Actividad> listaActividades;
+        public String nombre { get; set; }
+        public String direccion { get; set; }
+        public String horaApertura { get; set; }
+        public String horaCierre { get; set; }
+        public String numeroTelefono { get; set; }
+        public List<Actividad> listaActividades { get; set; }
 
         public Libreria(String nombre, String direccion, String horaApertura, String horaCierre, String numeroTelefono)
         {

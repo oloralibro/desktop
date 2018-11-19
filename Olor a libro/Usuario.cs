@@ -9,13 +9,13 @@ namespace Olor_a_libro
 {
     public class Usuario
     {
-        public bool superUsuario;
-        public string nombre;
-        public string correoElectronico;
-        public string contraseña;
-        public int puntuacionTotal;
-        public int nivel;
-        public List<Actividad> listaActividades;
+        public bool superUsuario { get; set; }
+        public string nombre { get; set; }
+        public string correoElectronico { get; set; }
+        public string contraseña { get; set; }
+        public int puntuacionTotal { get; set; }
+        public int nivel { get; set; }
+        public List<Actividad> listaActividades { get; set; }
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
         {

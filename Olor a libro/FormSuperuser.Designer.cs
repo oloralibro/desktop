@@ -44,6 +44,11 @@
             this.pictureBoxIconoBuscadorLibrerias = new System.Windows.Forms.PictureBox();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarUsuarios = new System.Windows.Forms.Button();
             this.buttonModificarUsuarios = new System.Windows.Forms.Button();
             this.buttonAñadirUsuarios = new System.Windows.Forms.Button();
@@ -59,11 +64,6 @@
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -228,6 +228,37 @@
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewUsuarios.TabIndex = 18;
             // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre usuario";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 400;
+            // 
+            // contraseña
+            // 
+            this.contraseña.HeaderText = "Contraseña";
+            this.contraseña.Name = "contraseña";
+            // 
+            // superUsuario
+            // 
+            this.superUsuario.HeaderText = "Super user";
+            this.superUsuario.Name = "superUsuario";
+            // 
+            // correoElectronico
+            // 
+            this.correoElectronico.DataPropertyName = "correoElectronico";
+            this.correoElectronico.HeaderText = "E-mail";
+            this.correoElectronico.Name = "correoElectronico";
+            this.correoElectronico.Width = 400;
+            // 
+            // nivel
+            // 
+            this.nivel.DataPropertyName = "nivel";
+            this.nivel.HeaderText = "Nivel";
+            this.nivel.Name = "nivel";
+            this.nivel.Width = 350;
+            // 
             // buttonEliminarUsuarios
             // 
             this.buttonEliminarUsuarios.Location = new System.Drawing.Point(620, 514);
@@ -369,37 +400,6 @@
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
             // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre";
-            this.nombre.HeaderText = "Nombre usuario";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 400;
-            // 
-            // contraseña
-            // 
-            this.contraseña.HeaderText = "Contraseña";
-            this.contraseña.Name = "contraseña";
-            // 
-            // superUsuario
-            // 
-            this.superUsuario.HeaderText = "Super user";
-            this.superUsuario.Name = "superUsuario";
-            // 
-            // correoElectronico
-            // 
-            this.correoElectronico.DataPropertyName = "correoElectronico";
-            this.correoElectronico.HeaderText = "E-mail";
-            this.correoElectronico.Name = "correoElectronico";
-            this.correoElectronico.Width = 400;
-            // 
-            // nivel
-            // 
-            this.nivel.DataPropertyName = "nivel";
-            this.nivel.HeaderText = "Nivel";
-            this.nivel.Name = "nivel";
-            this.nivel.Width = 350;
-            // 
             // FormSuperUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +409,7 @@
             this.Name = "FormSuperUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Olor A Libro - SuperUser";
+            this.Activated += new System.EventHandler(this.FormSuperUser_Activated);
             this.Load += new System.EventHandler(this.FormSuperUser_Load);
             this.Controls.SetChildIndex(this.tabControlSuperuser, 0);
             this.tabControlSuperuser.ResumeLayout(false);

@@ -46,8 +46,8 @@
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarUsuarios = new System.Windows.Forms.Button();
             this.buttonModificarUsuarios = new System.Windows.Forms.Button();
@@ -220,8 +220,8 @@
             this.dataGridViewUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombre,
             this.contraseña,
-            this.superUsuario,
             this.correoElectronico,
+            this.superUsuario,
             this.nivel});
             this.dataGridViewUsuarios.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
@@ -233,31 +233,35 @@
             this.nombre.DataPropertyName = "nombre";
             this.nombre.HeaderText = "Nombre usuario";
             this.nombre.Name = "nombre";
-            this.nombre.Width = 400;
+            this.nombre.Width = 250;
             // 
             // contraseña
             // 
+            this.contraseña.DataPropertyName = "contraseña";
             this.contraseña.HeaderText = "Contraseña";
             this.contraseña.Name = "contraseña";
-            // 
-            // superUsuario
-            // 
-            this.superUsuario.HeaderText = "Super user";
-            this.superUsuario.Name = "superUsuario";
+            this.contraseña.Width = 250;
             // 
             // correoElectronico
             // 
             this.correoElectronico.DataPropertyName = "correoElectronico";
             this.correoElectronico.HeaderText = "E-mail";
             this.correoElectronico.Name = "correoElectronico";
-            this.correoElectronico.Width = 400;
+            this.correoElectronico.Width = 350;
+            // 
+            // superUsuario
+            // 
+            this.superUsuario.DataPropertyName = "superUsuario";
+            this.superUsuario.HeaderText = "Super user";
+            this.superUsuario.Name = "superUsuario";
+            this.superUsuario.Width = 150;
             // 
             // nivel
             // 
             this.nivel.DataPropertyName = "nivel";
             this.nivel.HeaderText = "Nivel";
             this.nivel.Name = "nivel";
-            this.nivel.Width = 350;
+            this.nivel.Width = 150;
             // 
             // buttonEliminarUsuarios
             // 
@@ -267,6 +271,7 @@
             this.buttonEliminarUsuarios.TabIndex = 17;
             this.buttonEliminarUsuarios.Text = "Eliminar";
             this.buttonEliminarUsuarios.UseVisualStyleBackColor = true;
+            this.buttonEliminarUsuarios.Click += new System.EventHandler(this.buttonEliminarUsuarios_Click);
             // 
             // buttonModificarUsuarios
             // 
@@ -409,7 +414,6 @@
             this.Name = "FormSuperUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Olor A Libro - SuperUser";
-            this.Activated += new System.EventHandler(this.FormSuperUser_Activated);
             this.Load += new System.EventHandler(this.FormSuperUser_Load);
             this.Controls.SetChildIndex(this.tabControlSuperuser, 0);
             this.tabControlSuperuser.ResumeLayout(false);
@@ -464,8 +468,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn contraseña;
-        private System.Windows.Forms.DataGridViewTextBoxColumn superUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoElectronico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn superUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nivel;
     }
 }

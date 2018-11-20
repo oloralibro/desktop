@@ -291,6 +291,7 @@
             this.buttonAñadirUsuarios.TabIndex = 15;
             this.buttonAñadirUsuarios.Text = "Añadir";
             this.buttonAñadirUsuarios.UseVisualStyleBackColor = true;
+            this.buttonAñadirUsuarios.Click += new System.EventHandler(this.buttonAñadirUsuarios_Click);
             // 
             // textBoxBuscadorUsuarios
             // 

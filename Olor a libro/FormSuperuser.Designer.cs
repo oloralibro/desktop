@@ -44,6 +44,11 @@
             this.pictureBoxIconoBuscadorLibrerias = new System.Windows.Forms.PictureBox();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarUsuarios = new System.Windows.Forms.Button();
             this.buttonModificarUsuarios = new System.Windows.Forms.Button();
             this.buttonAñadirUsuarios = new System.Windows.Forms.Button();
@@ -59,11 +64,6 @@
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -228,6 +228,41 @@
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewUsuarios.TabIndex = 18;
             // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre usuario";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 250;
+            // 
+            // contraseña
+            // 
+            this.contraseña.DataPropertyName = "contraseña";
+            this.contraseña.HeaderText = "Contraseña";
+            this.contraseña.Name = "contraseña";
+            this.contraseña.Width = 250;
+            // 
+            // correoElectronico
+            // 
+            this.correoElectronico.DataPropertyName = "correoElectronico";
+            this.correoElectronico.HeaderText = "E-mail";
+            this.correoElectronico.Name = "correoElectronico";
+            this.correoElectronico.Width = 350;
+            // 
+            // superUsuario
+            // 
+            this.superUsuario.DataPropertyName = "superUsuario";
+            this.superUsuario.HeaderText = "Super user";
+            this.superUsuario.Name = "superUsuario";
+            this.superUsuario.Width = 150;
+            // 
+            // nivel
+            // 
+            this.nivel.DataPropertyName = "nivel";
+            this.nivel.HeaderText = "Nivel";
+            this.nivel.Name = "nivel";
+            this.nivel.Width = 150;
+            // 
             // buttonEliminarUsuarios
             // 
             this.buttonEliminarUsuarios.Location = new System.Drawing.Point(620, 514);
@@ -236,6 +271,7 @@
             this.buttonEliminarUsuarios.TabIndex = 17;
             this.buttonEliminarUsuarios.Text = "Eliminar";
             this.buttonEliminarUsuarios.UseVisualStyleBackColor = true;
+            this.buttonEliminarUsuarios.Click += new System.EventHandler(this.buttonEliminarUsuarios_Click);
             // 
             // buttonModificarUsuarios
             // 
@@ -368,41 +404,6 @@
             this.pictureBoxIconoBuscadorActividades.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
-            // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre";
-            this.nombre.HeaderText = "Nombre usuario";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 250;
-            // 
-            // contraseña
-            // 
-            this.contraseña.DataPropertyName = "contraseña";
-            this.contraseña.HeaderText = "Contraseña";
-            this.contraseña.Name = "contraseña";
-            this.contraseña.Width = 250;
-            // 
-            // correoElectronico
-            // 
-            this.correoElectronico.DataPropertyName = "correoElectronico";
-            this.correoElectronico.HeaderText = "E-mail";
-            this.correoElectronico.Name = "correoElectronico";
-            this.correoElectronico.Width = 350;
-            // 
-            // superUsuario
-            // 
-            this.superUsuario.DataPropertyName = "superUsuario";
-            this.superUsuario.HeaderText = "Super user";
-            this.superUsuario.Name = "superUsuario";
-            this.superUsuario.Width = 150;
-            // 
-            // nivel
-            // 
-            this.nivel.DataPropertyName = "nivel";
-            this.nivel.HeaderText = "Nivel";
-            this.nivel.Name = "nivel";
-            this.nivel.Width = 150;
             // 
             // FormSuperUser
             // 

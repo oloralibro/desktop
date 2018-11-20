@@ -27,5 +27,6 @@ namespace Olor_a_libro
             this.nivel = 0;
             this.listaActividades = new List<Actividad>();
         }
+
     }
 }

@@ -36,7 +36,27 @@ namespace Olor_a_libro
 
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
+            user.nombre = textBoxNombreUser.Text;
+            user.contraseña = textBoxContraseña.Text;
+            user.correoElectronico = textBoxCorreo.Text;
+            if (checkBoxSuperUser.Checked == true)
+            {
+                user.superUsuario = true;
+            }
+            else
+            {
+                user.superUsuario = false;
+            }
+
             this.Close();
+        }
+
+        private void buttonModificar_Click(object sender, EventArgs e)
+        {
+            textBoxNombreUser.ReadOnly = false;
+            textBoxCorreo.ReadOnly = false;
+            textBoxContraseña.ReadOnly = false;
+            checkBoxSuperUser.AutoCheck = true;
         }
     }
 }

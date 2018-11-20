@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
+using Newtonsoft.Json;
 
 namespace Olor_a_libro
 {
@@ -24,70 +25,81 @@ namespace Olor_a_libro
             InitializeComponent();
         }
 
+        private void FormSuperUser_Activated(object sender, EventArgs e) {
+            sobreescribirUsuarios();
+        }
+
         private void FormSuperUser_Load(object sender, EventArgs e)
         {
             dataGridViewActividades.AutoGenerateColumns = false;
             dataGridViewLibrerias.AutoGenerateColumns = false;
             dataGridViewUsuarios.AutoGenerateColumns = false;
             //Cargamos gridview de usuarios
-            SobreescribirUsuarios();
+            cargarUsuarios();
             //Cargamos la lista de librerias
             SobreescribirLibrerias();
             //Cargamos la lista de actividades
             SobreescribirActividades();
         }
 
-
-        //Librerias
-        private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
+        #region Usuarios
+        private void cargarUsuarios()
         {
-            FormAjustesLibreria f = new FormAjustesLibreria();
-            f.ShowDialog();
+            //Cargamos gridview de usuarios
+            jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
+            listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
+            dataGridViewUsuarios.DataSource = null;
+            dataGridViewUsuarios.DataSource = listaUsuarios;
         }
-        //endLibrerias
 
-        //Actividades
-        private void buttonAñadirActividad_Click(object sender, EventArgs e)
-        {
-            FormAjustesActividad f = new FormAjustesActividad();
-            f.ShowDialog();
-            SobreescribirActividades();
+        private void sobreescribirUsuarios() {
+            JArray jArrayUsuarios = (JArray)JToken.FromObject(listaUsuarios);
+            StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
+            JsonTextWriter writer = new JsonTextWriter(fichero);
+
+            jArrayUsuarios.WriteTo(writer);
+            writer.Close();
         }
-        //endActividades
 
-        //Usuarios
         private void buttonModificarUsuarios_Click(object sender, EventArgs e)
         {
             FormAjustesUsuario f = new FormAjustesUsuario();
             f.user = (Usuario)dataGridViewUsuarios.SelectedRows[0].DataBoundItem;
             f.ShowDialog();
         }
+
         private void buttonEliminarUsuarios_Click(object sender, EventArgs e)
         {
             listaUsuarios.Remove((Usuario)dataGridViewUsuarios.SelectedRows[0].DataBoundItem);
+
+            sobreescribirUsuarios();
+
             dataGridViewUsuarios.DataSource = null;
             dataGridViewUsuarios.DataSource = listaUsuarios;
         }
-        //endUsuarios
 
-        #region Usuarios
-        private void SobreescribirUsuarios()
-        {//Cargamos gridview de usuarios
-            jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-            listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
-            dataGridViewUsuarios.DataSource = null;
-            dataGridViewUsuarios.DataSource = listaUsuarios;
+        private void buttonAñadirUsuarios_Click(object sender, EventArgs e)
+        {
+            FormAnyadirUser f = new FormAnyadirUser(listaUsuarios);
+            f.ShowDialog();
         }
         #endregion
 
         #region Librerias
 
         private void SobreescribirLibrerias()
-        {//Cargamos la lista de librerias
+        {
+            //Cargamos la lista de librerias
             jArrayLibrerias = JArray.Parse(File.ReadAllText(@"../../Ficheros\LibreriasRegistradas.json"));
             listaLibrerias = jArrayLibrerias.ToObject<BindingList<Libreria>>();
             dataGridViewLibrerias.DataSource = null;
             dataGridViewLibrerias.DataSource = listaLibrerias;
+        }
+
+        private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
+        {
+            FormAjustesLibreria f = new FormAjustesLibreria();
+            f.ShowDialog();
         }
 
         #endregion
@@ -115,7 +127,13 @@ namespace Olor_a_libro
             dataGridViewActividades.DataSource = null;
             dataGridViewActividades.DataSource = listaActividades;
         }
-        #endregion
 
+        private void buttonAñadirActividad_Click(object sender, EventArgs e)
+        {
+            FormAjustesActividad f = new FormAjustesActividad();
+            f.ShowDialog();
+            SobreescribirActividades();
+        }
+        #endregion
     }
 }

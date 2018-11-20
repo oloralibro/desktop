@@ -50,6 +50,7 @@
             this.buttonModificar.TabIndex = 19;
             this.buttonModificar.Text = "Modificar";
             this.buttonModificar.UseVisualStyleBackColor = true;
+            this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
             // 
             // buttonAceptar
             // 
@@ -82,6 +83,7 @@
             // 
             this.textBoxCorreo.Location = new System.Drawing.Point(78, 89);
             this.textBoxCorreo.Name = "textBoxCorreo";
+            this.textBoxCorreo.ReadOnly = true;
             this.textBoxCorreo.Size = new System.Drawing.Size(252, 20);
             this.textBoxCorreo.TabIndex = 15;
             // 
@@ -89,6 +91,7 @@
             // 
             this.textBoxContraseña.Location = new System.Drawing.Point(78, 54);
             this.textBoxContraseña.Name = "textBoxContraseña";
+            this.textBoxContraseña.ReadOnly = true;
             this.textBoxContraseña.Size = new System.Drawing.Size(252, 20);
             this.textBoxContraseña.TabIndex = 14;
             // 
@@ -114,6 +117,7 @@
             // 
             this.textBoxNombreUser.Location = new System.Drawing.Point(78, 19);
             this.textBoxNombreUser.Name = "textBoxNombreUser";
+            this.textBoxNombreUser.ReadOnly = true;
             this.textBoxNombreUser.Size = new System.Drawing.Size(252, 20);
             this.textBoxNombreUser.TabIndex = 11;
             // 
@@ -137,6 +141,7 @@
             // 
             // checkBoxSuperUser
             // 
+            this.checkBoxSuperUser.AutoCheck = false;
             this.checkBoxSuperUser.AutoSize = true;
             this.checkBoxSuperUser.Location = new System.Drawing.Point(315, 120);
             this.checkBoxSuperUser.Name = "checkBoxSuperUser";
@@ -162,8 +167,10 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxNombreUser);
             this.Controls.Add(this.labelNombreUser);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormAjustesUsuario";
-            this.Text = "FormUsuario";
+            this.Text = "Ajustes de Usuario";
             this.Load += new System.EventHandler(this.FormAjustesUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

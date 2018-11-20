@@ -50,6 +50,9 @@ namespace Olor_a_libro
         private void buttonModificarUsuarios_Click(object sender, EventArgs e)
         {
             FormAjustesUsuario f = new FormAjustesUsuario();
+            f.user = (Usuario)dataGridViewUsuarios.SelectedRows[0].DataBoundItem;
+            f.ShowDialog();
+            
 
         }
 

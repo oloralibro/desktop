@@ -415,6 +415,7 @@
             this.Name = "FormSuperUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Olor A Libro - SuperUser";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSuperUser_FormClosing);
             this.Load += new System.EventHandler(this.FormSuperUser_Load);
             this.Controls.SetChildIndex(this.tabControlSuperuser, 0);
             this.tabControlSuperuser.ResumeLayout(false);

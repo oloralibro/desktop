@@ -122,6 +122,11 @@ namespace Olor_a_libro
             }
         }
 
+        private void FormSuperUser_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            sobreescribirUsuarios();
+        }
+
         private void RefrescarActividades()
         {
             dataGridViewActividades.DataSource = null;

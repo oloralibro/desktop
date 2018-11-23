@@ -127,13 +127,15 @@
             // 
             // direccion
             // 
+            this.direccion.DataPropertyName = "direccion";
             this.direccion.HeaderText = "Dirección";
             this.direccion.Name = "direccion";
             this.direccion.Width = 235;
             // 
             // horaApertura
             // 
-            this.horaApertura.HeaderText = "Hor apertura";
+            this.horaApertura.DataPropertyName = "horaApertura";
+            this.horaApertura.HeaderText = "Hora apertura";
             this.horaApertura.Name = "horaApertura";
             this.horaApertura.Width = 235;
             // 
@@ -159,6 +161,7 @@
             this.buttonEliminarLibrerias.TabIndex = 5;
             this.buttonEliminarLibrerias.Text = "Eliminar";
             this.buttonEliminarLibrerias.UseVisualStyleBackColor = true;
+            this.buttonEliminarLibrerias.Click += new System.EventHandler(this.buttonEliminarLibrerias_Click);
             // 
             // buttonModificarLibrerias
             // 
@@ -168,6 +171,7 @@
             this.buttonModificarLibrerias.TabIndex = 4;
             this.buttonModificarLibrerias.Text = "Modificar";
             this.buttonModificarLibrerias.UseVisualStyleBackColor = true;
+            this.buttonModificarLibrerias.Click += new System.EventHandler(this.buttonModificarLibrerias_Click);
             // 
             // buttonAnyadirLibrerias
             // 
@@ -368,6 +372,7 @@
             this.buttonEliminarActividad.TabIndex = 11;
             this.buttonEliminarActividad.Text = "Eliminar";
             this.buttonEliminarActividad.UseVisualStyleBackColor = true;
+            this.buttonEliminarActividad.Click += new System.EventHandler(this.buttonEliminarActividad_Click);
             // 
             // buttonModificarActividad
             // 
@@ -459,11 +464,6 @@
         private System.Windows.Forms.PictureBox pictureBoxIconoBuscadorActividades;
         private System.Windows.Forms.DataGridView dataGridViewUsuarios;
         private System.Windows.Forms.DataGridView dataGridViewLibrerias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaApertura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridView dataGridViewActividades;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
@@ -473,5 +473,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn correoElectronico;
         private System.Windows.Forms.DataGridViewTextBoxColumn superUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nivel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horaApertura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

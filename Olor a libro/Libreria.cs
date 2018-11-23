@@ -15,6 +15,8 @@ namespace Olor_a_libro
         public String numeroTelefono { get; set; }
         public List<Actividad> listaActividades { get; set; }
 
+        public Libreria() { }
+
         public Libreria(String nombre, String direccion, String horaApertura, String horaCierre, String numeroTelefono)
         {
             this.nombre = nombre;

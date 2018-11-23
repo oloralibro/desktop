@@ -36,7 +36,7 @@
             this.textBoxHoraApertura = new System.Windows.Forms.TextBox();
             this.labelActividades = new System.Windows.Forms.Label();
             this.listBoxActividades = new System.Windows.Forms.ListBox();
-            this.buttonCancelarLibreria = new System.Windows.Forms.Button();
+            this.buttonModificarLibreria = new System.Windows.Forms.Button();
             this.buttonAceptarLibreria = new System.Windows.Forms.Button();
             this.textBoxHoraCierre = new System.Windows.Forms.TextBox();
             this.labelHoraCierre = new System.Windows.Forms.Label();
@@ -59,6 +59,7 @@
             // 
             this.textBoxNombreLibreria.Location = new System.Drawing.Point(81, 20);
             this.textBoxNombreLibreria.Name = "textBoxNombreLibreria";
+            this.textBoxNombreLibreria.ReadOnly = true;
             this.textBoxNombreLibreria.Size = new System.Drawing.Size(241, 20);
             this.textBoxNombreLibreria.TabIndex = 1;
             // 
@@ -84,6 +85,7 @@
             // 
             this.textBoxDireccion.Location = new System.Drawing.Point(81, 56);
             this.textBoxDireccion.Name = "textBoxDireccion";
+            this.textBoxDireccion.ReadOnly = true;
             this.textBoxDireccion.Size = new System.Drawing.Size(241, 20);
             this.textBoxDireccion.TabIndex = 4;
             // 
@@ -91,6 +93,7 @@
             // 
             this.textBoxHoraApertura.Location = new System.Drawing.Point(98, 146);
             this.textBoxHoraApertura.Name = "textBoxHoraApertura";
+            this.textBoxHoraApertura.ReadOnly = true;
             this.textBoxHoraApertura.Size = new System.Drawing.Size(224, 20);
             this.textBoxHoraApertura.TabIndex = 5;
             // 
@@ -111,19 +114,19 @@
             this.listBoxActividades.Size = new System.Drawing.Size(299, 147);
             this.listBoxActividades.TabIndex = 7;
             // 
-            // buttonCancelarLibreria
+            // buttonModificarLibreria
             // 
-            this.buttonCancelarLibreria.Location = new System.Drawing.Point(264, 412);
-            this.buttonCancelarLibreria.Name = "buttonCancelarLibreria";
-            this.buttonCancelarLibreria.Size = new System.Drawing.Size(58, 23);
-            this.buttonCancelarLibreria.TabIndex = 8;
-            this.buttonCancelarLibreria.Text = "Cancelar";
-            this.buttonCancelarLibreria.UseVisualStyleBackColor = true;
-            this.buttonCancelarLibreria.Click += new System.EventHandler(this.buttonCancelarLibreria_Click);
+            this.buttonModificarLibreria.Location = new System.Drawing.Point(187, 410);
+            this.buttonModificarLibreria.Name = "buttonModificarLibreria";
+            this.buttonModificarLibreria.Size = new System.Drawing.Size(58, 23);
+            this.buttonModificarLibreria.TabIndex = 8;
+            this.buttonModificarLibreria.Text = "Modificar";
+            this.buttonModificarLibreria.UseVisualStyleBackColor = true;
+            this.buttonModificarLibreria.Click += new System.EventHandler(this.buttonCancelarLibreria_Click);
             // 
             // buttonAceptarLibreria
             // 
-            this.buttonAceptarLibreria.Location = new System.Drawing.Point(191, 412);
+            this.buttonAceptarLibreria.Location = new System.Drawing.Point(264, 410);
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 9;
@@ -135,6 +138,7 @@
             // 
             this.textBoxHoraCierre.Location = new System.Drawing.Point(98, 180);
             this.textBoxHoraCierre.Name = "textBoxHoraCierre";
+            this.textBoxHoraCierre.ReadOnly = true;
             this.textBoxHoraCierre.Size = new System.Drawing.Size(224, 20);
             this.textBoxHoraCierre.TabIndex = 11;
             // 
@@ -160,6 +164,7 @@
             // 
             this.textBoxTelefono.Location = new System.Drawing.Point(81, 93);
             this.textBoxTelefono.Name = "textBoxTelefono";
+            this.textBoxTelefono.ReadOnly = true;
             this.textBoxTelefono.Size = new System.Drawing.Size(241, 20);
             this.textBoxTelefono.TabIndex = 15;
             // 
@@ -194,7 +199,7 @@
             this.Controls.Add(this.textBoxHoraCierre);
             this.Controls.Add(this.labelHoraCierre);
             this.Controls.Add(this.buttonAceptarLibreria);
-            this.Controls.Add(this.buttonCancelarLibreria);
+            this.Controls.Add(this.buttonModificarLibreria);
             this.Controls.Add(this.listBoxActividades);
             this.Controls.Add(this.labelActividades);
             this.Controls.Add(this.textBoxHoraApertura);
@@ -224,7 +229,7 @@
         private System.Windows.Forms.TextBox textBoxHoraApertura;
         private System.Windows.Forms.Label labelActividades;
         private System.Windows.Forms.ListBox listBoxActividades;
-        private System.Windows.Forms.Button buttonCancelarLibreria;
+        private System.Windows.Forms.Button buttonModificarLibreria;
         private System.Windows.Forms.Button buttonAceptarLibreria;
         private System.Windows.Forms.TextBox textBoxHoraCierre;
         private System.Windows.Forms.Label labelHoraCierre;

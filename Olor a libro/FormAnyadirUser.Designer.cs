@@ -53,9 +53,9 @@
             this.labelSuperuser.AutoSize = true;
             this.labelSuperuser.Location = new System.Drawing.Point(230, 116);
             this.labelSuperuser.Name = "labelSuperuser";
-            this.labelSuperuser.Size = new System.Drawing.Size(63, 13);
+            this.labelSuperuser.Size = new System.Drawing.Size(60, 13);
             this.labelSuperuser.TabIndex = 32;
-            this.labelSuperuser.Text = "SuperUser :";
+            this.labelSuperuser.Text = "SuperUser ";
             // 
             // buttonAceptar
             // 
@@ -86,18 +86,18 @@
             this.labelCorreo.AutoSize = true;
             this.labelCorreo.Location = new System.Drawing.Point(12, 87);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(47, 13);
+            this.labelCorreo.Size = new System.Drawing.Size(44, 13);
             this.labelCorreo.TabIndex = 25;
-            this.labelCorreo.Text = "Correo  :";
+            this.labelCorreo.Text = "Correo  ";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Location = new System.Drawing.Point(12, 52);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(67, 13);
+            this.labelPassword.Size = new System.Drawing.Size(64, 13);
             this.labelPassword.TabIndex = 24;
-            this.labelPassword.Text = "Contraseña :";
+            this.labelPassword.Text = "Contraseña ";
             // 
             // textBoxNombreUser
             // 
@@ -111,9 +111,9 @@
             this.labelNombreUser.AutoSize = true;
             this.labelNombreUser.Location = new System.Drawing.Point(12, 17);
             this.labelNombreUser.Name = "labelNombreUser";
-            this.labelNombreUser.Size = new System.Drawing.Size(50, 13);
+            this.labelNombreUser.Size = new System.Drawing.Size(47, 13);
             this.labelNombreUser.TabIndex = 22;
-            this.labelNombreUser.Text = "Nombre :";
+            this.labelNombreUser.Text = "Nombre ";
             // 
             // FormAnyadirUser
             // 
@@ -131,6 +131,7 @@
             this.Controls.Add(this.textBoxNombreUser);
             this.Controls.Add(this.labelNombreUser);
             this.Name = "FormAnyadirUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Añadir usuario";
             this.ResumeLayout(false);
             this.PerformLayout();

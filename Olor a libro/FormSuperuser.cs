@@ -14,7 +14,7 @@ namespace Olor_a_libro
 {
     public partial class FormSuperUser : Olor_a_libro.FormPlantillaVentana
     {
-
+        Json json = new Json();
         JArray jArrayUsuarios, jArrayLibrerias, jArrayActividades;
         BindingList<Usuario> listaUsuarios;
         BindingList<Actividad> listaActividades;
@@ -26,9 +26,9 @@ namespace Olor_a_libro
         }
 
         private void FormSuperUser_Activated(object sender, EventArgs e) {
-            sobreescribirUsuarios();
-            sobreescribirActividades();
-            sobreescribirLibrerias();
+            json.sobreescribirUsuarios(listaUsuarios);
+            json.sobreescribirActividades(listaActividades);
+            json.sobreescribirLibrerias(listaLibrerias);
         }
 
         private void FormSuperUser_Load(object sender, EventArgs e)
@@ -46,9 +46,9 @@ namespace Olor_a_libro
 
         private void FormSuperUser_FormClosing(object sender, FormClosingEventArgs e)
         {
-            sobreescribirUsuarios();
-            sobreescribirActividades();
-            sobreescribirLibrerias();
+            json.sobreescribirUsuarios(listaUsuarios);
+            json.sobreescribirActividades(listaActividades);
+            json.sobreescribirLibrerias(listaLibrerias);
         }
 
         #region Usuarios
@@ -61,28 +61,20 @@ namespace Olor_a_libro
             dataGridViewUsuarios.DataSource = listaUsuarios;
         }
 
-        private void sobreescribirUsuarios() {
-            JArray jArrayUsuarios = (JArray)JToken.FromObject(listaUsuarios);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
-            JsonTextWriter writer = new JsonTextWriter(fichero);
-
-            jArrayUsuarios.WriteTo(writer);
-            writer.Close();
-        }
-
         private void buttonModificarUsuarios_Click(object sender, EventArgs e)
         {
             FormAjustesUsuario f = new FormAjustesUsuario();
-            f.user = (Usuario)dataGridViewUsuarios.SelectedRows[0].DataBoundItem;
+            f.listaUsuariosAjustes = listaUsuarios;
+            f.user = (Usuario)dataGridViewUsuarios.CurrentRow.DataBoundItem;
             f.ShowDialog();
         }
 
         private void buttonEliminarUsuarios_Click(object sender, EventArgs e)
         {
             listaUsuarios.Remove((Usuario)dataGridViewUsuarios.SelectedRows[0].DataBoundItem);
-
-            sobreescribirUsuarios();
-
+        
+            json.sobreescribirUsuarios(listaUsuarios);
+        
             dataGridViewUsuarios.DataSource = null;
             dataGridViewUsuarios.DataSource = listaUsuarios;
         }
@@ -105,16 +97,6 @@ namespace Olor_a_libro
             dataGridViewLibrerias.DataSource = listaLibrerias;
         }
 
-        private void sobreescribirLibrerias()
-        {
-            JArray jArrayLibrerias = (JArray)JToken.FromObject(listaLibrerias);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\LibreriasRegistradas.json");
-            JsonTextWriter writer = new JsonTextWriter(fichero);
-
-            jArrayLibrerias.WriteTo(writer);
-            writer.Close();
-        }
-
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
         {
             FormAnyadirLibreria f = new FormAnyadirLibreria(listaLibrerias);
@@ -125,7 +107,7 @@ namespace Olor_a_libro
         {
             listaLibrerias.Remove((Libreria)dataGridViewLibrerias.SelectedRows[0].DataBoundItem);
 
-            sobreescribirLibrerias();
+            json.sobreescribirLibrerias(listaLibrerias);
 
             dataGridViewLibrerias.DataSource = null;
             dataGridViewLibrerias.DataSource = listaLibrerias;
@@ -146,15 +128,6 @@ namespace Olor_a_libro
             dataGridViewActividades.DataSource = listaActividades;
         }
 
-        private void sobreescribirActividades() {
-            JArray jArrayActividades = (JArray)JToken.FromObject(listaActividades);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\ActividadesRegistradas.json");
-            JsonTextWriter writer = new JsonTextWriter(fichero);
-
-            jArrayActividades.WriteTo(writer);
-            writer.Close();
-        }
-
         private void buttonAñadirActividad_Click(object sender, EventArgs e)
         {
             FormAjustesActividad f = new FormAjustesActividad();
@@ -165,7 +138,7 @@ namespace Olor_a_libro
         {
             listaActividades.Remove((Actividad)dataGridViewActividades.SelectedRows[0].DataBoundItem);
 
-            sobreescribirActividades();
+            json.sobreescribirActividades(listaActividades);
 
             dataGridViewActividades.DataSource = null;
             dataGridViewActividades.DataSource = listaActividades;

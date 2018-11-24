@@ -14,7 +14,6 @@ namespace Olor_a_libro
         public string correoElectronico { get; set; }
         public string contraseña { get; set; }
         public int puntuacionTotal { get; set; }
-        public int nivel { get; set; }
         public List<Actividad> listaActividades { get; set; }
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
@@ -24,7 +23,6 @@ namespace Olor_a_libro
             this.correoElectronico = correo_electronico;
             this.contraseña = contraseña;
             this.puntuacionTotal = 0;
-            this.nivel = 0;
             this.listaActividades = new List<Actividad>();
         }
 

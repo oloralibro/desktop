@@ -15,10 +15,8 @@ namespace Olor_a_libro
     {
         public BindingList<Usuario> listaUsuariosAjustes;
         public Usuario user;
-        //estas variables solo sirven en el caso que se descarten los cambios, para devolverles el valor inicial
         string nombre, contraseña, correo, puntos;
-        bool superUser;
-        int usuarioRepetido;
+        bool superUser, usuarioRepetido, correoRepetido;
 
         public FormAjustesUsuario()
         {
@@ -27,14 +25,11 @@ namespace Olor_a_libro
 
         private void FormAjustesUsuario_Load(object sender, EventArgs e)
         {
+            //Omplim les entrades del new form amb les dades del usuari que volem modificar
             textBoxNombreUser.Text = user.nombre;
-            nombre = textBoxNombreUser.Text;
             textBoxContraseña.Text = user.contraseña;
-            contraseña = textBoxContraseña.Text;
             textBoxCorreo.Text = user.correoElectronico;
-            correo = textBoxCorreo.Text;
             textBoxPuntosTotales.Text = user.puntuacionTotal.ToString();
-            puntos = textBoxPuntosTotales.Text;
             if (user.superUsuario == true)
             {
                 checkBoxSuperUser.Checked = true;
@@ -44,34 +39,41 @@ namespace Olor_a_libro
                 checkBoxSuperUser.Checked = false;
                 superUser = false;
             }
+            //Quan comença el projecte guardem les entrades existents en strigs per si a cas necesitem recuperar els valors abans de patir modificacions 
+            contraseña = textBoxContraseña.Text;
+            correo = textBoxCorreo.Text;
+            puntos = textBoxPuntosTotales.Text;
+            nombre = textBoxNombreUser.Text;
         }
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Seguro que quieres guardar los cambios?", "GUARDAR CAMBIOS", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result== DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
-                usuarioRepetido = listaUsuariosAjustes.Count(p => p.nombre.Equals(this.textBoxNombreUser.Text));
-                if (usuarioRepetido > 1)
+                //Si s'esta segur de que guardarem els canvis comprovem que el nom i correus no estiguin ja a la base de dades de usuaris 
+                //ja que tan el nom com el correu nomes poden ser d'una persona
+                usuarioRepetido = listaUsuariosAjustes.Any(p => p.nombre.Equals(this.textBoxNombreUser.Text));
+                correoRepetido = listaUsuariosAjustes.Any(p => p.correoElectronico.Equals(this.textBoxCorreo.Text));
+                if (usuarioRepetido == true)
                 {
                     MessageBox.Show("Este nombre de usuario ya existe en otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (usuarioRepetido == 1)
+                else if (usuarioRepetido == false)
                 {
-
+                    user.nombre = textBoxNombreUser.Text;
+                    user.contraseña = textBoxContraseña.Text;
+                    user.correoElectronico = textBoxCorreo.Text;
+                    if (checkBoxSuperUser.Checked == true)
+                    {
+                        user.superUsuario = true;
+                    }
+                    else
+                    {
+                        user.superUsuario = false;
+                    }
+                    MessageBox.Show("Cambios guardados correctamente.", "CAMBIOS GUARDADOS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
-                user.nombre = textBoxNombreUser.Text;
-                user.contraseña = textBoxContraseña.Text;
-                user.correoElectronico = textBoxCorreo.Text;
-                if (checkBoxSuperUser.Checked == true)
-                {
-                    user.superUsuario = true;
-                }
-                else
-                {
-                    user.superUsuario = false;
-                }
-                MessageBox.Show("Cambios guardados correctamente.","CAMBIOS GUARDADOS",MessageBoxButtons.OK,MessageBoxIcon.None);
             }
             else
             {

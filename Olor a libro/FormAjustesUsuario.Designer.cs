@@ -48,7 +48,7 @@
             // 
             // buttonModificar
             // 
-            this.buttonModificar.Location = new System.Drawing.Point(197, 409);
+            this.buttonModificar.Location = new System.Drawing.Point(197, 395);
             this.buttonModificar.Name = "buttonModificar";
             this.buttonModificar.Size = new System.Drawing.Size(58, 23);
             this.buttonModificar.TabIndex = 19;
@@ -58,7 +58,7 @@
             // 
             // buttonAceptar
             // 
-            this.buttonAceptar.Location = new System.Drawing.Point(272, 409);
+            this.buttonAceptar.Location = new System.Drawing.Point(272, 395);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptar.TabIndex = 18;
@@ -189,7 +189,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(342, 446);
+            this.ClientSize = new System.Drawing.Size(342, 436);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxPuntosTotales);

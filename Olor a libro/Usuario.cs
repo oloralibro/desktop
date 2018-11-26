@@ -9,6 +9,7 @@ namespace Olor_a_libro
 {
     public class Usuario
     {
+        public int id { get; set; }
         public bool superUsuario { get; set; }
         public string nombre { get; set; }
         public string correoElectronico { get; set; }
@@ -18,6 +19,7 @@ namespace Olor_a_libro
 
         public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
         {
+
             this.superUsuario = false;
             this.nombre = nombre_usuario;
             this.correoElectronico = correo_electronico;

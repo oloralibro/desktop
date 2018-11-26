@@ -71,14 +71,14 @@
             this.textBoxCormirmarEmail.Location = new System.Drawing.Point(162, 161);
             this.textBoxCormirmarEmail.Name = "textBoxCormirmarEmail";
             this.textBoxCormirmarEmail.Size = new System.Drawing.Size(236, 20);
-            this.textBoxCormirmarEmail.TabIndex = 32;
+            this.textBoxCormirmarEmail.TabIndex = 3;
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(162, 134);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(236, 20);
-            this.textBoxEmail.TabIndex = 31;
+            this.textBoxEmail.TabIndex = 2;
             // 
             // labelConfirmarEmail
             // 
@@ -105,7 +105,7 @@
             this.buttonCancelar.Location = new System.Drawing.Point(293, 284);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(105, 23);
-            this.buttonCancelar.TabIndex = 28;
+            this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
@@ -115,7 +115,7 @@
             this.buttonRegistrarse.Location = new System.Drawing.Point(162, 284);
             this.buttonRegistrarse.Name = "buttonRegistrarse";
             this.buttonRegistrarse.Size = new System.Drawing.Size(105, 23);
-            this.buttonRegistrarse.TabIndex = 25;
+            this.buttonRegistrarse.TabIndex = 7;
             this.buttonRegistrarse.Text = "Registrarse";
             this.buttonRegistrarse.UseVisualStyleBackColor = true;
             this.buttonRegistrarse.Click += new System.EventHandler(this.buttonRegistrarse_Click);
@@ -126,7 +126,7 @@
             this.textBoxConfirmarContraseña.Name = "textBoxConfirmarContraseña";
             this.textBoxConfirmarContraseña.PasswordChar = '*';
             this.textBoxConfirmarContraseña.Size = new System.Drawing.Size(236, 20);
-            this.textBoxConfirmarContraseña.TabIndex = 24;
+            this.textBoxConfirmarContraseña.TabIndex = 5;
             // 
             // textBoxContraseña
             // 
@@ -134,7 +134,7 @@
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(236, 20);
-            this.textBoxContraseña.TabIndex = 23;
+            this.textBoxContraseña.TabIndex = 4;
             // 
             // labelConfirmarContraseña
             // 
@@ -161,7 +161,7 @@
             this.textBoxUsuario.Location = new System.Drawing.Point(162, 82);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(236, 20);
-            this.textBoxUsuario.TabIndex = 35;
+            this.textBoxUsuario.TabIndex = 1;
             // 
             // labelUsuario
             // 
@@ -187,7 +187,7 @@
             this.buttonSuperUser.Location = new System.Drawing.Point(97, 284);
             this.buttonSuperUser.Name = "buttonSuperUser";
             this.buttonSuperUser.Size = new System.Drawing.Size(43, 23);
-            this.buttonSuperUser.TabIndex = 38;
+            this.buttonSuperUser.TabIndex = 6;
             this.buttonSuperUser.Text = "Super";
             this.buttonSuperUser.UseVisualStyleBackColor = true;
             this.buttonSuperUser.Click += new System.EventHandler(this.buttonSuperUser_Click);

@@ -25,6 +25,11 @@ namespace Olor_a_libro
 
         private void FormAjustesUsuario_Load(object sender, EventArgs e)
         {
+            //Estas lineas son necesarias para eliminar el usuario que pueda ser modificado durante esta pantalla
+            //pudiendo asi controlar las veces que un mismo nombre usuario de usuario o correo tenemos en la bd  
+            var itemToRemove = listaUsuariosAjustes.Where(x => x.nombre == user.nombre).ToList();
+            foreach (var item in itemToRemove)
+                listaUsuariosAjustes.Remove(item); 
             //Omplim les entrades del new form amb les dades del usuari que volem modificar
             textBoxNombreUser.Text = user.nombre;
             textBoxContraseña.Text = user.contraseña;
@@ -58,8 +63,14 @@ namespace Olor_a_libro
                 if (usuarioRepetido == true)
                 {
                     MessageBox.Show("Este nombre de usuario ya existe en otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxNombreUser.Text = nombre;
                 }
-                else if (usuarioRepetido == false)
+                else if (correoRepetido == true)
+                {
+                    MessageBox.Show("Este correo pertenece a otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxCorreo.Text = correo;
+                }
+                else if ((usuarioRepetido==false)&&(correoRepetido==false))
                 {
                     user.nombre = textBoxNombreUser.Text;
                     user.contraseña = textBoxContraseña.Text;
@@ -72,6 +83,7 @@ namespace Olor_a_libro
                     {
                         user.superUsuario = false;
                     }
+                    listaUsuariosAjustes.Add(user);
                     MessageBox.Show("Cambios guardados correctamente.", "CAMBIOS GUARDADOS", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }

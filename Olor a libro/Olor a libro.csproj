@@ -110,6 +110,7 @@
     <Compile Include="FormAjustesUsuario.Designer.cs">
       <DependentUpon>FormAjustesUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarId.cs" />
     <Compile Include="Json.cs" />
     <Compile Include="Libreria.cs" />
     <Compile Include="Usuario.cs" />

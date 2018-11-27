@@ -66,7 +66,9 @@ namespace Olor_a_libro
             FormAjustesUsuario f = new FormAjustesUsuario();
             f.listaUsuariosAjustes = listaUsuarios;
             f.user = (Usuario)dataGridViewUsuarios.CurrentRow.DataBoundItem;
+            int index = listaUsuarios.IndexOf(f.user);
             f.ShowDialog();
+            listaUsuarios[index] = f.user;
         }
 
         private void buttonEliminarUsuarios_Click(object sender, EventArgs e)

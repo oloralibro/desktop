@@ -44,6 +44,12 @@
             this.pictureBoxIconoBuscadorLibrerias = new System.Windows.Forms.PictureBox();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.puntuacionTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarUsuarios = new System.Windows.Forms.Button();
             this.buttonModificarUsuarios = new System.Windows.Forms.Button();
             this.buttonAñadirUsuarios = new System.Windows.Forms.Button();
@@ -59,11 +65,6 @@
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correoElectronico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.superUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.puntuacionTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -105,6 +106,7 @@
             // 
             // dataGridViewLibrerias
             // 
+            this.dataGridViewLibrerias.AllowUserToAddRows = false;
             this.dataGridViewLibrerias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewLibrerias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLibrerias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -186,10 +188,10 @@
             // textBoxBuscadorLibrerias
             // 
             this.textBoxBuscadorLibrerias.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorLibrerias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBuscadorLibrerias.Location = new System.Drawing.Point(79, 33);
-            this.textBoxBuscadorLibrerias.Multiline = true;
             this.textBoxBuscadorLibrerias.Name = "textBoxBuscadorLibrerias";
-            this.textBoxBuscadorLibrerias.Size = new System.Drawing.Size(675, 32);
+            this.textBoxBuscadorLibrerias.Size = new System.Drawing.Size(675, 29);
             this.textBoxBuscadorLibrerias.TabIndex = 1;
             // 
             // pictureBoxIconoBuscadorLibrerias
@@ -219,9 +221,11 @@
             // 
             // dataGridViewUsuarios
             // 
+            this.dataGridViewUsuarios.AllowUserToAddRows = false;
             this.dataGridViewUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.nombre,
             this.contraseña,
             this.correoElectronico,
@@ -231,6 +235,48 @@
             this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewUsuarios.TabIndex = 18;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Width = 70;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre usuario";
+            this.nombre.Name = "nombre";
+            this.nombre.Width = 250;
+            // 
+            // contraseña
+            // 
+            this.contraseña.DataPropertyName = "contraseña";
+            this.contraseña.HeaderText = "Contraseña";
+            this.contraseña.Name = "contraseña";
+            this.contraseña.Width = 250;
+            // 
+            // correoElectronico
+            // 
+            this.correoElectronico.DataPropertyName = "correoElectronico";
+            this.correoElectronico.HeaderText = "E-mail";
+            this.correoElectronico.Name = "correoElectronico";
+            this.correoElectronico.Width = 300;
+            // 
+            // superUsuario
+            // 
+            this.superUsuario.DataPropertyName = "superUsuario";
+            this.superUsuario.HeaderText = "Super user";
+            this.superUsuario.Name = "superUsuario";
+            this.superUsuario.Width = 120;
+            // 
+            // puntuacionTotal
+            // 
+            this.puntuacionTotal.DataPropertyName = "puntuacionTotal";
+            this.puntuacionTotal.HeaderText = "Puntos";
+            this.puntuacionTotal.Name = "puntuacionTotal";
+            this.puntuacionTotal.Width = 150;
             // 
             // buttonEliminarUsuarios
             // 
@@ -297,6 +343,7 @@
             // 
             // dataGridViewActividades
             // 
+            this.dataGridViewActividades.AllowUserToAddRows = false;
             this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -376,41 +423,6 @@
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
             // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre";
-            this.nombre.HeaderText = "Nombre usuario";
-            this.nombre.Name = "nombre";
-            this.nombre.Width = 250;
-            // 
-            // contraseña
-            // 
-            this.contraseña.DataPropertyName = "contraseña";
-            this.contraseña.HeaderText = "Contraseña";
-            this.contraseña.Name = "contraseña";
-            this.contraseña.Width = 250;
-            // 
-            // correoElectronico
-            // 
-            this.correoElectronico.DataPropertyName = "correoElectronico";
-            this.correoElectronico.HeaderText = "E-mail";
-            this.correoElectronico.Name = "correoElectronico";
-            this.correoElectronico.Width = 350;
-            // 
-            // superUsuario
-            // 
-            this.superUsuario.DataPropertyName = "superUsuario";
-            this.superUsuario.HeaderText = "Super user";
-            this.superUsuario.Name = "superUsuario";
-            this.superUsuario.Width = 150;
-            // 
-            // puntuacionTotal
-            // 
-            this.puntuacionTotal.DataPropertyName = "puntuacionTotal";
-            this.puntuacionTotal.HeaderText = "Puntos";
-            this.puntuacionTotal.Name = "puntuacionTotal";
-            this.puntuacionTotal.Width = 150;
-            // 
             // FormSuperUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,6 +485,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horaApertura;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn contraseña;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoElectronico;

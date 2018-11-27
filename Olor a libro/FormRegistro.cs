@@ -15,7 +15,7 @@ namespace Olor_a_libro
 {
     public partial class FormRegistro : Form
     {
-        List<Usuario> listaUsuarios;
+        BindingList<Usuario> listaUsuarios;
         JArray jArrayUsuarios;
         Usuario usuario;
         bool usuarioRepetido, superUser;
@@ -31,12 +31,12 @@ namespace Olor_a_libro
             {
                 //si existe el fichero UsuariosRegistrados lo cargamos en una lista
                 jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-                listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+                listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
             }
             else
             {
                 //si no, creamos una lista vacia
-                listaUsuarios = new List<Usuario>();
+                listaUsuarios = new BindingList<Usuario>();
             }
         }
 
@@ -63,7 +63,7 @@ namespace Olor_a_libro
                 else
                 {
                     //Creamos el usuario con la info insertada
-                    usuario = new Usuario(this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
+                    usuario = new Usuario(listaUsuarios, this.textBoxUsuario.Text, this.textBoxEmail.Text, this.textBoxContraseña.Text);
                     if (superUser == true)
                     {
                         usuario.superUsuario = true;

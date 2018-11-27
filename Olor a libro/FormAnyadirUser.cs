@@ -23,7 +23,7 @@ namespace Olor_a_libro
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
 
-            Usuario user = new Usuario(textBoxNombreUser.Text, textBoxCorreo.Text, textBoxContraseña.Text);
+            Usuario user = new Usuario(listaUsuarios, textBoxNombreUser.Text, textBoxCorreo.Text, textBoxContraseña.Text);
             if (checkBoxSuperUser.Checked == true)
             {
                 user.superUsuario = true;

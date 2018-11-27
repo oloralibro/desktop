@@ -16,7 +16,7 @@ namespace Olor_a_libro
     {
 
         JArray jArrayUsuarios;
-        List<Usuario> listaUsuarios;
+        BindingList<Usuario> listaUsuarios;
         bool existeUsuario;
         Usuario usuarioCopia;
 
@@ -32,7 +32,7 @@ namespace Olor_a_libro
                 //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
 
                 jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
-                listaUsuarios = jArrayUsuarios.ToObject<List<Usuario>>();
+                listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
 
                 existeUsuario = listaUsuarios.Any(p => p.nombre.Equals(this.textBoxNombreUsuario.Text) && p.contraseña.Equals(this.textBoxContraseña.Text));
                 if (this.textBoxNombreUsuario.Text.Equals("") && this.textBoxContraseña.Text.Equals(""))

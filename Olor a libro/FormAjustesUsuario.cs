@@ -18,6 +18,8 @@ namespace Olor_a_libro
         string nombre, contraseña, correo, puntos;
         bool superUser, usuarioRepetido, correoRepetido;
 
+       
+
         public FormAjustesUsuario()
         {
             InitializeComponent();
@@ -25,12 +27,7 @@ namespace Olor_a_libro
 
         private void FormAjustesUsuario_Load(object sender, EventArgs e)
         {
-            //Estas lineas son necesarias para eliminar el usuario que pueda ser modificado durante esta pantalla
-            //pudiendo asi controlar las veces que un mismo nombre usuario de usuario o correo tenemos en la bd  
-            var itemToRemove = listaUsuariosAjustes.Where(x => x.nombre == user.nombre).ToList();
-            foreach (var item in itemToRemove)
-                listaUsuariosAjustes.Remove(item); 
-            //Omplim les entrades del new form amb les dades del usuari que volem modificar
+            //Omplim les entrades del new form amb les dades del usuari que podem modificar
             textBoxNombreUser.Text = user.nombre;
             textBoxContraseña.Text = user.contraseña;
             textBoxCorreo.Text = user.correoElectronico;
@@ -58,8 +55,8 @@ namespace Olor_a_libro
             {
                 //Si s'esta segur de que guardarem els canvis comprovem que el nom i correus no estiguin ja a la base de dades de usuaris 
                 //ja que tan el nom com el correu nomes poden ser d'una persona
-                usuarioRepetido = listaUsuariosAjustes.Any(p => p.nombre.Equals(this.textBoxNombreUser.Text));
-                correoRepetido = listaUsuariosAjustes.Any(p => p.correoElectronico.Equals(this.textBoxCorreo.Text));
+                usuarioRepetido = listaUsuariosAjustes.Any(p => p.nombre.Equals(this.textBoxNombreUser.Text) && p.id != user.id);
+                correoRepetido = listaUsuariosAjustes.Any(p => p.correoElectronico.Equals(this.textBoxCorreo.Text) && p.id != user.id);
                 if (usuarioRepetido == true)
                 {
                     MessageBox.Show("Este nombre de usuario ya existe en otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -75,6 +72,7 @@ namespace Olor_a_libro
                     user.nombre = textBoxNombreUser.Text;
                     user.contraseña = textBoxContraseña.Text;
                     user.correoElectronico = textBoxCorreo.Text;
+                    user.puntuacionTotal = int.Parse(textBoxPuntosTotales.Text);
                     if (checkBoxSuperUser.Checked == true)
                     {
                         user.superUsuario = true;
@@ -83,8 +81,8 @@ namespace Olor_a_libro
                     {
                         user.superUsuario = false;
                     }
-                    listaUsuariosAjustes.Add(user);
                     MessageBox.Show("Cambios guardados correctamente.", "CAMBIOS GUARDADOS", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    this.Close();
                 }
             }
             else
@@ -98,7 +96,7 @@ namespace Olor_a_libro
             }
         }
 
-        private void buttonAceptar_Click(object sender, EventArgs e)
+        private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }

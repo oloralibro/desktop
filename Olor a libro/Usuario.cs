@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +18,14 @@ namespace Olor_a_libro
         public int puntuacionTotal { get; set; }
         public List<Actividad> listaActividades { get; set; }
 
-        public Usuario(String nombre_usuario, String correo_electronico, String contraseña)
+        public Usuario()
         {
 
+        }
+
+        public Usuario(BindingList<Usuario> lista, String nombre_usuario, String correo_electronico, String contraseña)
+        {
+            this.id = GenerarId.generarId(new BindingList<object>(lista.Cast<object>().ToList()));
             this.superUsuario = false;
             this.nombre = nombre_usuario;
             this.correoElectronico = correo_electronico;

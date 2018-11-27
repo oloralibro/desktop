@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonModificar = new System.Windows.Forms.Button();
-            this.buttonAceptar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.listBoxActividades = new System.Windows.Forms.ListBox();
             this.labelActividades = new System.Windows.Forms.Label();
             this.textBoxCorreo = new System.Windows.Forms.TextBox();
@@ -56,15 +56,15 @@
             this.buttonModificar.UseVisualStyleBackColor = true;
             this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
             // 
-            // buttonAceptar
+            // buttonCancelar
             // 
-            this.buttonAceptar.Location = new System.Drawing.Point(272, 395);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(58, 23);
-            this.buttonAceptar.TabIndex = 18;
-            this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = true;
-            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
+            this.buttonCancelar.Location = new System.Drawing.Point(272, 395);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(58, 23);
+            this.buttonCancelar.TabIndex = 18;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // listBoxActividades
             // 
@@ -197,7 +197,7 @@
             this.Controls.Add(this.checkBoxSuperUser);
             this.Controls.Add(this.labelSuperuser);
             this.Controls.Add(this.buttonModificar);
-            this.Controls.Add(this.buttonAceptar);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.listBoxActividades);
             this.Controls.Add(this.labelActividades);
             this.Controls.Add(this.textBoxCorreo);
@@ -220,7 +220,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Button buttonAceptar;
+        private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.ListBox listBoxActividades;
         private System.Windows.Forms.Label labelActividades;
         private System.Windows.Forms.TextBox textBoxCorreo;

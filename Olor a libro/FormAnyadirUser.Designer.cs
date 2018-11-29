@@ -42,7 +42,7 @@
             // checkBoxSuperUser
             // 
             this.checkBoxSuperUser.AutoSize = true;
-            this.checkBoxSuperUser.Location = new System.Drawing.Point(315, 115);
+            this.checkBoxSuperUser.Location = new System.Drawing.Point(78, 150);
             this.checkBoxSuperUser.Name = "checkBoxSuperUser";
             this.checkBoxSuperUser.Size = new System.Drawing.Size(15, 14);
             this.checkBoxSuperUser.TabIndex = 33;
@@ -51,7 +51,7 @@
             // labelSuperuser
             // 
             this.labelSuperuser.AutoSize = true;
-            this.labelSuperuser.Location = new System.Drawing.Point(230, 116);
+            this.labelSuperuser.Location = new System.Drawing.Point(12, 151);
             this.labelSuperuser.Name = "labelSuperuser";
             this.labelSuperuser.Size = new System.Drawing.Size(60, 13);
             this.labelSuperuser.TabIndex = 32;
@@ -59,7 +59,7 @@
             // 
             // buttonAceptar
             // 
-            this.buttonAceptar.Location = new System.Drawing.Point(143, 139);
+            this.buttonAceptar.Location = new System.Drawing.Point(262, 179);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(68, 26);
             this.buttonAceptar.TabIndex = 30;
@@ -69,14 +69,14 @@
             // 
             // textBoxCorreo
             // 
-            this.textBoxCorreo.Location = new System.Drawing.Point(78, 84);
+            this.textBoxCorreo.Location = new System.Drawing.Point(78, 105);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(252, 20);
             this.textBoxCorreo.TabIndex = 27;
             // 
             // textBoxContraseña
             // 
-            this.textBoxContraseña.Location = new System.Drawing.Point(78, 49);
+            this.textBoxContraseña.Location = new System.Drawing.Point(78, 61);
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.Size = new System.Drawing.Size(252, 20);
             this.textBoxContraseña.TabIndex = 26;
@@ -84,7 +84,7 @@
             // labelCorreo
             // 
             this.labelCorreo.AutoSize = true;
-            this.labelCorreo.Location = new System.Drawing.Point(12, 87);
+            this.labelCorreo.Location = new System.Drawing.Point(12, 108);
             this.labelCorreo.Name = "labelCorreo";
             this.labelCorreo.Size = new System.Drawing.Size(44, 13);
             this.labelCorreo.TabIndex = 25;
@@ -93,7 +93,7 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(12, 52);
+            this.labelPassword.Location = new System.Drawing.Point(12, 64);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(64, 13);
             this.labelPassword.TabIndex = 24;
@@ -120,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(342, 176);
+            this.ClientSize = new System.Drawing.Size(342, 217);
             this.Controls.Add(this.checkBoxSuperUser);
             this.Controls.Add(this.labelSuperuser);
             this.Controls.Add(this.buttonAceptar);

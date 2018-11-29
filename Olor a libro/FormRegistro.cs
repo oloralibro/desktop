@@ -18,7 +18,7 @@ namespace Olor_a_libro
         BindingList<Usuario> listaUsuarios;
         JArray jArrayUsuarios;
         Usuario usuario;
-        bool usuarioRepetido, superUser;
+        bool superUser;
 
         public FormRegistro()
         {
@@ -42,13 +42,9 @@ namespace Olor_a_libro
 
         private void buttonRegistrarse_Click(object sender, EventArgs e)
         {
-            //Comprovamos que este usuario no este ya en la lista de usuarios 
-            usuarioRepetido = listaUsuarios.Any(p => p.nombre.Equals(this.textBoxUsuario.Text));
-            if (usuarioRepetido == true)
-            {
-                MessageBox.Show("Este nombre de usuario ya existe, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
+           
+            //Comprovamos que este usuario y el correo no esten ya en la lista de usuarios 
+            if(Utilidades.usuarioRepetido(listaUsuarios, textBoxUsuario.Text, textBoxEmail.Text)==false)
             {
                 if (!this.textBoxEmail.Text.Equals(this.textBoxCormirmarEmail.Text))
                 {
@@ -70,7 +66,8 @@ namespace Olor_a_libro
                     }
                     //Añadimos el usuario a la lista de usuarios y al json de usuarios registrados
                     listaUsuarios.Add(usuario);
-                    SobreescribirJson(jArrayUsuarios);
+                    Json.sobreescribirJson(new BindingList<object>(listaUsuarios.Cast<object>().ToList()),
+                        "../../Ficheros\\UsuariosRegistrados.json");
                     this.Close();
                 }
 
@@ -81,15 +78,6 @@ namespace Olor_a_libro
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        public void SobreescribirJson(JArray o)
-        {
-            o = (JArray)JToken.FromObject(listaUsuarios);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
-            JsonTextWriter writer = new JsonTextWriter(fichero);
-            o.WriteTo(writer);
-            writer.Close();
         }
 
         private void buttonSuperUser_Click(object sender, EventArgs e)

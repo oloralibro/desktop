@@ -12,28 +12,46 @@ namespace Olor_a_libro
 {
     public partial class FormAnyadirUser : Form
     {
-        BindingList<Usuario> listaUsuarios;
+        public BindingList<Usuario> listaUsuariosAñadir;
 
-        public FormAnyadirUser(BindingList<Usuario> usuarios)
+        public FormAnyadirUser()
         {
             InitializeComponent();
-            listaUsuarios = usuarios;
         }
 
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
-
-            Usuario user = new Usuario(listaUsuarios, textBoxNombreUser.Text, textBoxCorreo.Text, textBoxContraseña.Text);
-            if (checkBoxSuperUser.Checked == true)
+            if (Utilidades.usuarioRepetido(listaUsuariosAñadir, textBoxNombreUser.Text, textBoxCorreo.Text) == false)
             {
-                user.superUsuario = true;
-            }
-            else {
-                user.superUsuario = false;
-            }
+                if (textBoxNombreUser.Text.Equals(""))
+                {
+                    MessageBox.Show("Es obligatorio rellanar el campo Nombre.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (textBoxCorreo.Text.Equals(""))
+                {
+                    MessageBox.Show("Es obligatorio rellanar el campo Correo.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (textBoxContraseña.Text.Equals(""))
+                {
+                    MessageBox.Show("Es obligatorio rellanar el campo Contraseña.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
 
-            listaUsuarios.Add(user);
-            this.Close();
+                    Usuario user = new Usuario(listaUsuariosAñadir, textBoxNombreUser.Text,
+                        textBoxCorreo.Text, textBoxContraseña.Text);
+                    if (checkBoxSuperUser.Checked == true)
+                    {
+                        user.superUsuario = true;
+                    }
+                    listaUsuariosAñadir.Add(user);
+                    this.Close();
+
+                }
+            }
         }
     }
 }

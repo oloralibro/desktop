@@ -25,7 +25,7 @@ namespace Olor_a_libro
 
         public Usuario(BindingList<Usuario> lista, String nombre_usuario, String correo_electronico, String contraseña)
         {
-            this.id = GenerarId.generarId(new BindingList<object>(lista.Cast<object>().ToList()));
+            this.id = Utilidades.generarId(new BindingList<object>(lista.Cast<object>().ToList()));
             this.superUsuario = false;
             this.nombre = nombre_usuario;
             this.correoElectronico = correo_electronico;

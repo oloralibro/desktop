@@ -18,8 +18,6 @@ namespace Olor_a_libro
         string nombre, contraseña, correo, puntos;
         bool superUser, usuarioRepetido, correoRepetido;
 
-       
-
         public FormAjustesUsuario()
         {
             InitializeComponent();
@@ -53,37 +51,61 @@ namespace Olor_a_libro
             DialogResult result = MessageBox.Show("Seguro que quieres guardar los cambios?", "GUARDAR CAMBIOS", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                //Si s'esta segur de que guardarem els canvis comprovem que el nom i correus no estiguin ja a la base de dades de usuaris 
-                //ja que tan el nom com el correu nomes poden ser d'una persona
-                usuarioRepetido = listaUsuariosAjustes.Any(p => p.nombre.Equals(this.textBoxNombreUser.Text) && p.id != user.id);
-                correoRepetido = listaUsuariosAjustes.Any(p => p.correoElectronico.Equals(this.textBoxCorreo.Text) && p.id != user.id);
-                if (usuarioRepetido == true)
+                if (textBoxNombreUser.Text.Equals(""))
                 {
-                    MessageBox.Show("Este nombre de usuario ya existe en otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBoxNombreUser.Text = nombre;
+                    MessageBox.Show("Es obligatorio rellanar el campo Nombre.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxNombreUser.Focus();
                 }
-                else if (correoRepetido == true)
+                else if (textBoxCorreo.Text.Equals(""))
                 {
-                    MessageBox.Show("Este correo pertenece a otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBoxCorreo.Text = correo;
+                    MessageBox.Show("Es obligatorio rellanar el campo Correo.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxCorreo.Focus();
                 }
-                else if ((usuarioRepetido==false)&&(correoRepetido==false))
+                else if (textBoxContraseña.Text.Equals(""))
                 {
-                    user.nombre = textBoxNombreUser.Text;
-                    user.contraseña = textBoxContraseña.Text;
-                    user.correoElectronico = textBoxCorreo.Text;
-                    user.puntuacionTotal = int.Parse(textBoxPuntosTotales.Text);
-                    if (checkBoxSuperUser.Checked == true)
+                    MessageBox.Show("Es obligatorio rellanar el campo Contraseña.",
+                        "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxContraseña.Focus();
+                }
+                else
+                {
+                    //Si s'esta segur de que guardarem els canvis comprovem que el nom i correus no estiguin ja a la base de dades de usuaris 
+                    //ja que tan el nom com el correu nomes poden ser d'una persona
+                    usuarioRepetido = listaUsuariosAjustes.Any(p => p.nombre.Equals(this.textBoxNombreUser.Text) && p.id != user.id);
+                    correoRepetido = listaUsuariosAjustes.Any(p => p.correoElectronico.Equals(this.textBoxCorreo.Text) && p.id != user.id);
+                    if (usuarioRepetido == true)
                     {
-                        user.superUsuario = true;
+                        MessageBox.Show("Este nombre de usuario ya existe en otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBoxNombreUser.Text = nombre;
+                        textBoxNombreUser.Focus();
                     }
-                    else
+                    else if (correoRepetido == true)
                     {
-                        user.superUsuario = false;
+                        MessageBox.Show("Este correo pertenece a otro usuario, introduce uno nuevo.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBoxCorreo.Text = correo;
+                        textBoxCorreo.Focus();
                     }
-                    MessageBox.Show("Cambios guardados correctamente.", "CAMBIOS GUARDADOS", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    this.Close();
+                    else if ((usuarioRepetido == false) && (correoRepetido == false))
+                    {
+                        user.nombre = textBoxNombreUser.Text;
+                        user.contraseña = textBoxContraseña.Text;
+                        user.correoElectronico = textBoxCorreo.Text;
+                        user.puntuacionTotal = int.Parse(textBoxPuntosTotales.Text);
+                        if (checkBoxSuperUser.Checked == true)
+                        {
+                            user.superUsuario = true;
+                        }
+                        else
+                        {
+                            user.superUsuario = false;
+                        }
+                        MessageBox.Show("Cambios guardados correctamente.", "CAMBIOS GUARDADOS", MessageBoxButtons.OK, MessageBoxIcon.None);
+                        this.Close();
+                    }
                 }
+                    
             }
             else
             {

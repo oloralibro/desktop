@@ -18,10 +18,7 @@ namespace Olor_a_libro
         public int puntuacionTotal { get; set; }
         public List<Actividad> listaActividades { get; set; }
 
-        public Usuario()
-        {
-
-        }
+        public Usuario() { }
 
         public Usuario(BindingList<Usuario> lista, String nombre_usuario, String correo_electronico, String contraseña)
         {

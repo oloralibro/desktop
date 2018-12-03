@@ -34,7 +34,7 @@
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.textBoxNombreActividad = new System.Windows.Forms.TextBox();
             this.labelNombreActividad = new System.Windows.Forms.Label();
-            this.buttonAceptarActividad = new System.Windows.Forms.Button();
+            this.buttonAceptarModificar = new System.Windows.Forms.Button();
             this.buttonCancelarActividad = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -89,15 +89,15 @@
             this.labelNombreActividad.TabIndex = 16;
             this.labelNombreActividad.Text = "Nombre ";
             // 
-            // buttonAceptarActividad
+            // buttonAceptarModificar
             // 
-            this.buttonAceptarActividad.Location = new System.Drawing.Point(188, 250);
-            this.buttonAceptarActividad.Name = "buttonAceptarActividad";
-            this.buttonAceptarActividad.Size = new System.Drawing.Size(58, 23);
-            this.buttonAceptarActividad.TabIndex = 23;
-            this.buttonAceptarActividad.Text = "Aceptar";
-            this.buttonAceptarActividad.UseVisualStyleBackColor = true;
-            this.buttonAceptarActividad.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
+            this.buttonAceptarModificar.Location = new System.Drawing.Point(188, 250);
+            this.buttonAceptarModificar.Name = "buttonAceptarModificar";
+            this.buttonAceptarModificar.Size = new System.Drawing.Size(58, 23);
+            this.buttonAceptarModificar.TabIndex = 23;
+            this.buttonAceptarModificar.Text = "Modificar";
+            this.buttonAceptarModificar.UseVisualStyleBackColor = true;
+            this.buttonAceptarModificar.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
             // 
             // buttonCancelarActividad
             // 
@@ -135,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(342, 285);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.buttonAceptarActividad);
+            this.Controls.Add(this.buttonAceptarModificar);
             this.Controls.Add(this.buttonCancelarActividad);
             this.Controls.Add(this.textBoxPuntos);
             this.Controls.Add(this.labelPuntos);
@@ -162,7 +162,7 @@
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.TextBox textBoxNombreActividad;
         private System.Windows.Forms.Label labelNombreActividad;
-        private System.Windows.Forms.Button buttonAceptarActividad;
+        private System.Windows.Forms.Button buttonAceptarModificar;
         private System.Windows.Forms.Button buttonCancelarActividad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;

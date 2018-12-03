@@ -130,7 +130,7 @@
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 9;
-            this.buttonAceptarLibreria.Text = "Aceptar";
+            this.buttonAceptarLibreria.Text = "Cancelar";
             this.buttonAceptarLibreria.UseVisualStyleBackColor = true;
             this.buttonAceptarLibreria.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
             // 

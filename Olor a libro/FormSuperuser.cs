@@ -15,7 +15,6 @@ namespace Olor_a_libro
     public partial class FormSuperUser : Olor_a_libro.FormPlantillaVentana
     {
 
-
         JArray jArrayUsuarios, jArrayLibrerias, jArrayActividades;
         BindingList<Usuario> listaUsuarios;
         BindingList<Actividad> listaActividades;
@@ -51,7 +50,7 @@ namespace Olor_a_libro
             Json.sobreescribirActividades(listaActividades);
             Json.sobreescribirLibrerias(listaLibrerias);
         }
-
+        
 
 
         #region Usuarios
@@ -98,6 +97,8 @@ namespace Olor_a_libro
 
 
 
+
+
         #region Librerias
         private void reloadDataGridViewLibrerias()
         {
@@ -131,8 +132,12 @@ namespace Olor_a_libro
         private void buttonModificarLibrerias_Click(object sender, EventArgs e)
         {
             FormAjustesLibreria f = new FormAjustesLibreria();
+            f.listaLibreriasAjustes = listaLibrerias;
+            f.ShowDialog();
         }
         #endregion
+
+
 
 
 
@@ -152,16 +157,15 @@ namespace Olor_a_libro
 
         private void buttonAñadirActividad_Click(object sender, EventArgs e)
         {
-            FormAjustesActividad f = new FormAjustesActividad();
+            FormAñadirActividad f = new FormAñadirActividad();
+            f.listaActividadesAñadir = listaActividades;
             f.ShowDialog();
         }
 
         private void buttonEliminarActividad_Click(object sender, EventArgs e)
         {
-            listaActividades.Remove((Actividad)dataGridViewActividades.SelectedRows[0].DataBoundItem);
-
+            listaActividades.Remove((Actividad)dataGridViewActividades.CurrentRow.DataBoundItem);
             Json.sobreescribirActividades(listaActividades);
-
             reloadDataGridViewActividades();
         }
         #endregion

@@ -22,7 +22,7 @@ namespace Olor_a_libro
 
         private void buttonAnyadirActividad_Click(object sender, EventArgs e)
         {
-            FormAnyadirActividad f = new FormAnyadirActividad(l);
+            FormAñadirActividad f = new FormAñadirActividad();
             f.ShowDialog();
             dataGridViewActividades.DataSource = l.listaActividades;
         }

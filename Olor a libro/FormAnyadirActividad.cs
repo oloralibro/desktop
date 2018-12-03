@@ -10,20 +10,29 @@ using System.Windows.Forms;
 
 namespace Olor_a_libro
 {
-    public partial class FormAnyadirActividad : Form
+    public partial class FormAñadirActividad : Form
     {
-        Libreria libreria = new Libreria();
+        public BindingList<Actividad> listaActividadesAñadir;
+        Actividad actividad; 
 
-        public FormAnyadirActividad(Libreria l)
+        public FormAñadirActividad()
         {
             InitializeComponent();
-            libreria = l;
         }
 
         private void buttonAceptarActividad_Click(object sender, EventArgs e)
         {
-            Actividad act = new Actividad(textBoxNombreActividad.Text, textBoxDescripcion.Text, int.Parse(textBoxPuntos.Text));
-            libreria.listaActividades.Add(act);
+            if (textBoxNombreActividad.Text.Equals("")||textBoxDescripcion.Text.Equals("")||textBoxPuntos.Text.Equals(""))
+            {
+                MessageBox.Show("Hay campos sin rellenar.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+               actividad = new Actividad(listaActividadesAñadir, textBoxNombreActividad.Text,
+                    textBoxDescripcion.Text, int.Parse(textBoxPuntos.Text));
+                listaActividadesAñadir.Add(actividad);
+                this.Close();
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Olor_a_libro
     public partial class FormAnyadirUser : Form
     {
         public BindingList<Usuario> listaUsuariosAñadir;
+        Usuario user;
 
         public FormAnyadirUser()
         {
@@ -27,21 +28,24 @@ namespace Olor_a_libro
                 {
                     MessageBox.Show("Es obligatorio rellanar el campo Nombre.",
                         "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxNombreUser.Focus();
                 }
                 else if (textBoxCorreo.Text.Equals(""))
                 {
                     MessageBox.Show("Es obligatorio rellanar el campo Correo.",
                         "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxCorreo.Focus();
                 }
                 else if (textBoxContraseña.Text.Equals(""))
                 {
                     MessageBox.Show("Es obligatorio rellanar el campo Contraseña.",
                         "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBoxContraseña.Focus();
                 }
                 else
                 {
 
-                    Usuario user = new Usuario(listaUsuariosAñadir, textBoxNombreUser.Text,
+                    user = new Usuario(listaUsuariosAñadir, textBoxNombreUser.Text,
                         textBoxCorreo.Text, textBoxContraseña.Text);
                     if (checkBoxSuperUser.Checked == true)
                     {

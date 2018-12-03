@@ -15,9 +15,9 @@ namespace Olor_a_libro
 {
     public partial class FormAjustesLibreria : Form
     {
-        List<Libreria> listaLibrerias;
-        Libreria libreria;
-        JArray jArrayLibrerias;
+        public BindingList<Libreria> listaLibreriasAjustes;
+        public Libreria libreria;
+        string nombre, direccion,telefono, horaApertura, horaCierre;
         bool libreriaRepetida;
 
         public FormAjustesLibreria()
@@ -27,26 +27,16 @@ namespace Olor_a_libro
 
         private void FormAñadirLibreria_Load(object sender, EventArgs e)
         {
-            if (File.Exists(@"../../Ficheros\LibreriasRegistradas.json"))
-            {
-                //si existe el fichero LibreriasRegistradas lo cargamos en una lista
-                jArrayLibrerias = JArray.Parse(File.ReadAllText(@"../../Ficheros\LibreriasRegistradas.json"));
-                listaLibrerias = jArrayLibrerias.ToObject<List<Libreria>>();
-            }
-            else
-            {
-                //si no, creamos una lista vacia
-                listaLibrerias = new List<Libreria>();
-            }
+            
         }
 
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)
         {
             //Comprovamos que esta libreria no este ya en la lista de librerias 
-            libreriaRepetida = listaLibrerias.Any(p => p.nombre.Equals(this.textBoxNombreLibreria.Text));
+            libreriaRepetida = listaLibreriasAjustes.Any(p => p.nombre.Equals(this.textBoxNombreLibreria.Text));
             if (libreriaRepetida == true)
             {
-                MessageBox.Show("Esta libreria ya existe, introduce una nueva.", "ERROR",
+                MessageBox.Show("El nombre de esta libreria ya existe, introduce uno nuevo.", "ERROR",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (this.textBoxDireccion.Text.Equals("") || this.textBoxHoraApertura.Text.Equals("") ||
@@ -58,12 +48,14 @@ namespace Olor_a_libro
             }
             else
             {
-                //Creamos la libreria con la info insertada
-                libreria = new Libreria(this.textBoxNombreLibreria.Text, this.textBoxDireccion.Text,
-                    this.textBoxHoraApertura.Text, this.textBoxHoraCierre.Text, this.textBoxTelefono.Text);
+                //Editamos la libreria con la info insertada
                 //Añadimos la libreria a la lista de librerias y al json de LibreriasRegistradas
-                listaLibrerias.Add(libreria);
-                SobreescribirJson(jArrayLibrerias);
+                libreria.nombre = textBoxNombreLibreria.Text;
+                libreria.numeroTelefono = textBoxTelefono.Text;
+                libreria.horaApertura = textBoxHoraApertura.Text;
+                libreria.horaCierre = textBoxHoraCierre.Text;
+
+                
                 this.Close();
             }
         }
@@ -73,13 +65,5 @@ namespace Olor_a_libro
             this.Close();
         }
 
-        public void SobreescribirJson(JArray o)
-        {
-            o = (JArray)JToken.FromObject(listaLibrerias);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\LibreriasRegistradas.json");
-            JsonTextWriter writer = new JsonTextWriter(fichero);
-            o.WriteTo(writer);
-            writer.Close();
-        }
     }
 }

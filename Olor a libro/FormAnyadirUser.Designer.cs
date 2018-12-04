@@ -130,6 +130,7 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxNombreUser);
             this.Controls.Add(this.labelNombreUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAnyadirUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Añadir usuario";

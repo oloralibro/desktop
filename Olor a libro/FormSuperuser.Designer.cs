@@ -32,6 +32,12 @@
             this.tabControlSuperuser = new System.Windows.Forms.TabControl();
             this.tabPageRedLibrerias = new System.Windows.Forms.TabPage();
             this.dataGridViewLibrerias = new System.Windows.Forms.DataGridView();
+            this.idLibreria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaApertura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarLibrerias = new System.Windows.Forms.Button();
             this.buttonModificarLibrerias = new System.Windows.Forms.Button();
             this.buttonAnyadirLibrerias = new System.Windows.Forms.Button();
@@ -60,12 +66,6 @@
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
-            this.idLibreria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaApertura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -121,6 +121,48 @@
             this.dataGridViewLibrerias.Name = "dataGridViewLibrerias";
             this.dataGridViewLibrerias.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewLibrerias.TabIndex = 19;
+            // 
+            // idLibreria
+            // 
+            this.idLibreria.DataPropertyName = "id";
+            this.idLibreria.HeaderText = "Id";
+            this.idLibreria.Name = "idLibreria";
+            this.idLibreria.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nombre libreria";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 235;
+            // 
+            // direccion
+            // 
+            this.direccion.DataPropertyName = "direccion";
+            this.direccion.HeaderText = "Dirección";
+            this.direccion.Name = "direccion";
+            this.direccion.Width = 270;
+            // 
+            // horaApertura
+            // 
+            this.horaApertura.DataPropertyName = "horaApertura";
+            this.horaApertura.HeaderText = "Hora apertura";
+            this.horaApertura.Name = "horaApertura";
+            this.horaApertura.Width = 155;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "horaCierre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Hora cierre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 155;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "numeroTelefono";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Teléfono";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 250;
             // 
             // buttonEliminarLibrerias
             // 
@@ -361,6 +403,7 @@
             this.buttonModificarActividad.TabIndex = 10;
             this.buttonModificarActividad.Text = "Modificar";
             this.buttonModificarActividad.UseVisualStyleBackColor = true;
+            this.buttonModificarActividad.Click += new System.EventHandler(this.buttonModificarActividad_Click);
             // 
             // buttonAñadirActividad
             // 
@@ -389,48 +432,6 @@
             this.pictureBoxIconoBuscadorActividades.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
-            // 
-            // idLibreria
-            // 
-            this.idLibreria.DataPropertyName = "id";
-            this.idLibreria.HeaderText = "Id";
-            this.idLibreria.Name = "idLibreria";
-            this.idLibreria.Width = 70;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nombre libreria";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 235;
-            // 
-            // direccion
-            // 
-            this.direccion.DataPropertyName = "direccion";
-            this.direccion.HeaderText = "Dirección";
-            this.direccion.Name = "direccion";
-            this.direccion.Width = 270;
-            // 
-            // horaApertura
-            // 
-            this.horaApertura.DataPropertyName = "horaApertura";
-            this.horaApertura.HeaderText = "Hora apertura";
-            this.horaApertura.Name = "horaApertura";
-            this.horaApertura.Width = 155;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "horaCierre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Hora cierre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 155;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "numeroTelefono";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Teléfono";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 250;
             // 
             // FormSuperUser
             // 

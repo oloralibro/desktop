@@ -97,7 +97,7 @@
             this.buttonAceptarModificar.TabIndex = 23;
             this.buttonAceptarModificar.Text = "Modificar";
             this.buttonAceptarModificar.UseVisualStyleBackColor = true;
-            this.buttonAceptarModificar.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
+            this.buttonAceptarModificar.Click += new System.EventHandler(this.buttonAceptarModificar_Click);
             // 
             // buttonCancelarActividad
             // 
@@ -143,6 +143,7 @@
             this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.textBoxNombreActividad);
             this.Controls.Add(this.labelNombreActividad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAjustesActividad";

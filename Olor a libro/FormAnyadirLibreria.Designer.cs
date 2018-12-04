@@ -236,6 +236,7 @@
             this.Controls.Add(this.labelDireccion);
             this.Controls.Add(this.textBoxNombreLibreria);
             this.Controls.Add(this.labelNombreLibreria);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAnyadirLibreria";
             this.Text = "FormAnyadirLibreria";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).EndInit();

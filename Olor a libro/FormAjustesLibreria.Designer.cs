@@ -208,6 +208,7 @@
             this.Controls.Add(this.labelDireccion);
             this.Controls.Add(this.textBoxNombreLibreria);
             this.Controls.Add(this.labelNombreLibreria);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAjustesLibreria";

@@ -69,6 +69,7 @@
             this.Controls.Add(this.buttonAceptarSuper);
             this.Controls.Add(this.textBoxContraseñaSuper);
             this.Controls.Add(this.labelContraseñaSuper);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormRegistroSuper";

@@ -16,9 +16,9 @@ namespace Olor_a_libro
     public partial class FormAjustesActividad : Form
     {
 
-        List<Actividad> listaActividades;
-        Actividad actividad;
-        JArray jArrayActividades;
+        public BindingList<Actividad> listaActividades;
+        public Actividad actividad;
+        string nombre, descripcion, puntos;
         bool actividadRepetida;
 
         public FormAjustesActividad()
@@ -28,10 +28,15 @@ namespace Olor_a_libro
 
         private void FormAjustesActividad_Load(object sender, EventArgs e)
         {
-            
+            textBoxNombreActividad.Text = actividad.nombre;
+            textBoxDescripcion.Text = actividad.descripcion;
+            textBoxPuntos.Text = actividad.puntos.ToString();
+            nombre = actividad.nombre;
+            descripcion = actividad.descripcion;
+            puntos = actividad.puntos.ToString();
         }
 
-        private void buttonAceptarLibreria_Click(object sender, EventArgs e)
+        private void buttonAceptarModificar_Click(object sender, EventArgs e)
         {
             //Comprovamos que esta libreria no este ya en la lista de librerias 
             actividadRepetida = listaActividades.Any(p => p.nombre.Equals(this.textBoxNombreActividad.Text));
@@ -48,7 +53,7 @@ namespace Olor_a_libro
             }
             else
             {
-                //Creamos la libreria con la info insertada
+                //Modificamos la libreria con la info insertada
                 //Añadimos la libreria a la lista de librerias y al json de LibreriasRegistradas
                 this.Close();
             }

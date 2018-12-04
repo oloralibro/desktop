@@ -79,6 +79,7 @@
             this.Controls.Add(this.listBoxActividadesLibreria);
             this.Controls.Add(this.textBoxBuscador);
             this.Controls.Add(this.pictureBoxLupa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormActividadesLibreria";
             this.Text = "FormActividadesLibreria";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLupa)).EndInit();

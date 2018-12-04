@@ -206,6 +206,7 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.textBoxNombreUser);
             this.Controls.Add(this.labelNombreUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAjustesUsuario";

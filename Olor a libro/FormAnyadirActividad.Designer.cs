@@ -142,6 +142,7 @@
             this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.textBoxNombreActividad);
             this.Controls.Add(this.labelNombreActividad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAñadirActividad";

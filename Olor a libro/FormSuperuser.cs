@@ -19,6 +19,7 @@ namespace Olor_a_libro
         BindingList<Usuario> listaUsuarios;
         BindingList<Actividad> listaActividades;
         BindingList<Libreria> listaLibrerias;
+        int indexUsuarios, indexActividades, indexLibrerias;
 
         public FormSuperUser()
         {
@@ -73,9 +74,9 @@ namespace Olor_a_libro
             FormAjustesUsuario f = new FormAjustesUsuario();
             f.listaUsuariosAjustes = listaUsuarios;
             f.user = (Usuario)dataGridViewUsuarios.CurrentRow.DataBoundItem;
-            int index = listaUsuarios.IndexOf(f.user);
+            indexUsuarios = listaUsuarios.IndexOf(f.user);
             f.ShowDialog();
-            listaUsuarios[index] = f.user;
+            listaUsuarios[indexUsuarios] = f.user;
         }
 
         private void buttonEliminarUsuarios_Click(object sender, EventArgs e)
@@ -153,6 +154,16 @@ namespace Olor_a_libro
             jArrayActividades = JArray.Parse(File.ReadAllText(@"../../Ficheros\ActividadesRegistradas.json"));
             listaActividades = jArrayActividades.ToObject<BindingList<Actividad>>();
             reloadDataGridViewActividades();
+        }
+
+        private void buttonModificarActividad_Click(object sender, EventArgs e)
+        {
+            FormAjustesActividad f = new FormAjustesActividad();
+            f.listaActividades = listaActividades;
+            f.actividad = (Actividad)dataGridViewActividades.CurrentRow.DataBoundItem;
+            indexActividades = listaActividades.IndexOf(f.actividad);
+            f.ShowDialog();
+            listaActividades[indexActividades] = f.actividad;
         }
 
         private void buttonAñadirActividad_Click(object sender, EventArgs e)

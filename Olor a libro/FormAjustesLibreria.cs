@@ -17,7 +17,7 @@ namespace Olor_a_libro
     {
         public BindingList<Libreria> listaLibreriasAjustes;
         public Libreria libreria;
-        string nombre, direccion,telefono, horaApertura, horaCierre;
+        string nombre, direccion,telefono, horario;
         bool libreriaRepetida;
 
         public FormAjustesLibreria()
@@ -39,8 +39,7 @@ namespace Olor_a_libro
                 MessageBox.Show("El nombre de esta libreria ya existe, introduce uno nuevo.", "ERROR",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (this.textBoxDireccion.Text.Equals("") || this.textBoxHoraApertura.Text.Equals("") ||
-                this.textBoxHoraCierre.Text.Equals("")||this.textBoxNombreLibreria.Text.Equals("")||
+            else if (this.textBoxDireccion.Text.Equals("") || this.textBoxHorario.Text.Equals("") ||
                 this.textBoxTelefono.Text.Equals(""))
             {
                 MessageBox.Show("Introduce todos los datos.", "ATENCIÓN",
@@ -52,9 +51,7 @@ namespace Olor_a_libro
                 //Añadimos la libreria a la lista de librerias y al json de LibreriasRegistradas
                 libreria.nombre = textBoxNombreLibreria.Text;
                 libreria.numeroTelefono = textBoxTelefono.Text;
-                libreria.horaApertura = textBoxHoraApertura.Text;
-                libreria.horaCierre = textBoxHoraCierre.Text;
-
+                libreria.horario = textBoxHorario.Text;
                 
                 this.Close();
             }

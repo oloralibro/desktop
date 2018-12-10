@@ -35,8 +35,7 @@
             this.idLibreria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaApertura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarLibrerias = new System.Windows.Forms.Button();
             this.buttonModificarLibrerias = new System.Windows.Forms.Button();
@@ -58,14 +57,15 @@
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
             this.tabPageActividades = new System.Windows.Forms.TabPage();
             this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarActividad = new System.Windows.Forms.Button();
             this.buttonModificarActividad = new System.Windows.Forms.Button();
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
+            this.idActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -114,8 +114,7 @@
             this.idLibreria,
             this.dataGridViewTextBoxColumn1,
             this.direccion,
-            this.horaApertura,
-            this.dataGridViewTextBoxColumn2,
+            this.horario,
             this.dataGridViewTextBoxColumn3});
             this.dataGridViewLibrerias.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewLibrerias.Name = "dataGridViewLibrerias";
@@ -143,19 +142,12 @@
             this.direccion.Name = "direccion";
             this.direccion.Width = 270;
             // 
-            // horaApertura
+            // horario
             // 
-            this.horaApertura.DataPropertyName = "horaApertura";
-            this.horaApertura.HeaderText = "Hora apertura";
-            this.horaApertura.Name = "horaApertura";
-            this.horaApertura.Width = 155;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "horaCierre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Hora cierre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 155;
+            this.horario.DataPropertyName = "horario";
+            this.horario.HeaderText = "Horario";
+            this.horario.Name = "horario";
+            this.horario.Width = 310;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -356,6 +348,7 @@
             this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idActividad,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
@@ -363,27 +356,6 @@
             this.dataGridViewActividades.Name = "dataGridViewActividades";
             this.dataGridViewActividades.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewActividades.TabIndex = 19;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 292;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 684;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "puntos";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Puntos";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // buttonEliminarActividad
             // 
@@ -432,6 +404,34 @@
             this.pictureBoxIconoBuscadorActividades.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
+            // 
+            // idActividad
+            // 
+            this.idActividad.DataPropertyName = "id";
+            this.idActividad.HeaderText = "Id";
+            this.idActividad.Name = "idActividad";
+            this.idActividad.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 315;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 550;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "puntos";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Puntos";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // FormSuperUser
             // 
@@ -487,9 +487,6 @@
         private System.Windows.Forms.DataGridView dataGridViewUsuarios;
         private System.Windows.Forms.DataGridView dataGridViewLibrerias;
         private System.Windows.Forms.DataGridView dataGridViewActividades;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn contraseña;
@@ -499,8 +496,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idLibreria;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaApertura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horario;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idActividad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
     }
 }

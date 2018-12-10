@@ -32,13 +32,11 @@
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
             this.labeltelefono = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxHoraCierre = new System.Windows.Forms.TextBox();
-            this.labelHoraCierre = new System.Windows.Forms.Label();
             this.buttonAceptarLibreria = new System.Windows.Forms.Button();
             this.labelActividades = new System.Windows.Forms.Label();
-            this.textBoxHoraApertura = new System.Windows.Forms.TextBox();
+            this.textBoxHorario = new System.Windows.Forms.TextBox();
             this.textBoxDireccion = new System.Windows.Forms.TextBox();
-            this.labelHoraApertura = new System.Windows.Forms.Label();
+            this.labelHorario = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
             this.textBoxNombreLibreria = new System.Windows.Forms.TextBox();
             this.labelNombreLibreria = new System.Windows.Forms.Label();
@@ -78,31 +76,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 199);
+            this.label2.Location = new System.Drawing.Point(6, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(331, 13);
             this.label2.TabIndex = 29;
             this.label2.Text = "______________________________________________________";
             // 
-            // textBoxHoraCierre
-            // 
-            this.textBoxHoraCierre.Location = new System.Drawing.Point(99, 175);
-            this.textBoxHoraCierre.Name = "textBoxHoraCierre";
-            this.textBoxHoraCierre.Size = new System.Drawing.Size(224, 20);
-            this.textBoxHoraCierre.TabIndex = 28;
-            // 
-            // labelHoraCierre
-            // 
-            this.labelHoraCierre.AutoSize = true;
-            this.labelHoraCierre.Location = new System.Drawing.Point(21, 178);
-            this.labelHoraCierre.Name = "labelHoraCierre";
-            this.labelHoraCierre.Size = new System.Drawing.Size(59, 13);
-            this.labelHoraCierre.TabIndex = 27;
-            this.labelHoraCierre.Text = "Hora cierre";
-            // 
             // buttonAceptarLibreria
             // 
-            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 439);
+            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 432);
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 26;
@@ -113,18 +95,18 @@
             // labelActividades
             // 
             this.labelActividades.AutoSize = true;
-            this.labelActividades.Location = new System.Drawing.Point(21, 215);
+            this.labelActividades.Location = new System.Drawing.Point(21, 192);
             this.labelActividades.Name = "labelActividades";
             this.labelActividades.Size = new System.Drawing.Size(65, 13);
             this.labelActividades.TabIndex = 23;
             this.labelActividades.Text = "Actividades ";
             // 
-            // textBoxHoraApertura
+            // textBoxHorario
             // 
-            this.textBoxHoraApertura.Location = new System.Drawing.Point(99, 141);
-            this.textBoxHoraApertura.Name = "textBoxHoraApertura";
-            this.textBoxHoraApertura.Size = new System.Drawing.Size(224, 20);
-            this.textBoxHoraApertura.TabIndex = 22;
+            this.textBoxHorario.Location = new System.Drawing.Point(82, 140);
+            this.textBoxHorario.Name = "textBoxHorario";
+            this.textBoxHorario.Size = new System.Drawing.Size(241, 20);
+            this.textBoxHorario.TabIndex = 22;
             // 
             // textBoxDireccion
             // 
@@ -133,14 +115,14 @@
             this.textBoxDireccion.Size = new System.Drawing.Size(241, 20);
             this.textBoxDireccion.TabIndex = 21;
             // 
-            // labelHoraApertura
+            // labelHorario
             // 
-            this.labelHoraApertura.AutoSize = true;
-            this.labelHoraApertura.Location = new System.Drawing.Point(21, 144);
-            this.labelHoraApertura.Name = "labelHoraApertura";
-            this.labelHoraApertura.Size = new System.Drawing.Size(72, 13);
-            this.labelHoraApertura.TabIndex = 20;
-            this.labelHoraApertura.Text = "Hora apertura";
+            this.labelHorario.AutoSize = true;
+            this.labelHorario.Location = new System.Drawing.Point(21, 143);
+            this.labelHorario.Name = "labelHorario";
+            this.labelHorario.Size = new System.Drawing.Size(41, 13);
+            this.labelHorario.TabIndex = 20;
+            this.labelHorario.Text = "Horario";
             // 
             // labelDireccion
             // 
@@ -169,7 +151,7 @@
             // 
             // buttonAnyadirActividad
             // 
-            this.buttonAnyadirActividad.Location = new System.Drawing.Point(99, 215);
+            this.buttonAnyadirActividad.Location = new System.Drawing.Point(225, 207);
             this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
             this.buttonAnyadirActividad.Size = new System.Drawing.Size(98, 23);
             this.buttonAnyadirActividad.TabIndex = 34;
@@ -185,7 +167,7 @@
             this.Nombre,
             this.Descripcion,
             this.Puntos});
-            this.dataGridViewActividades.Location = new System.Drawing.Point(24, 256);
+            this.dataGridViewActividades.Location = new System.Drawing.Point(24, 236);
             this.dataGridViewActividades.Name = "dataGridViewActividades";
             this.dataGridViewActividades.Size = new System.Drawing.Size(299, 177);
             this.dataGridViewActividades.TabIndex = 35;
@@ -226,13 +208,11 @@
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.labeltelefono);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxHoraCierre);
-            this.Controls.Add(this.labelHoraCierre);
             this.Controls.Add(this.buttonAceptarLibreria);
             this.Controls.Add(this.labelActividades);
-            this.Controls.Add(this.textBoxHoraApertura);
+            this.Controls.Add(this.textBoxHorario);
             this.Controls.Add(this.textBoxDireccion);
-            this.Controls.Add(this.labelHoraApertura);
+            this.Controls.Add(this.labelHorario);
             this.Controls.Add(this.labelDireccion);
             this.Controls.Add(this.textBoxNombreLibreria);
             this.Controls.Add(this.labelNombreLibreria);
@@ -251,13 +231,11 @@
         private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.Label labeltelefono;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxHoraCierre;
-        private System.Windows.Forms.Label labelHoraCierre;
         private System.Windows.Forms.Button buttonAceptarLibreria;
         private System.Windows.Forms.Label labelActividades;
-        private System.Windows.Forms.TextBox textBoxHoraApertura;
+        private System.Windows.Forms.TextBox textBoxHorario;
         private System.Windows.Forms.TextBox textBoxDireccion;
-        private System.Windows.Forms.Label labelHoraApertura;
+        private System.Windows.Forms.Label labelHorario;
         private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.TextBox textBoxNombreLibreria;
         private System.Windows.Forms.Label labelNombreLibreria;

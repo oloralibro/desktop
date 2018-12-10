@@ -32,15 +32,12 @@ namespace Olor_a_libro
             l.nombre = textBoxNombreLibreria.Text;
             l.direccion = textBoxDireccion.Text;
             l.numeroTelefono = textBoxTelefono.Text;
-            l.horaApertura = textBoxHoraApertura.Text;
-            l.horaCierre = textBoxHoraCierre.Text;
+            l.horario = textBoxHorario.Text;
 
             listaLibrerias.Add(l);
 
-            this.Close();
-            
+            this.Close();    
         }
-
-        
+  
     }
 }

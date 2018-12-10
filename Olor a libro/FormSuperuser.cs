@@ -123,7 +123,7 @@ namespace Olor_a_libro
 
         private void buttonEliminarLibrerias_Click(object sender, EventArgs e)
         {
-            listaLibrerias.Remove((Libreria)dataGridViewLibrerias.SelectedRows[0].DataBoundItem);
+            listaLibrerias.Remove((Libreria)dataGridViewLibrerias.CurrentRow.DataBoundItem);
 
             Json.sobreescribirLibrerias(listaLibrerias);
 

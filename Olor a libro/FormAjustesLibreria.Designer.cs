@@ -135,11 +135,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 169);
+            this.label2.Location = new System.Drawing.Point(3, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 13);
+            this.label2.Size = new System.Drawing.Size(337, 13);
             this.label2.TabIndex = 13;
-            this.label2.Text = "______________________________________________________";
+            this.label2.Text = "_______________________________________________________";
             // 
             // textBoxTelefono
             // 
@@ -161,11 +161,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 116);
+            this.label4.Location = new System.Drawing.Point(2, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(331, 13);
+            this.label4.Size = new System.Drawing.Size(337, 13);
             this.label4.TabIndex = 16;
-            this.label4.Text = "______________________________________________________";
+            this.label4.Text = "_______________________________________________________";
             // 
             // FormAjustesLibreria
             // 

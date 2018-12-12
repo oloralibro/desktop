@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,32 +14,28 @@ namespace Olor_a_libro
 {
     public partial class FormAnyadirLibreria : Form
     {
-        BindingList<Libreria> listaLibrerias;
-        Libreria l = new Libreria();
-        public FormAnyadirLibreria(BindingList<Libreria> librerias)
+        public BindingList<Libreria> listaLibreriasAñadir;
+        Libreria libreria;
+
+        public FormAnyadirLibreria()
         {
             InitializeComponent();
-            listaLibrerias = librerias;
         }
 
         private void buttonAnyadirActividad_Click(object sender, EventArgs e)
         {
-            FormAñadirActividad f = new FormAñadirActividad();
+            FormAñadirActividadALibreria f = new FormAñadirActividadALibreria(libreria.listaActividades);
             f.ShowDialog();
-            dataGridViewActividades.DataSource = l.listaActividades;
         }
 
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)
         {
-            l.nombre = textBoxNombreLibreria.Text;
-            l.direccion = textBoxDireccion.Text;
-            l.numeroTelefono = textBoxTelefono.Text;
-            l.horario = textBoxHorario.Text;
+            libreria = new Libreria(listaLibreriasAñadir, textBoxNombreLibreria.Text, textBoxDireccion.Text, textBoxHorario.Text, textBoxTelefono.Text);
 
-            listaLibrerias.Add(l);
+            listaLibreriasAñadir.Add(libreria);
 
             this.Close();    
         }
-  
+       
     }
 }

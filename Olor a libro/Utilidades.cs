@@ -11,6 +11,7 @@ namespace Olor_a_libro
     public static class Utilidades
     {
         
+           
         public static int generarId(BindingList<object> lista)
         {
             int id=0;

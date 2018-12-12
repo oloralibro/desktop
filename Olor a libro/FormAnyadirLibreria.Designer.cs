@@ -42,32 +42,30 @@
             this.labelNombreLibreria = new System.Windows.Forms.Label();
             this.buttonAnyadirActividad = new System.Windows.Forms.Button();
             this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Puntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 111);
+            this.label4.Location = new System.Drawing.Point(2, 116);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(331, 13);
+            this.label4.Size = new System.Drawing.Size(337, 13);
             this.label4.TabIndex = 32;
-            this.label4.Text = "______________________________________________________";
+            this.label4.Text = "_______________________________________________________";
             // 
             // textBoxTelefono
             // 
-            this.textBoxTelefono.Location = new System.Drawing.Point(82, 88);
+            this.textBoxTelefono.Location = new System.Drawing.Point(82, 93);
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(241, 20);
-            this.textBoxTelefono.TabIndex = 31;
+            this.textBoxTelefono.TabIndex = 3;
             // 
             // labeltelefono
             // 
             this.labeltelefono.AutoSize = true;
-            this.labeltelefono.Location = new System.Drawing.Point(21, 91);
+            this.labeltelefono.Location = new System.Drawing.Point(21, 96);
             this.labeltelefono.Name = "labeltelefono";
             this.labeltelefono.Size = new System.Drawing.Size(49, 13);
             this.labeltelefono.TabIndex = 30;
@@ -76,18 +74,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 164);
+            this.label2.Location = new System.Drawing.Point(3, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 13);
+            this.label2.Size = new System.Drawing.Size(337, 13);
             this.label2.TabIndex = 29;
-            this.label2.Text = "______________________________________________________";
+            this.label2.Text = "_______________________________________________________";
             // 
             // buttonAceptarLibreria
             // 
-            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 432);
+            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 444);
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
-            this.buttonAceptarLibreria.TabIndex = 26;
+            this.buttonAceptarLibreria.TabIndex = 7;
             this.buttonAceptarLibreria.Text = "Aceptar";
             this.buttonAceptarLibreria.UseVisualStyleBackColor = true;
             this.buttonAceptarLibreria.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
@@ -95,7 +93,7 @@
             // labelActividades
             // 
             this.labelActividades.AutoSize = true;
-            this.labelActividades.Location = new System.Drawing.Point(21, 192);
+            this.labelActividades.Location = new System.Drawing.Point(21, 197);
             this.labelActividades.Name = "labelActividades";
             this.labelActividades.Size = new System.Drawing.Size(65, 13);
             this.labelActividades.TabIndex = 23;
@@ -103,22 +101,22 @@
             // 
             // textBoxHorario
             // 
-            this.textBoxHorario.Location = new System.Drawing.Point(82, 140);
+            this.textBoxHorario.Location = new System.Drawing.Point(82, 145);
             this.textBoxHorario.Name = "textBoxHorario";
             this.textBoxHorario.Size = new System.Drawing.Size(241, 20);
-            this.textBoxHorario.TabIndex = 22;
+            this.textBoxHorario.TabIndex = 4;
             // 
             // textBoxDireccion
             // 
-            this.textBoxDireccion.Location = new System.Drawing.Point(82, 51);
+            this.textBoxDireccion.Location = new System.Drawing.Point(82, 56);
             this.textBoxDireccion.Name = "textBoxDireccion";
             this.textBoxDireccion.Size = new System.Drawing.Size(241, 20);
-            this.textBoxDireccion.TabIndex = 21;
+            this.textBoxDireccion.TabIndex = 2;
             // 
             // labelHorario
             // 
             this.labelHorario.AutoSize = true;
-            this.labelHorario.Location = new System.Drawing.Point(21, 143);
+            this.labelHorario.Location = new System.Drawing.Point(21, 148);
             this.labelHorario.Name = "labelHorario";
             this.labelHorario.Size = new System.Drawing.Size(41, 13);
             this.labelHorario.TabIndex = 20;
@@ -127,7 +125,7 @@
             // labelDireccion
             // 
             this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Location = new System.Drawing.Point(21, 54);
+            this.labelDireccion.Location = new System.Drawing.Point(21, 59);
             this.labelDireccion.Name = "labelDireccion";
             this.labelDireccion.Size = new System.Drawing.Size(55, 13);
             this.labelDireccion.TabIndex = 19;
@@ -135,15 +133,15 @@
             // 
             // textBoxNombreLibreria
             // 
-            this.textBoxNombreLibreria.Location = new System.Drawing.Point(82, 15);
+            this.textBoxNombreLibreria.Location = new System.Drawing.Point(82, 20);
             this.textBoxNombreLibreria.Name = "textBoxNombreLibreria";
             this.textBoxNombreLibreria.Size = new System.Drawing.Size(241, 20);
-            this.textBoxNombreLibreria.TabIndex = 18;
+            this.textBoxNombreLibreria.TabIndex = 1;
             // 
             // labelNombreLibreria
             // 
             this.labelNombreLibreria.AutoSize = true;
-            this.labelNombreLibreria.Location = new System.Drawing.Point(21, 18);
+            this.labelNombreLibreria.Location = new System.Drawing.Point(21, 23);
             this.labelNombreLibreria.Name = "labelNombreLibreria";
             this.labelNombreLibreria.Size = new System.Drawing.Size(47, 13);
             this.labelNombreLibreria.TabIndex = 17;
@@ -151,57 +149,38 @@
             // 
             // buttonAnyadirActividad
             // 
-            this.buttonAnyadirActividad.Location = new System.Drawing.Point(225, 207);
+            this.buttonAnyadirActividad.Location = new System.Drawing.Point(219, 207);
             this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
-            this.buttonAnyadirActividad.Size = new System.Drawing.Size(98, 23);
-            this.buttonAnyadirActividad.TabIndex = 34;
-            this.buttonAnyadirActividad.Text = "Añadir Actividad";
+            this.buttonAnyadirActividad.Size = new System.Drawing.Size(104, 23);
+            this.buttonAnyadirActividad.TabIndex = 5;
+            this.buttonAnyadirActividad.Text = "Añadir Actividades";
             this.buttonAnyadirActividad.UseVisualStyleBackColor = true;
             this.buttonAnyadirActividad.Click += new System.EventHandler(this.buttonAnyadirActividad_Click);
             // 
             // dataGridViewActividades
             // 
-            this.dataGridViewActividades.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.Descripcion,
-            this.Puntos});
-            this.dataGridViewActividades.Location = new System.Drawing.Point(24, 236);
+            this.dataGridViewActividades.Location = new System.Drawing.Point(24, 238);
             this.dataGridViewActividades.Name = "dataGridViewActividades";
             this.dataGridViewActividades.Size = new System.Drawing.Size(299, 177);
-            this.dataGridViewActividades.TabIndex = 35;
+            this.dataGridViewActividades.TabIndex = 33;
             // 
-            // Nombre
+            // label1
             // 
-            this.Nombre.DataPropertyName = "nombre";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Visible = false;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Visible = false;
-            // 
-            // Puntos
-            // 
-            this.Puntos.DataPropertyName = "puntos";
-            this.Puntos.HeaderText = "Puntos";
-            this.Puntos.Name = "Puntos";
-            this.Puntos.ReadOnly = true;
-            this.Puntos.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 418);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(337, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "_______________________________________________________";
             // 
             // FormAnyadirLibreria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(342, 467);
+            this.ClientSize = new System.Drawing.Size(342, 479);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewActividades);
             this.Controls.Add(this.buttonAnyadirActividad);
             this.Controls.Add(this.label4);
@@ -218,7 +197,8 @@
             this.Controls.Add(this.labelNombreLibreria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAnyadirLibreria";
-            this.Text = "FormAnyadirLibreria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Olor A Libro - Añadir libreria";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,8 +221,6 @@
         private System.Windows.Forms.Label labelNombreLibreria;
         private System.Windows.Forms.Button buttonAnyadirActividad;
         private System.Windows.Forms.DataGridView dataGridViewActividades;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Puntos;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -117,7 +117,8 @@ namespace Olor_a_libro
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
         {
-            FormAnyadirLibreria f = new FormAnyadirLibreria(listaLibrerias);
+            FormAnyadirLibreria f = new FormAnyadirLibreria();
+            f.listaLibreriasAñadir = listaLibrerias;
             f.ShowDialog();
         }
 

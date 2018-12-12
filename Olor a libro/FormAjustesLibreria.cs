@@ -17,7 +17,6 @@ namespace Olor_a_libro
     {
         public BindingList<Libreria> listaLibreriasAjustes;
         public Libreria libreria;
-        string nombre, direccion,telefono, horario;
         bool libreriaRepetida;
 
         public FormAjustesLibreria()
@@ -27,7 +26,11 @@ namespace Olor_a_libro
 
         private void FormAñadirLibreria_Load(object sender, EventArgs e)
         {
-            
+            textBoxNombreLibreria.Text = libreria.nombre;
+            textBoxTelefono.Text = libreria.numeroTelefono;
+            textBoxDireccion.Text = libreria.direccion;
+            textBoxHorario.Text = libreria.horario;
+            //listBoxActividades        
         }
 
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)
@@ -48,10 +51,12 @@ namespace Olor_a_libro
             else
             {
                 //Editamos la libreria con la info insertada
-                //Añadimos la libreria a la lista de librerias y al json de LibreriasRegistradas
                 libreria.nombre = textBoxNombreLibreria.Text;
+                libreria.direccion = textBoxDireccion.Text;
                 libreria.numeroTelefono = textBoxTelefono.Text;
                 libreria.horario = textBoxHorario.Text;
+                libreria.listaActividades = null;
+                
                 
                 this.Close();
             }

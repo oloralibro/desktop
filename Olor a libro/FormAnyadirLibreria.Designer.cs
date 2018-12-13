@@ -33,17 +33,12 @@
             this.labeltelefono = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonAceptarLibreria = new System.Windows.Forms.Button();
-            this.labelActividades = new System.Windows.Forms.Label();
             this.textBoxHorario = new System.Windows.Forms.TextBox();
             this.textBoxDireccion = new System.Windows.Forms.TextBox();
             this.labelHorario = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
             this.textBoxNombreLibreria = new System.Windows.Forms.TextBox();
             this.labelNombreLibreria = new System.Windows.Forms.Label();
-            this.buttonAnyadirActividad = new System.Windows.Forms.Button();
-            this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -82,22 +77,13 @@
             // 
             // buttonAceptarLibreria
             // 
-            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 444);
+            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 197);
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 7;
             this.buttonAceptarLibreria.Text = "Aceptar";
             this.buttonAceptarLibreria.UseVisualStyleBackColor = true;
             this.buttonAceptarLibreria.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
-            // 
-            // labelActividades
-            // 
-            this.labelActividades.AutoSize = true;
-            this.labelActividades.Location = new System.Drawing.Point(21, 197);
-            this.labelActividades.Name = "labelActividades";
-            this.labelActividades.Size = new System.Drawing.Size(65, 13);
-            this.labelActividades.TabIndex = 23;
-            this.labelActividades.Text = "Actividades ";
             // 
             // textBoxHorario
             // 
@@ -147,48 +133,17 @@
             this.labelNombreLibreria.TabIndex = 17;
             this.labelNombreLibreria.Text = "Nombre ";
             // 
-            // buttonAnyadirActividad
-            // 
-            this.buttonAnyadirActividad.Location = new System.Drawing.Point(219, 207);
-            this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
-            this.buttonAnyadirActividad.Size = new System.Drawing.Size(104, 23);
-            this.buttonAnyadirActividad.TabIndex = 5;
-            this.buttonAnyadirActividad.Text = "Añadir Actividades";
-            this.buttonAnyadirActividad.UseVisualStyleBackColor = true;
-            this.buttonAnyadirActividad.Click += new System.EventHandler(this.buttonAnyadirActividad_Click);
-            // 
-            // dataGridViewActividades
-            // 
-            this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewActividades.Location = new System.Drawing.Point(24, 238);
-            this.dataGridViewActividades.Name = "dataGridViewActividades";
-            this.dataGridViewActividades.Size = new System.Drawing.Size(299, 177);
-            this.dataGridViewActividades.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 418);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 13);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "_______________________________________________________";
-            // 
             // FormAnyadirLibreria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(342, 479);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridViewActividades);
-            this.Controls.Add(this.buttonAnyadirActividad);
+            this.ClientSize = new System.Drawing.Size(342, 231);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.labeltelefono);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonAceptarLibreria);
-            this.Controls.Add(this.labelActividades);
             this.Controls.Add(this.textBoxHorario);
             this.Controls.Add(this.textBoxDireccion);
             this.Controls.Add(this.labelHorario);
@@ -199,7 +154,6 @@
             this.Name = "FormAnyadirLibreria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Olor A Libro - Añadir libreria";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewActividades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,15 +166,11 @@
         private System.Windows.Forms.Label labeltelefono;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonAceptarLibreria;
-        private System.Windows.Forms.Label labelActividades;
         private System.Windows.Forms.TextBox textBoxHorario;
         private System.Windows.Forms.TextBox textBoxDireccion;
         private System.Windows.Forms.Label labelHorario;
         private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.TextBox textBoxNombreLibreria;
         private System.Windows.Forms.Label labelNombreLibreria;
-        private System.Windows.Forms.Button buttonAnyadirActividad;
-        private System.Windows.Forms.DataGridView dataGridViewActividades;
-        private System.Windows.Forms.Label label1;
     }
 }

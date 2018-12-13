@@ -14,7 +14,7 @@ namespace Olor_a_libro
 {
     public partial class FormAñadirActividadALibreria : Form
     {
-        List<Actividad> listaActividades = new List<Actividad>();
+        List<Actividad> listaActividadesCompleta = new List<Actividad>();
         List<Actividad> listaActividadesLibreria;
 
         public FormAñadirActividadALibreria(List<Actividad> listaActividadesLibreria)
@@ -26,8 +26,12 @@ namespace Olor_a_libro
         private void FormAñadirActividadALibreria_Load(object sender, EventArgs e)
         {
             JArray jArrayActividades = JArray.Parse(File.ReadAllText(@"../../Ficheros\ActividadesRegistradas.json"));
-            listaActividades = jArrayActividades.ToObject<List<Actividad>>();
-            dataGridViewActividades.DataSource = listaActividades;
+            listaActividadesCompleta = jArrayActividades.ToObject<List<Actividad>>();
+            foreach (Actividad actividad in listaActividadesLibreria)
+            {
+                listaActividadesCompleta.RemoveAll(p => p.id==actividad.id);
+            }
+            dataGridViewActividades.DataSource = listaActividadesCompleta;
             dataGridViewActividades.Columns["direccion"].Visible = false;
             dataGridViewActividades.Columns["id"].Width=35;
             dataGridViewActividades.Columns["puntos"].Width = 50;
@@ -37,10 +41,10 @@ namespace Olor_a_libro
         private void buttonAñadirActividadALibreria_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow r in dataGridViewActividades.SelectedRows)
-            {
-                listaActividadesLibreria.Add(r.DataBoundItem);
+            { 
+                listaActividadesLibreria.Add((Actividad)r.DataBoundItem);
             }
-            listaActividadesLibreria.Add(dataGridViewActividades.SelectedRows.)
+            this.Close();
         }
     }
 }

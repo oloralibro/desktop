@@ -117,8 +117,7 @@ namespace Olor_a_libro
 
         private void buttonAnyadirLibrerias_Click(object sender, EventArgs e)
         {
-            FormAnyadirLibreria f = new FormAnyadirLibreria();
-            f.listaLibreriasAñadir = listaLibrerias;
+            FormAnyadirLibreria f = new FormAnyadirLibreria(listaLibrerias);
             f.ShowDialog();
         }
 
@@ -133,9 +132,11 @@ namespace Olor_a_libro
 
         private void buttonModificarLibrerias_Click(object sender, EventArgs e)
         {
-            FormAjustesLibreria f = new FormAjustesLibreria();
-            f.listaLibreriasAjustes = listaLibrerias;
+            FormAjustesLibreria f = new FormAjustesLibreria(listaLibrerias);
+            f.libreria = (Libreria)dataGridViewLibrerias.CurrentRow.DataBoundItem;
+            indexLibrerias = listaLibrerias.IndexOf(f.libreria);
             f.ShowDialog();
+            listaLibrerias[indexLibrerias] = f.libreria;
         }
         #endregion
 

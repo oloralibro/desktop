@@ -42,12 +42,14 @@
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
             this.labeltelefono = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonAnyadirActividad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNombreLibreria
             // 
             this.labelNombreLibreria.AutoSize = true;
-            this.labelNombreLibreria.Location = new System.Drawing.Point(20, 23);
+            this.labelNombreLibreria.Location = new System.Drawing.Point(20, 25);
             this.labelNombreLibreria.Name = "labelNombreLibreria";
             this.labelNombreLibreria.Size = new System.Drawing.Size(47, 13);
             this.labelNombreLibreria.TabIndex = 0;
@@ -55,16 +57,15 @@
             // 
             // textBoxNombreLibreria
             // 
-            this.textBoxNombreLibreria.Location = new System.Drawing.Point(81, 20);
+            this.textBoxNombreLibreria.Location = new System.Drawing.Point(81, 22);
             this.textBoxNombreLibreria.Name = "textBoxNombreLibreria";
-            this.textBoxNombreLibreria.ReadOnly = true;
             this.textBoxNombreLibreria.Size = new System.Drawing.Size(241, 20);
             this.textBoxNombreLibreria.TabIndex = 1;
             // 
             // labelDireccion
             // 
             this.labelDireccion.AutoSize = true;
-            this.labelDireccion.Location = new System.Drawing.Point(20, 59);
+            this.labelDireccion.Location = new System.Drawing.Point(20, 61);
             this.labelDireccion.Name = "labelDireccion";
             this.labelDireccion.Size = new System.Drawing.Size(55, 13);
             this.labelDireccion.TabIndex = 2;
@@ -73,7 +74,7 @@
             // labelHoraApertura
             // 
             this.labelHoraApertura.AutoSize = true;
-            this.labelHoraApertura.Location = new System.Drawing.Point(20, 149);
+            this.labelHoraApertura.Location = new System.Drawing.Point(20, 151);
             this.labelHoraApertura.Name = "labelHoraApertura";
             this.labelHoraApertura.Size = new System.Drawing.Size(41, 13);
             this.labelHoraApertura.TabIndex = 3;
@@ -81,24 +82,22 @@
             // 
             // textBoxDireccion
             // 
-            this.textBoxDireccion.Location = new System.Drawing.Point(81, 56);
+            this.textBoxDireccion.Location = new System.Drawing.Point(81, 58);
             this.textBoxDireccion.Name = "textBoxDireccion";
-            this.textBoxDireccion.ReadOnly = true;
             this.textBoxDireccion.Size = new System.Drawing.Size(241, 20);
             this.textBoxDireccion.TabIndex = 4;
             // 
             // textBoxHorario
             // 
-            this.textBoxHorario.Location = new System.Drawing.Point(81, 146);
+            this.textBoxHorario.Location = new System.Drawing.Point(81, 148);
             this.textBoxHorario.Name = "textBoxHorario";
-            this.textBoxHorario.ReadOnly = true;
             this.textBoxHorario.Size = new System.Drawing.Size(241, 20);
             this.textBoxHorario.TabIndex = 5;
             // 
             // labelActividades
             // 
             this.labelActividades.AutoSize = true;
-            this.labelActividades.Location = new System.Drawing.Point(20, 197);
+            this.labelActividades.Location = new System.Drawing.Point(20, 204);
             this.labelActividades.Name = "labelActividades";
             this.labelActividades.Size = new System.Drawing.Size(65, 13);
             this.labelActividades.TabIndex = 6;
@@ -107,35 +106,35 @@
             // listBoxActividades
             // 
             this.listBoxActividades.FormattingEnabled = true;
-            this.listBoxActividades.Location = new System.Drawing.Point(23, 214);
+            this.listBoxActividades.Location = new System.Drawing.Point(23, 242);
             this.listBoxActividades.Name = "listBoxActividades";
-            this.listBoxActividades.Size = new System.Drawing.Size(299, 147);
+            this.listBoxActividades.Size = new System.Drawing.Size(299, 173);
             this.listBoxActividades.TabIndex = 7;
             // 
             // buttonModificarLibreria
             // 
-            this.buttonModificarLibreria.Location = new System.Drawing.Point(187, 375);
+            this.buttonModificarLibreria.Location = new System.Drawing.Point(188, 444);
             this.buttonModificarLibreria.Name = "buttonModificarLibreria";
             this.buttonModificarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonModificarLibreria.TabIndex = 8;
             this.buttonModificarLibreria.Text = "Modificar";
             this.buttonModificarLibreria.UseVisualStyleBackColor = true;
-            this.buttonModificarLibreria.Click += new System.EventHandler(this.buttonCancelarLibreria_Click);
+            this.buttonModificarLibreria.Click += new System.EventHandler(this.buttonModificarLibreria_Click);
             // 
             // buttonAceptarLibreria
             // 
-            this.buttonAceptarLibreria.Location = new System.Drawing.Point(264, 375);
+            this.buttonAceptarLibreria.Location = new System.Drawing.Point(265, 444);
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 9;
-            this.buttonAceptarLibreria.Text = "Cancelar";
+            this.buttonAceptarLibreria.Text = "Aceptar";
             this.buttonAceptarLibreria.UseVisualStyleBackColor = true;
             this.buttonAceptarLibreria.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 169);
+            this.label2.Location = new System.Drawing.Point(3, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(337, 13);
             this.label2.TabIndex = 13;
@@ -143,16 +142,15 @@
             // 
             // textBoxTelefono
             // 
-            this.textBoxTelefono.Location = new System.Drawing.Point(81, 93);
+            this.textBoxTelefono.Location = new System.Drawing.Point(81, 95);
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.ReadOnly = true;
             this.textBoxTelefono.Size = new System.Drawing.Size(241, 20);
             this.textBoxTelefono.TabIndex = 15;
             // 
             // labeltelefono
             // 
             this.labeltelefono.AutoSize = true;
-            this.labeltelefono.Location = new System.Drawing.Point(20, 95);
+            this.labeltelefono.Location = new System.Drawing.Point(20, 97);
             this.labeltelefono.Name = "labeltelefono";
             this.labeltelefono.Size = new System.Drawing.Size(49, 13);
             this.labeltelefono.TabIndex = 14;
@@ -161,18 +159,39 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 116);
+            this.label4.Location = new System.Drawing.Point(2, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(337, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "_______________________________________________________";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 418);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(337, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "_______________________________________________________";
+            // 
+            // buttonAnyadirActividad
+            // 
+            this.buttonAnyadirActividad.Location = new System.Drawing.Point(218, 213);
+            this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
+            this.buttonAnyadirActividad.Size = new System.Drawing.Size(104, 23);
+            this.buttonAnyadirActividad.TabIndex = 36;
+            this.buttonAnyadirActividad.Text = "Añadir Actividades";
+            this.buttonAnyadirActividad.UseVisualStyleBackColor = true;
+            this.buttonAnyadirActividad.Click += new System.EventHandler(this.buttonAnyadirActividad_Click);
             // 
             // FormAjustesLibreria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(342, 408);
+            this.ClientSize = new System.Drawing.Size(342, 479);
+            this.Controls.Add(this.buttonAnyadirActividad);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.labeltelefono);
@@ -215,5 +234,7 @@
         private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.Label labeltelefono;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonAnyadirActividad;
     }
 }

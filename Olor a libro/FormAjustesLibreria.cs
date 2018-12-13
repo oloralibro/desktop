@@ -15,13 +15,14 @@ namespace Olor_a_libro
 {
     public partial class FormAjustesLibreria : Form
     {
-        public BindingList<Libreria> listaLibreriasAjustes;
+        BindingList<Libreria> listaLibreriasAjustes;
         public Libreria libreria;
         bool libreriaRepetida;
 
-        public FormAjustesLibreria()
+        public FormAjustesLibreria(BindingList<Libreria> listaLibreriasAjustes)
         {
             InitializeComponent();
+            this.listaLibreriasAjustes = listaLibreriasAjustes;
         }
 
         private void FormAñadirLibreria_Load(object sender, EventArgs e)
@@ -30,13 +31,31 @@ namespace Olor_a_libro
             textBoxTelefono.Text = libreria.numeroTelefono;
             textBoxDireccion.Text = libreria.direccion;
             textBoxHorario.Text = libreria.horario;
-            //listBoxActividades        
+
+            listBoxActividades.DataSource = null;
+            listBoxActividades.DataSource = libreria.listaActividades;
+            listBoxActividades.DisplayMember = "nombre";
+
+        }
+
+        private void buttonAnyadirActividad_Click(object sender, EventArgs e)
+        {
+            FormAñadirActividadALibreria f = new FormAñadirActividadALibreria(libreria.listaActividades);
+            f.ShowDialog();
+            listBoxActividades.DataSource = null;
+            listBoxActividades.DataSource = libreria.listaActividades;
+            listBoxActividades.DisplayMember = "nombre";
         }
 
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void buttonModificarLibreria_Click(object sender, EventArgs e)
+        {
             //Comprovamos que esta libreria no este ya en la lista de librerias 
-            libreriaRepetida = listaLibreriasAjustes.Any(p => p.nombre.Equals(this.textBoxNombreLibreria.Text));
+            libreriaRepetida = listaLibreriasAjustes.Any(p => p.nombre.Equals(this.textBoxNombreLibreria.Text) && p.id != libreria.id);
             if (libreriaRepetida == true)
             {
                 MessageBox.Show("El nombre de esta libreria ya existe, introduce uno nuevo.", "ERROR",
@@ -55,17 +74,9 @@ namespace Olor_a_libro
                 libreria.direccion = textBoxDireccion.Text;
                 libreria.numeroTelefono = textBoxTelefono.Text;
                 libreria.horario = textBoxHorario.Text;
-                libreria.listaActividades = null;
-                
                 
                 this.Close();
             }
         }
-
-        private void buttonCancelarLibreria_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
     }
 }

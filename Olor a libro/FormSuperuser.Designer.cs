@@ -57,15 +57,15 @@
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
             this.tabPageActividades = new System.Windows.Forms.TabPage();
             this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
+            this.idActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEliminarActividad = new System.Windows.Forms.Button();
             this.buttonModificarActividad = new System.Windows.Forms.Button();
             this.buttonAñadirActividad = new System.Windows.Forms.Button();
             this.textBoxBuscadorActividades = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorActividades = new System.Windows.Forms.PictureBox();
-            this.idActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlSuperuser.SuspendLayout();
             this.tabPageRedLibrerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLibrerias)).BeginInit();
@@ -172,7 +172,7 @@
             this.buttonModificarLibrerias.Name = "buttonModificarLibrerias";
             this.buttonModificarLibrerias.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarLibrerias.TabIndex = 4;
-            this.buttonModificarLibrerias.Text = "Modificar";
+            this.buttonModificarLibrerias.Text = "Abrir";
             this.buttonModificarLibrerias.UseVisualStyleBackColor = true;
             this.buttonModificarLibrerias.Click += new System.EventHandler(this.buttonModificarLibrerias_Click);
             // 
@@ -295,7 +295,7 @@
             this.buttonModificarUsuarios.Name = "buttonModificarUsuarios";
             this.buttonModificarUsuarios.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarUsuarios.TabIndex = 16;
-            this.buttonModificarUsuarios.Text = "Modificar";
+            this.buttonModificarUsuarios.Text = "Abrir";
             this.buttonModificarUsuarios.UseVisualStyleBackColor = true;
             this.buttonModificarUsuarios.Click += new System.EventHandler(this.buttonModificarUsuarios_Click);
             // 
@@ -357,6 +357,34 @@
             this.dataGridViewActividades.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewActividades.TabIndex = 19;
             // 
+            // idActividad
+            // 
+            this.idActividad.DataPropertyName = "id";
+            this.idActividad.HeaderText = "Id";
+            this.idActividad.Name = "idActividad";
+            this.idActividad.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 315;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 550;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "puntos";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Puntos";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 200;
+            // 
             // buttonEliminarActividad
             // 
             this.buttonEliminarActividad.Location = new System.Drawing.Point(620, 514);
@@ -373,7 +401,7 @@
             this.buttonModificarActividad.Name = "buttonModificarActividad";
             this.buttonModificarActividad.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarActividad.TabIndex = 10;
-            this.buttonModificarActividad.Text = "Modificar";
+            this.buttonModificarActividad.Text = "Abrir";
             this.buttonModificarActividad.UseVisualStyleBackColor = true;
             this.buttonModificarActividad.Click += new System.EventHandler(this.buttonModificarActividad_Click);
             // 
@@ -404,34 +432,6 @@
             this.pictureBoxIconoBuscadorActividades.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxIconoBuscadorActividades.TabIndex = 6;
             this.pictureBoxIconoBuscadorActividades.TabStop = false;
-            // 
-            // idActividad
-            // 
-            this.idActividad.DataPropertyName = "id";
-            this.idActividad.HeaderText = "Id";
-            this.idActividad.Name = "idActividad";
-            this.idActividad.Width = 70;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 315;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 550;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "puntos";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Puntos";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // FormSuperUser
             // 

@@ -28,9 +28,10 @@ namespace Olor_a_libro
             }
             else
             {
-               actividad = new Actividad(listaActividadesAñadir, textBoxNombreActividad.Text,
+                actividad = new Actividad(listaActividadesAñadir, textBoxNombreActividad.Text,
                     textBoxDescripcion.Text, int.Parse(textBoxPuntos.Text));
                 listaActividadesAñadir.Add(actividad);
+                Json.sobreescribirActividades(listaActividadesAñadir);
                 this.Close();
             }
         }

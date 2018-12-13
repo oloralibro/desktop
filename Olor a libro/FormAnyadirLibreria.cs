@@ -14,18 +14,13 @@ namespace Olor_a_libro
 {
     public partial class FormAnyadirLibreria : Form
     {
-        public BindingList<Libreria> listaLibreriasAñadir;
+        BindingList<Libreria> listaLibreriasAñadir;
         Libreria libreria;
 
-        public FormAnyadirLibreria()
+        public FormAnyadirLibreria(BindingList<Libreria> listaLibreriasAñadir)
         {
             InitializeComponent();
-        }
-
-        private void buttonAnyadirActividad_Click(object sender, EventArgs e)
-        {
-            FormAñadirActividadALibreria f = new FormAñadirActividadALibreria(libreria.listaActividades);
-            f.ShowDialog();
+            this.listaLibreriasAñadir = listaLibreriasAñadir;
         }
 
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)

@@ -118,6 +118,7 @@
             this.dataGridViewTextBoxColumn3});
             this.dataGridViewLibrerias.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewLibrerias.Name = "dataGridViewLibrerias";
+            this.dataGridViewLibrerias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewLibrerias.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewLibrerias.TabIndex = 19;
             // 
@@ -158,7 +159,7 @@
             // 
             // buttonEliminarLibrerias
             // 
-            this.buttonEliminarLibrerias.Location = new System.Drawing.Point(620, 514);
+            this.buttonEliminarLibrerias.Location = new System.Drawing.Point(587, 514);
             this.buttonEliminarLibrerias.Name = "buttonEliminarLibrerias";
             this.buttonEliminarLibrerias.Size = new System.Drawing.Size(84, 32);
             this.buttonEliminarLibrerias.TabIndex = 5;
@@ -168,7 +169,7 @@
             // 
             // buttonModificarLibrerias
             // 
-            this.buttonModificarLibrerias.Location = new System.Drawing.Point(502, 514);
+            this.buttonModificarLibrerias.Location = new System.Drawing.Point(469, 514);
             this.buttonModificarLibrerias.Name = "buttonModificarLibrerias";
             this.buttonModificarLibrerias.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarLibrerias.TabIndex = 4;
@@ -178,7 +179,7 @@
             // 
             // buttonAnyadirLibrerias
             // 
-            this.buttonAnyadirLibrerias.Location = new System.Drawing.Point(739, 514);
+            this.buttonAnyadirLibrerias.Location = new System.Drawing.Point(706, 514);
             this.buttonAnyadirLibrerias.Name = "buttonAnyadirLibrerias";
             this.buttonAnyadirLibrerias.Size = new System.Drawing.Size(82, 32);
             this.buttonAnyadirLibrerias.TabIndex = 3;
@@ -234,6 +235,7 @@
             this.puntuacionTotal});
             this.dataGridViewUsuarios.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
+            this.dataGridViewUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewUsuarios.TabIndex = 18;
             // 
@@ -277,11 +279,11 @@
             this.puntuacionTotal.DataPropertyName = "puntuacionTotal";
             this.puntuacionTotal.HeaderText = "Puntos";
             this.puntuacionTotal.Name = "puntuacionTotal";
-            this.puntuacionTotal.Width = 150;
+            this.puntuacionTotal.Width = 145;
             // 
             // buttonEliminarUsuarios
             // 
-            this.buttonEliminarUsuarios.Location = new System.Drawing.Point(620, 514);
+            this.buttonEliminarUsuarios.Location = new System.Drawing.Point(587, 514);
             this.buttonEliminarUsuarios.Name = "buttonEliminarUsuarios";
             this.buttonEliminarUsuarios.Size = new System.Drawing.Size(84, 32);
             this.buttonEliminarUsuarios.TabIndex = 17;
@@ -291,7 +293,7 @@
             // 
             // buttonModificarUsuarios
             // 
-            this.buttonModificarUsuarios.Location = new System.Drawing.Point(502, 514);
+            this.buttonModificarUsuarios.Location = new System.Drawing.Point(469, 514);
             this.buttonModificarUsuarios.Name = "buttonModificarUsuarios";
             this.buttonModificarUsuarios.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarUsuarios.TabIndex = 16;
@@ -301,7 +303,7 @@
             // 
             // buttonAñadirUsuarios
             // 
-            this.buttonAñadirUsuarios.Location = new System.Drawing.Point(739, 514);
+            this.buttonAñadirUsuarios.Location = new System.Drawing.Point(706, 514);
             this.buttonAñadirUsuarios.Name = "buttonAñadirUsuarios";
             this.buttonAñadirUsuarios.Size = new System.Drawing.Size(82, 32);
             this.buttonAñadirUsuarios.TabIndex = 15;
@@ -312,10 +314,11 @@
             // textBoxBuscadorUsuarios
             // 
             this.textBoxBuscadorUsuarios.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.textBoxBuscadorUsuarios.Location = new System.Drawing.Point(79, 33);
             this.textBoxBuscadorUsuarios.Multiline = true;
             this.textBoxBuscadorUsuarios.Name = "textBoxBuscadorUsuarios";
-            this.textBoxBuscadorUsuarios.Size = new System.Drawing.Size(675, 32);
+            this.textBoxBuscadorUsuarios.Size = new System.Drawing.Size(675, 29);
             this.textBoxBuscadorUsuarios.TabIndex = 13;
             // 
             // pictureBoxIconoBuscadorUsuarios
@@ -354,6 +357,7 @@
             this.dataGridViewTextBoxColumn6});
             this.dataGridViewActividades.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewActividades.Name = "dataGridViewActividades";
+            this.dataGridViewActividades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewActividades.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewActividades.TabIndex = 19;
             // 
@@ -369,14 +373,14 @@
             this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
             this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 315;
+            this.dataGridViewTextBoxColumn4.Width = 215;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
             this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 550;
+            this.dataGridViewTextBoxColumn5.Width = 650;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -387,7 +391,7 @@
             // 
             // buttonEliminarActividad
             // 
-            this.buttonEliminarActividad.Location = new System.Drawing.Point(620, 514);
+            this.buttonEliminarActividad.Location = new System.Drawing.Point(587, 514);
             this.buttonEliminarActividad.Name = "buttonEliminarActividad";
             this.buttonEliminarActividad.Size = new System.Drawing.Size(84, 32);
             this.buttonEliminarActividad.TabIndex = 11;
@@ -397,7 +401,7 @@
             // 
             // buttonModificarActividad
             // 
-            this.buttonModificarActividad.Location = new System.Drawing.Point(502, 514);
+            this.buttonModificarActividad.Location = new System.Drawing.Point(469, 514);
             this.buttonModificarActividad.Name = "buttonModificarActividad";
             this.buttonModificarActividad.Size = new System.Drawing.Size(82, 32);
             this.buttonModificarActividad.TabIndex = 10;
@@ -407,7 +411,7 @@
             // 
             // buttonAñadirActividad
             // 
-            this.buttonAñadirActividad.Location = new System.Drawing.Point(739, 514);
+            this.buttonAñadirActividad.Location = new System.Drawing.Point(706, 514);
             this.buttonAñadirActividad.Name = "buttonAñadirActividad";
             this.buttonAñadirActividad.Size = new System.Drawing.Size(82, 32);
             this.buttonAñadirActividad.TabIndex = 9;
@@ -418,10 +422,11 @@
             // textBoxBuscadorActividades
             // 
             this.textBoxBuscadorActividades.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxBuscadorActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.textBoxBuscadorActividades.Location = new System.Drawing.Point(79, 33);
             this.textBoxBuscadorActividades.Multiline = true;
             this.textBoxBuscadorActividades.Name = "textBoxBuscadorActividades";
-            this.textBoxBuscadorActividades.Size = new System.Drawing.Size(675, 32);
+            this.textBoxBuscadorActividades.Size = new System.Drawing.Size(675, 29);
             this.textBoxBuscadorActividades.TabIndex = 7;
             // 
             // pictureBoxIconoBuscadorActividades
@@ -487,17 +492,17 @@
         private System.Windows.Forms.DataGridView dataGridViewUsuarios;
         private System.Windows.Forms.DataGridView dataGridViewLibrerias;
         private System.Windows.Forms.DataGridView dataGridViewActividades;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idLibreria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn contraseña;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoElectronico;
         private System.Windows.Forms.DataGridViewTextBoxColumn superUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn puntuacionTotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idLibreria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idActividad;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;

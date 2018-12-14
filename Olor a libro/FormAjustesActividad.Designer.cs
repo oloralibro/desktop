@@ -105,7 +105,7 @@
             this.buttonCancelarActividad.Name = "buttonCancelarActividad";
             this.buttonCancelarActividad.Size = new System.Drawing.Size(58, 23);
             this.buttonCancelarActividad.TabIndex = 22;
-            this.buttonCancelarActividad.Text = "Cancelar";
+            this.buttonCancelarActividad.Text = "Aceptar";
             this.buttonCancelarActividad.UseVisualStyleBackColor = true;
             this.buttonCancelarActividad.Click += new System.EventHandler(this.buttonCancelarLibreria_Click);
             // 

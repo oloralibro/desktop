@@ -47,6 +47,14 @@ namespace Olor_a_libro
             listBoxActividades.DisplayMember = "nombre";
         }
 
+        private void buttonEliminarActividad_Click(object sender, EventArgs e)
+        {
+            libreria.listaActividades.Remove((Actividad)listBoxActividades.SelectedItem);
+            listBoxActividades.DataSource = null;
+            listBoxActividades.DataSource = libreria.listaActividades;
+            listBoxActividades.DisplayMember = "nombre";
+        }
+
         private void buttonAceptarLibreria_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -74,9 +82,13 @@ namespace Olor_a_libro
                 libreria.direccion = textBoxDireccion.Text;
                 libreria.numeroTelefono = textBoxTelefono.Text;
                 libreria.horario = textBoxHorario.Text;
-                
+                foreach (Actividad act in libreria.listaActividades)
+                {
+                    act.direccion = libreria.direccion;
+                }
                 this.Close();
             }
         }
+
     }
 }

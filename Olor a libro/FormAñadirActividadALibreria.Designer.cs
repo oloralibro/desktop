@@ -35,6 +35,7 @@
             // 
             // dataGridViewActividades
             // 
+            this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewActividades.Location = new System.Drawing.Point(9, 12);
             this.dataGridViewActividades.Name = "dataGridViewActividades";
@@ -56,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(396, 268);
             this.Controls.Add(this.buttonAñadirActividadALibreria);
             this.Controls.Add(this.dataGridViewActividades);

@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAnyadirActividad = new System.Windows.Forms.Button();
+            this.buttonEliminarActividad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelNombreLibreria
@@ -176,13 +177,23 @@
             // 
             // buttonAnyadirActividad
             // 
-            this.buttonAnyadirActividad.Location = new System.Drawing.Point(218, 213);
+            this.buttonAnyadirActividad.Location = new System.Drawing.Point(188, 213);
             this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
-            this.buttonAnyadirActividad.Size = new System.Drawing.Size(104, 23);
+            this.buttonAnyadirActividad.Size = new System.Drawing.Size(57, 23);
             this.buttonAnyadirActividad.TabIndex = 36;
-            this.buttonAnyadirActividad.Text = "Añadir Actividades";
+            this.buttonAnyadirActividad.Text = "Añadir";
             this.buttonAnyadirActividad.UseVisualStyleBackColor = true;
             this.buttonAnyadirActividad.Click += new System.EventHandler(this.buttonAnyadirActividad_Click);
+            // 
+            // buttonEliminarActividad
+            // 
+            this.buttonEliminarActividad.Location = new System.Drawing.Point(266, 213);
+            this.buttonEliminarActividad.Name = "buttonEliminarActividad";
+            this.buttonEliminarActividad.Size = new System.Drawing.Size(57, 23);
+            this.buttonEliminarActividad.TabIndex = 37;
+            this.buttonEliminarActividad.Text = "Eliminar";
+            this.buttonEliminarActividad.UseVisualStyleBackColor = true;
+            this.buttonEliminarActividad.Click += new System.EventHandler(this.buttonEliminarActividad_Click);
             // 
             // FormAjustesLibreria
             // 
@@ -190,6 +201,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(342, 479);
+            this.Controls.Add(this.buttonEliminarActividad);
             this.Controls.Add(this.buttonAnyadirActividad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
@@ -236,5 +248,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAnyadirActividad;
+        private System.Windows.Forms.Button buttonEliminarActividad;
     }
 }

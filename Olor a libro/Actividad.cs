@@ -9,6 +9,8 @@ namespace Olor_a_libro
 {
     public class Actividad
     {
+        public const string ACTIVIDADES_PATH = @"../../Ficheros\ActividadesRegistradas.json";
+
         public int id { get; set; }
         public String nombre { get; set; }
         public String descripcion { get; set; }

@@ -10,9 +10,13 @@ namespace Olor_a_libro
 {
     public partial class FormInicio : Olor_a_libro.FormPlantillaVentana
     {
-        public FormInicio()
+        public FormInicio(Usuario user)
         {
             InitializeComponent();
+            /* aqui es donde pasamos el usuario que ha entrado a la plantilla, 
+             * con lo que conseguimos que ya que la plantilla se informa se informen todos los demas forms
+             */
+            this.user = user;
         }
     }
 }

@@ -77,7 +77,7 @@
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(142, 23);
             this.buttonCancel.TabIndex = 18;
-            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.Text = "Cancelar";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // PictureBoxIcono

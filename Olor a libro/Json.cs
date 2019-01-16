@@ -28,7 +28,7 @@ namespace Olor_a_libro
         public static void sobreescribirUsuarios(BindingList<Usuario> listaUsuarios)
         {
             JArray jArrayUsuarios = (JArray)JToken.FromObject(listaUsuarios);
-            StreamWriter fichero = File.CreateText(@"../../Ficheros\UsuariosRegistrados.json");
+            StreamWriter fichero = File.CreateText(Usuario.USUARIOS_PATH);
             JsonTextWriter writer = new JsonTextWriter(fichero);
 
             jArrayUsuarios.WriteTo(writer);

@@ -228,6 +228,7 @@
             this.MaximizeBox = false;
             this.Name = "FormPlantillaVentana";
             this.Text = "PlantillaVentana";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPlantillaVentana_FormClosing);
             this.tableLayoutPanelMenu.ResumeLayout(false);
             this.tableLayoutPanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMenuIconoSuperUser)).EndInit();

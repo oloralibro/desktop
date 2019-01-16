@@ -12,7 +12,7 @@ namespace Olor_a_libro
 {
     public partial class FormRegistroSuper : Form
     {
-        public bool superUser=false;
+        public bool superUser;
 
         public FormRegistroSuper()
         {
@@ -29,6 +29,7 @@ namespace Olor_a_libro
             }
             else {
                 MessageBox.Show("Contraseña incorrecta.", "ERROR", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                superUser = false;
             }
         }
     }

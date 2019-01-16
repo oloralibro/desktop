@@ -27,10 +27,10 @@ namespace Olor_a_libro
 
         private void FormRegistro_Load(object sender, EventArgs e)
         {
-            if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
+            if (File.Exists(Usuario.USUARIOS_PATH))
             {
                 //si existe el fichero UsuariosRegistrados lo cargamos en una lista
-                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
+                jArrayUsuarios = JArray.Parse(File.ReadAllText(Usuario.USUARIOS_PATH));
                 listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
             }
             else
@@ -46,15 +46,20 @@ namespace Olor_a_libro
             //Comprovamos que este usuario y el correo no esten ya en la lista de usuarios 
             if(Utilidades.usuarioRepetido(listaUsuarios, textBoxUsuario.Text, textBoxEmail.Text)==false)
             {
-                if (!this.textBoxEmail.Text.Equals(this.textBoxCormirmarEmail.Text))
+                if (textBoxUsuario.Text.Equals("") || textBoxEmail.Text.Equals("") || textBoxContraseña.Equals(""))
                 {
-                    //Comprovamos con confirmar correo que haya introducido bien el correo 
-                    MessageBox.Show("El correo electronico no coincide, introducelo de nuevo.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Introduce todos los datos.", "ATENCIÓN",
+                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else if (!this.textBoxContraseña.Text.Equals(this.textBoxConfirmarContraseña.Text))
                 {
                     //Comprovamos con confirmar contraseña que este bien introducida 
                     MessageBox.Show("La contraseña no coincide, introducela de nuevo.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (!this.textBoxEmail.Text.Equals(this.textBoxCormirmarEmail.Text))
+                {
+                    //Comprovamos con confirmar correo que haya introducido bien el correo 
+                    MessageBox.Show("El correo electronico no coincide, introducelo de nuevo.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -67,7 +72,7 @@ namespace Olor_a_libro
                     //Añadimos el usuario a la lista de usuarios y al json de usuarios registrados
                     listaUsuarios.Add(usuario);
                     Json.sobreescribirJson(new BindingList<object>(listaUsuarios.Cast<object>().ToList()),
-                        "../../Ficheros\\UsuariosRegistrados.json");
+                        Usuario.USUARIOS_PATH);
                     this.Close();
                 }
 
@@ -84,6 +89,8 @@ namespace Olor_a_libro
         {
             FormRegistroSuper f = new FormRegistroSuper();
             f.ShowDialog();
+            //s'ha intentat passar per parametre pero el fran ha verificat que no te cap mena de sentit el k no ho faci be,
+            //al canviar de form sense passar per cap comanda el valor del boolea es canvia
             superUser = f.superUser;
         }
     }

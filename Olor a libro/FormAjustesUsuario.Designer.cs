@@ -52,7 +52,7 @@
             this.buttonModificar.Name = "buttonModificar";
             this.buttonModificar.Size = new System.Drawing.Size(58, 23);
             this.buttonModificar.TabIndex = 19;
-            this.buttonModificar.Text = "Modificar";
+            this.buttonModificar.Text = "Guardar";
             this.buttonModificar.UseVisualStyleBackColor = true;
             this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
             // 
@@ -62,7 +62,7 @@
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(58, 23);
             this.buttonCancelar.TabIndex = 18;
-            this.buttonCancelar.Text = "Aceptar";
+            this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
@@ -142,7 +142,6 @@
             // 
             // checkBoxSuperUser
             // 
-            this.checkBoxSuperUser.AutoCheck = false;
             this.checkBoxSuperUser.AutoSize = true;
             this.checkBoxSuperUser.Location = new System.Drawing.Point(315, 150);
             this.checkBoxSuperUser.Name = "checkBoxSuperUser";
@@ -211,7 +210,7 @@
             this.MinimizeBox = false;
             this.Name = "FormAjustesUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Ajustes de Usuario";
+            this.Text = "Olor A Libro - Ajustes de Usuario";
             this.Load += new System.EventHandler(this.FormAjustesUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

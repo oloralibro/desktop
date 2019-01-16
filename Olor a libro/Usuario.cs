@@ -10,6 +10,8 @@ namespace Olor_a_libro
 {
     public class Usuario
     {
+        public const string USUARIOS_PATH = @"../../Ficheros\UsuariosRegistrados.json";
+
         public int id { get; set; }
         public bool superUsuario { get; set; }
         public string nombre { get; set; }

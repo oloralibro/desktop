@@ -11,7 +11,6 @@ namespace Olor_a_libro
     public static class Utilidades
     {
         
-           
         public static int generarId(BindingList<object> lista)
         {
             int id=0;
@@ -52,6 +51,30 @@ namespace Olor_a_libro
                 result = false;
             }
             return result;
+        }
+
+        public static float generarLatitud()
+        {
+            //Valor maxim i minim de la latitud: 41.3261225-41.4387139
+            //Diferencia entre la latitud maxima i minima: 0.1125914
+
+            Random rng = new Random();
+
+            float latitud = (float)(rng.NextDouble()*0.1125915+41.3261225);
+
+            return latitud;
+        }
+
+        public static float generarLongitud()
+        {
+            //Valor maxim i minim de la longitud: 2.1155867-2.2263982
+            //Diferencia entre la longitud maxima i la minima: 0.1108115
+
+            Random rng = new Random();
+
+            float longitud = (float)(rng.NextDouble()*0.1108115+2.1155867);
+
+            return longitud;
         }
     }
 }

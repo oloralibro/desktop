@@ -1,0 +1,221 @@
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csprojAssemblyReference.cache
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividadesLibreria.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.cache
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CopyComplete
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\Eric\Source\Repos\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csprojAssemblyReference.cache
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.cache
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CopyComplete
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\Eric\Desktop\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csprojResolveAssemblyReference.cache
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.Cache
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.csprojAssemblyReference.cache
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.cache
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CoreCompileInputs.cache
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CopyComplete
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_080119\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor a libro.csprojResolveAssemblyReference.cache
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.Cache
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\cep.CEPNET0\Downloads\oloralibro_130119\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.csprojAssemblyReference.cache
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.cache
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CoreCompileInputs.cache
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CopyComplete
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_140119\desktop\Olor a libro\obj\Debug\Olor a libro.pdb
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\bin\Debug\Olor a libro.exe.config
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\bin\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\bin\Debug\Olor a libro.pdb
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.csprojAssemblyReference.cache
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesActividad.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormActividades.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustes.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividad.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAnyadirUser.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAñadirActividadALibreria.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormHistorial.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormInicio.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormJugar.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesLibreria.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibrerias.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLibros.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormLogin.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPerfil.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormPlantillaVentana.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistro.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormRegistroSuper.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormSuperUser.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.FormAjustesUsuario.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor_a_libro.Properties.Resources.resources
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.GenerateResource.cache
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CoreCompileInputs.cache
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.csproj.CopyComplete
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.exe
+C:\Users\ericm\Downloads\oloralibro_150119\desktop\Olor a libro\obj\Debug\Olor a libro.pdb

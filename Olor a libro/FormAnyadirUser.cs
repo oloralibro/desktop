@@ -12,12 +12,13 @@ namespace Olor_a_libro
 {
     public partial class FormAnyadirUser : Form
     {
-        public BindingList<Usuario> listaUsuariosAñadir;
+        BindingList<Usuario> listaUsuariosAñadir;
         Usuario user;
 
-        public FormAnyadirUser()
+        public FormAnyadirUser(BindingList<Usuario> listaUsuariosAñadir)
         {
             InitializeComponent();
+            this.listaUsuariosAñadir = listaUsuariosAñadir;
         }
 
         private void buttonAceptar_Click(object sender, EventArgs e)

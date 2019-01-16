@@ -16,13 +16,14 @@ namespace Olor_a_libro
     public partial class FormAjustesLibreria : Form
     {
         BindingList<Libreria> listaLibreriasAjustes;
-        public Libreria libreria;
+        Libreria libreria;
         bool libreriaRepetida;
 
-        public FormAjustesLibreria(BindingList<Libreria> listaLibreriasAjustes)
+        public FormAjustesLibreria(BindingList<Libreria> listaLibreriasAjustes, Libreria libreria)
         {
             InitializeComponent();
             this.listaLibreriasAjustes = listaLibreriasAjustes;
+            this.libreria = libreria;
         }
 
         private void FormAñadirLibreria_Load(object sender, EventArgs e)

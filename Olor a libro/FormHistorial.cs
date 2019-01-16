@@ -10,9 +10,10 @@ namespace Olor_a_libro
 {
     public partial class FormHistorial : Olor_a_libro.FormPlantillaVentana
     {
-        public FormHistorial()
+        public FormHistorial(Usuario user)
         {
             InitializeComponent();
+            this.user = user;
         }
     }
 }

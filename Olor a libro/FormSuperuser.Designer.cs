@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSuperUser));
             this.tabControlSuperuser = new System.Windows.Forms.TabControl();
             this.tabPageRedLibrerias = new System.Windows.Forms.TabPage();
+            this.buttonBuscarLibrerias = new System.Windows.Forms.Button();
             this.dataGridViewLibrerias = new System.Windows.Forms.DataGridView();
             this.idLibreria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +44,7 @@
             this.textBoxBuscadorLibrerias = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorLibrerias = new System.Windows.Forms.PictureBox();
             this.tabPageUsuarios = new System.Windows.Forms.TabPage();
+            this.buttonBuscarUsuario = new System.Windows.Forms.Button();
             this.dataGridViewUsuarios = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +58,7 @@
             this.textBoxBuscadorUsuarios = new System.Windows.Forms.TextBox();
             this.pictureBoxIconoBuscadorUsuarios = new System.Windows.Forms.PictureBox();
             this.tabPageActividades = new System.Windows.Forms.TabPage();
+            this.buttonBuscarActividad = new System.Windows.Forms.Button();
             this.dataGridViewActividades = new System.Windows.Forms.DataGridView();
             this.idActividad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,6 +94,7 @@
             // 
             // tabPageRedLibrerias
             // 
+            this.tabPageRedLibrerias.Controls.Add(this.buttonBuscarLibrerias);
             this.tabPageRedLibrerias.Controls.Add(this.dataGridViewLibrerias);
             this.tabPageRedLibrerias.Controls.Add(this.buttonEliminarLibrerias);
             this.tabPageRedLibrerias.Controls.Add(this.buttonModificarLibrerias);
@@ -105,9 +109,20 @@
             this.tabPageRedLibrerias.Text = "Red de Librerías";
             this.tabPageRedLibrerias.UseVisualStyleBackColor = true;
             // 
+            // buttonBuscarLibrerias
+            // 
+            this.buttonBuscarLibrerias.Location = new System.Drawing.Point(760, 33);
+            this.buttonBuscarLibrerias.Name = "buttonBuscarLibrerias";
+            this.buttonBuscarLibrerias.Size = new System.Drawing.Size(70, 29);
+            this.buttonBuscarLibrerias.TabIndex = 20;
+            this.buttonBuscarLibrerias.Text = "Buscar";
+            this.buttonBuscarLibrerias.UseVisualStyleBackColor = true;
+            this.buttonBuscarLibrerias.Click += new System.EventHandler(this.buttonBuscarLibrerias_Click);
+            // 
             // dataGridViewLibrerias
             // 
             this.dataGridViewLibrerias.AllowUserToAddRows = false;
+            this.dataGridViewLibrerias.AllowUserToDeleteRows = false;
             this.dataGridViewLibrerias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewLibrerias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLibrerias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -118,6 +133,7 @@
             this.dataGridViewTextBoxColumn3});
             this.dataGridViewLibrerias.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewLibrerias.Name = "dataGridViewLibrerias";
+            this.dataGridViewLibrerias.ReadOnly = true;
             this.dataGridViewLibrerias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewLibrerias.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewLibrerias.TabIndex = 19;
@@ -127,6 +143,7 @@
             this.idLibreria.DataPropertyName = "id";
             this.idLibreria.HeaderText = "Id";
             this.idLibreria.Name = "idLibreria";
+            this.idLibreria.ReadOnly = true;
             this.idLibreria.Width = 70;
             // 
             // dataGridViewTextBoxColumn1
@@ -134,6 +151,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "nombre";
             this.dataGridViewTextBoxColumn1.HeaderText = "Nombre libreria";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 235;
             // 
             // direccion
@@ -141,6 +159,7 @@
             this.direccion.DataPropertyName = "direccion";
             this.direccion.HeaderText = "Dirección";
             this.direccion.Name = "direccion";
+            this.direccion.ReadOnly = true;
             this.direccion.Width = 270;
             // 
             // horario
@@ -148,6 +167,7 @@
             this.horario.DataPropertyName = "horario";
             this.horario.HeaderText = "Horario";
             this.horario.Name = "horario";
+            this.horario.ReadOnly = true;
             this.horario.Width = 310;
             // 
             // dataGridViewTextBoxColumn3
@@ -155,6 +175,7 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "numeroTelefono";
             this.dataGridViewTextBoxColumn3.HeaderText = "Teléfono";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 250;
             // 
             // buttonEliminarLibrerias
@@ -207,6 +228,7 @@
             // 
             // tabPageUsuarios
             // 
+            this.tabPageUsuarios.Controls.Add(this.buttonBuscarUsuario);
             this.tabPageUsuarios.Controls.Add(this.dataGridViewUsuarios);
             this.tabPageUsuarios.Controls.Add(this.buttonEliminarUsuarios);
             this.tabPageUsuarios.Controls.Add(this.buttonModificarUsuarios);
@@ -221,9 +243,20 @@
             this.tabPageUsuarios.Text = "Usuarios";
             this.tabPageUsuarios.UseVisualStyleBackColor = true;
             // 
+            // buttonBuscarUsuario
+            // 
+            this.buttonBuscarUsuario.Location = new System.Drawing.Point(760, 33);
+            this.buttonBuscarUsuario.Name = "buttonBuscarUsuario";
+            this.buttonBuscarUsuario.Size = new System.Drawing.Size(70, 29);
+            this.buttonBuscarUsuario.TabIndex = 21;
+            this.buttonBuscarUsuario.Text = "Buscar";
+            this.buttonBuscarUsuario.UseVisualStyleBackColor = true;
+            this.buttonBuscarUsuario.Click += new System.EventHandler(this.buttonBuscarUsuario_Click);
+            // 
             // dataGridViewUsuarios
             // 
             this.dataGridViewUsuarios.AllowUserToAddRows = false;
+            this.dataGridViewUsuarios.AllowUserToDeleteRows = false;
             this.dataGridViewUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -235,6 +268,7 @@
             this.puntuacionTotal});
             this.dataGridViewUsuarios.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewUsuarios.Name = "dataGridViewUsuarios";
+            this.dataGridViewUsuarios.ReadOnly = true;
             this.dataGridViewUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUsuarios.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewUsuarios.TabIndex = 18;
@@ -244,6 +278,7 @@
             this.Id.DataPropertyName = "id";
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             this.Id.Width = 70;
             // 
             // nombre
@@ -251,6 +286,7 @@
             this.nombre.DataPropertyName = "nombre";
             this.nombre.HeaderText = "Nombre usuario";
             this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             this.nombre.Width = 250;
             // 
             // contraseña
@@ -258,6 +294,7 @@
             this.contraseña.DataPropertyName = "contraseña";
             this.contraseña.HeaderText = "Contraseña";
             this.contraseña.Name = "contraseña";
+            this.contraseña.ReadOnly = true;
             this.contraseña.Width = 250;
             // 
             // correoElectronico
@@ -265,6 +302,7 @@
             this.correoElectronico.DataPropertyName = "correoElectronico";
             this.correoElectronico.HeaderText = "E-mail";
             this.correoElectronico.Name = "correoElectronico";
+            this.correoElectronico.ReadOnly = true;
             this.correoElectronico.Width = 300;
             // 
             // superUsuario
@@ -272,6 +310,7 @@
             this.superUsuario.DataPropertyName = "superUsuario";
             this.superUsuario.HeaderText = "Super user";
             this.superUsuario.Name = "superUsuario";
+            this.superUsuario.ReadOnly = true;
             this.superUsuario.Width = 120;
             // 
             // puntuacionTotal
@@ -279,6 +318,7 @@
             this.puntuacionTotal.DataPropertyName = "puntuacionTotal";
             this.puntuacionTotal.HeaderText = "Puntos";
             this.puntuacionTotal.Name = "puntuacionTotal";
+            this.puntuacionTotal.ReadOnly = true;
             this.puntuacionTotal.Width = 145;
             // 
             // buttonEliminarUsuarios
@@ -332,6 +372,7 @@
             // 
             // tabPageActividades
             // 
+            this.tabPageActividades.Controls.Add(this.buttonBuscarActividad);
             this.tabPageActividades.Controls.Add(this.dataGridViewActividades);
             this.tabPageActividades.Controls.Add(this.buttonEliminarActividad);
             this.tabPageActividades.Controls.Add(this.buttonModificarActividad);
@@ -345,9 +386,20 @@
             this.tabPageActividades.Text = "Actividades";
             this.tabPageActividades.UseVisualStyleBackColor = true;
             // 
+            // buttonBuscarActividad
+            // 
+            this.buttonBuscarActividad.Location = new System.Drawing.Point(760, 33);
+            this.buttonBuscarActividad.Name = "buttonBuscarActividad";
+            this.buttonBuscarActividad.Size = new System.Drawing.Size(70, 29);
+            this.buttonBuscarActividad.TabIndex = 22;
+            this.buttonBuscarActividad.Text = "Buscar";
+            this.buttonBuscarActividad.UseVisualStyleBackColor = true;
+            this.buttonBuscarActividad.Click += new System.EventHandler(this.buttonBuscarActividad_Click);
+            // 
             // dataGridViewActividades
             // 
             this.dataGridViewActividades.AllowUserToAddRows = false;
+            this.dataGridViewActividades.AllowUserToDeleteRows = false;
             this.dataGridViewActividades.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.dataGridViewActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -357,6 +409,7 @@
             this.dataGridViewTextBoxColumn6});
             this.dataGridViewActividades.Location = new System.Drawing.Point(41, 80);
             this.dataGridViewActividades.Name = "dataGridViewActividades";
+            this.dataGridViewActividades.ReadOnly = true;
             this.dataGridViewActividades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewActividades.Size = new System.Drawing.Size(1178, 407);
             this.dataGridViewActividades.TabIndex = 19;
@@ -366,6 +419,7 @@
             this.idActividad.DataPropertyName = "id";
             this.idActividad.HeaderText = "Id";
             this.idActividad.Name = "idActividad";
+            this.idActividad.ReadOnly = true;
             this.idActividad.Width = 70;
             // 
             // dataGridViewTextBoxColumn4
@@ -373,6 +427,7 @@
             this.dataGridViewTextBoxColumn4.DataPropertyName = "nombre";
             this.dataGridViewTextBoxColumn4.HeaderText = "Nombre actividad";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 215;
             // 
             // dataGridViewTextBoxColumn5
@@ -380,6 +435,7 @@
             this.dataGridViewTextBoxColumn5.DataPropertyName = "descripcion";
             this.dataGridViewTextBoxColumn5.HeaderText = "Descripción";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 650;
             // 
             // dataGridViewTextBoxColumn6
@@ -387,6 +443,7 @@
             this.dataGridViewTextBoxColumn6.DataPropertyName = "puntos";
             this.dataGridViewTextBoxColumn6.HeaderText = "Puntos";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // buttonEliminarActividad
@@ -507,5 +564,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Button buttonBuscarLibrerias;
+        private System.Windows.Forms.Button buttonBuscarUsuario;
+        private System.Windows.Forms.Button buttonBuscarActividad;
     }
 }

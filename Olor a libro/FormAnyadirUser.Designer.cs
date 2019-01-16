@@ -133,7 +133,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAnyadirUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Añadir usuario";
+            this.Text = "Olor A Libro - Añadir usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

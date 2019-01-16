@@ -9,12 +9,16 @@ namespace Olor_a_libro
 {
     public class Libreria
     {
+        public const string LIBRERIAS_PATH = @"../../Ficheros\LibreriasRegistradas.json";
+
         public int id { get; set; }
         public String nombre { get; set; }
         public String direccion { get; set; }
         public String horario { get; set; }
         public String numeroTelefono { get; set; }
         public List<Actividad> listaActividades { get; set; }
+        public float latitud;
+        public float longitud;
 
         public Libreria() { }
 
@@ -26,6 +30,8 @@ namespace Olor_a_libro
             this.horario = horario;
             this.numeroTelefono = numeroTelefono;
             this.listaActividades = new List<Actividad>();
+            this.latitud = Utilidades.generarLatitud();
+            this.longitud = Utilidades.generarLongitud();
         }
     }
 }

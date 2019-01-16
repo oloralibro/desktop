@@ -118,7 +118,7 @@
             this.buttonModificarLibreria.Name = "buttonModificarLibreria";
             this.buttonModificarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonModificarLibreria.TabIndex = 8;
-            this.buttonModificarLibreria.Text = "Modificar";
+            this.buttonModificarLibreria.Text = "Guardar";
             this.buttonModificarLibreria.UseVisualStyleBackColor = true;
             this.buttonModificarLibreria.Click += new System.EventHandler(this.buttonModificarLibreria_Click);
             // 
@@ -128,7 +128,7 @@
             this.buttonAceptarLibreria.Name = "buttonAceptarLibreria";
             this.buttonAceptarLibreria.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarLibreria.TabIndex = 9;
-            this.buttonAceptarLibreria.Text = "Aceptar";
+            this.buttonAceptarLibreria.Text = "Cancelar";
             this.buttonAceptarLibreria.UseVisualStyleBackColor = true;
             this.buttonAceptarLibreria.Click += new System.EventHandler(this.buttonAceptarLibreria_Click);
             // 
@@ -177,7 +177,7 @@
             // 
             // buttonAnyadirActividad
             // 
-            this.buttonAnyadirActividad.Location = new System.Drawing.Point(188, 213);
+            this.buttonAnyadirActividad.Location = new System.Drawing.Point(189, 213);
             this.buttonAnyadirActividad.Name = "buttonAnyadirActividad";
             this.buttonAnyadirActividad.Size = new System.Drawing.Size(57, 23);
             this.buttonAnyadirActividad.TabIndex = 36;
@@ -187,7 +187,7 @@
             // 
             // buttonEliminarActividad
             // 
-            this.buttonEliminarActividad.Location = new System.Drawing.Point(266, 213);
+            this.buttonEliminarActividad.Location = new System.Drawing.Point(265, 213);
             this.buttonEliminarActividad.Name = "buttonEliminarActividad";
             this.buttonEliminarActividad.Size = new System.Drawing.Size(57, 23);
             this.buttonEliminarActividad.TabIndex = 37;

@@ -74,7 +74,7 @@
             this.MinimizeBox = false;
             this.Name = "FormRegistroSuper";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Privilegios super usuario";
+            this.Text = "Olor A Libro - Privilegios super usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

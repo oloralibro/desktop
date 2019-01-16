@@ -56,12 +56,6 @@
     <Compile Include="FormAjustesActividad.Designer.cs">
       <DependentUpon>FormAjustesActividad.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormActividadesLibreria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormActividadesLibreria.Designer.cs">
-      <DependentUpon>FormActividadesLibreria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAnyadirActividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,9 +181,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormActividades.resx">
       <DependentUpon>FormActividades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormActividadesLibreria.resx">
-      <DependentUpon>FormActividadesLibreria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAjustes.resx">
       <DependentUpon>FormAjustes.cs</DependentUpon>

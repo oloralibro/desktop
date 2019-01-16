@@ -27,11 +27,11 @@ namespace Olor_a_libro
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (File.Exists(@"../../Ficheros\UsuariosRegistrados.json"))
+            if (File.Exists(Usuario.USUARIOS_PATH))
             {
                 //Si existeixen usuaris creats carreguem aquests usuaris a una nova llista i busquem si hi ha algun amb usuari i contrasenya iguals als introduits 
 
-                jArrayUsuarios = JArray.Parse(File.ReadAllText(@"../../Ficheros\UsuariosRegistrados.json"));
+                jArrayUsuarios = JArray.Parse(File.ReadAllText(Usuario.USUARIOS_PATH));
                 listaUsuarios = jArrayUsuarios.ToObject<BindingList<Usuario>>();
 
                 existeUsuario = listaUsuarios.Any(p => p.nombre.Equals(this.textBoxNombreUsuario.Text) && p.contraseña.Equals(this.textBoxContraseña.Text));
@@ -52,9 +52,8 @@ namespace Olor_a_libro
                     usuarioCopia = listaUsuarios.FirstOrDefault(a => a.nombre.Equals(this.textBoxNombreUsuario.Text));
                     //en la linia anterior busquem dins de la llista l'usuari que vol entrar i copiem aquest usuari
                     //per tal de passar-lo al form inicio
-                    FormInicio f = new FormInicio();
+                    FormInicio f = new FormInicio(usuarioCopia);
                     f.Show();
-                    f.user = usuarioCopia;
                     this.Hide();
                 }
                 else

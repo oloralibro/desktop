@@ -10,9 +10,10 @@ namespace Olor_a_libro
 {
     public partial class FormLibrerias : Olor_a_libro.FormPlantillaVentana
     {
-        public FormLibrerias()
+        public FormLibrerias(Usuario user)
         {
             InitializeComponent();
+            this.user = user;
         }
     }
 }

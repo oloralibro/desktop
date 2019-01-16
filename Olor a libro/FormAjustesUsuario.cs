@@ -13,14 +13,16 @@ namespace Olor_a_libro
 
     public partial class FormAjustesUsuario : Form
     {
-        public BindingList<Usuario> listaUsuariosAjustes;
-        public Usuario user;
+        BindingList<Usuario> listaUsuariosAjustes;
+        Usuario user;
         string nombre, contraseña, correo, puntos;
         bool superUser, usuarioRepetido, correoRepetido;
 
-        public FormAjustesUsuario()
+        public FormAjustesUsuario(BindingList<Usuario> listaUsuariosAjustes, Usuario user)
         {
             InitializeComponent();
+            this.listaUsuariosAjustes = listaUsuariosAjustes;
+            this.user = user;
         }
 
         private void FormAjustesUsuario_Load(object sender, EventArgs e)
@@ -39,15 +41,22 @@ namespace Olor_a_libro
                 checkBoxSuperUser.Checked = false;
                 superUser = false;
             }
+            
             //Quan comença el projecte guardem les entrades existents en strigs per si a cas necesitem recuperar els valors abans de patir modificacions 
             contraseña = textBoxContraseña.Text;
             correo = textBoxCorreo.Text;
             puntos = textBoxPuntosTotales.Text;
             nombre = textBoxNombreUser.Text;
+
+            //Carrega la listbox amb les activitats que cada usuari ha fet
+            listBoxActividades.DataSource = null;
+            listBoxActividades.DataSource = user.listaActividades;
+            listBoxActividades.DisplayMember = "nombre";
         }
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
+            bool isIntString = textBoxPuntosTotales.Text.All(char.IsDigit);
             DialogResult result = MessageBox.Show("Seguro que quieres guardar los cambios?", "GUARDAR CAMBIOS", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
@@ -68,6 +77,11 @@ namespace Olor_a_libro
                     MessageBox.Show("Es obligatorio rellanar el campo Contraseña.",
                         "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBoxContraseña.Focus();
+                }
+                else if (isIntString == false)
+                {
+                    MessageBox.Show("Introduce los puntos correctamente.",
+                   "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

@@ -95,7 +95,7 @@
             this.buttonAceptarModificar.Name = "buttonAceptarModificar";
             this.buttonAceptarModificar.Size = new System.Drawing.Size(58, 23);
             this.buttonAceptarModificar.TabIndex = 23;
-            this.buttonAceptarModificar.Text = "Modificar";
+            this.buttonAceptarModificar.Text = "Guardar";
             this.buttonAceptarModificar.UseVisualStyleBackColor = true;
             this.buttonAceptarModificar.Click += new System.EventHandler(this.buttonAceptarModificar_Click);
             // 
@@ -105,7 +105,7 @@
             this.buttonCancelarActividad.Name = "buttonCancelarActividad";
             this.buttonCancelarActividad.Size = new System.Drawing.Size(58, 23);
             this.buttonCancelarActividad.TabIndex = 22;
-            this.buttonCancelarActividad.Text = "Aceptar";
+            this.buttonCancelarActividad.Text = "Cancelar";
             this.buttonCancelarActividad.UseVisualStyleBackColor = true;
             this.buttonCancelarActividad.Click += new System.EventHandler(this.buttonCancelarLibreria_Click);
             // 

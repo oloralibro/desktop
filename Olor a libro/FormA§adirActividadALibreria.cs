@@ -25,7 +25,7 @@ namespace Olor_a_libro
 
         private void FormAñadirActividadALibreria_Load(object sender, EventArgs e)
         {
-            JArray jArrayActividades = JArray.Parse(File.ReadAllText(@"../../Ficheros\ActividadesRegistradas.json"));
+            JArray jArrayActividades = JArray.Parse(File.ReadAllText(Actividad.ACTIVIDADES_PATH));
             listaActividadesCompleta = jArrayActividades.ToObject<List<Actividad>>();
             foreach (Actividad actividad in listaActividadesLibreria)
             {
